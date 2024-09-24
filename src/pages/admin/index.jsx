@@ -1,4 +1,4 @@
-const AdminPage = () => {
+const AdminPanel = () => {
   return (
     <section>
       <h1>Admin panel</h1>
@@ -6,4 +6,4 @@ const AdminPage = () => {
   );
 };
 
-export default AdminPage;
+export default AdminPanel;
