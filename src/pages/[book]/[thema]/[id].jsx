@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-const RoomPage = () => {
+const LearnRoom = () => {
   const router = useRouter();
   const { id } = router.query;
   return (
@@ -10,4 +10,4 @@ const RoomPage = () => {
   );
 };
 
-export default RoomPage;
+export default LearnRoom;
