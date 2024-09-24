@@ -5,7 +5,7 @@ const BookPage = () => {
   const { book } = router.query;
   return (
     <section>
-      <h1>Book "{book}"</h1>
+      <h1>Book &quot;{book}&quot;</h1>
     </section>
   );
 };

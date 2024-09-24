@@ -5,7 +5,7 @@ const RoomPage = () => {
   const { id } = router.query;
   return (
     <section>
-      <h1>Word with ID: "{id}"</h1>
+      <h1>Word with ID: &quot;{id}&quot;</h1>
     </section>
   );
 };

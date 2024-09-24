@@ -5,7 +5,7 @@ const ThemaPage = () => {
   const { thema } = router.query;
   return (
     <section>
-      <h1>Thema "{thema}"</h1>
+      <h1>Thema &quot;{thema}&quot;</h1>
     </section>
   );
 };
