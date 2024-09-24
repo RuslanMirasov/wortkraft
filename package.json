@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.13"
+    "sass": "^1.79.3",
+    "swr": "^2.2.5",
+    "use-local-storage-state": "^19.4.0"
   },
   "devDependencies": {
     "eslint": "^8",
