@@ -89,6 +89,26 @@ const Settings = ({ size = 24, stroke }) => (
   </svg>
 );
 
+const ArrowDown = ({ size = 24, stroke }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19.5 8.25L12 15.75L4.5 8.25" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const ArrowLeft = ({ size = 24, stroke }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.75 19.5L8.25 12L15.75 4.5" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const ArrowRight = ({ size = 24, stroke }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+
+
 const Icon = ({ name, fill = 'currentColor', stroke = 'currentColor', size }) => {
   return (
     <>
@@ -98,6 +118,9 @@ const Icon = ({ name, fill = 'currentColor', stroke = 'currentColor', size }) =>
       {name === 'bookmark' && <Bookmark size={size} stroke={stroke} />}
       {name === 'statistic' && <Statistic size={size} stroke={stroke} />}
       {name === 'settings' && <Settings size={size} stroke={stroke} />}
+      {name === 'arrow-down' && <ArrowDown size={size} stroke={stroke} />}
+      {name === 'arrow-left' && <ArrowLeft size={size} stroke={stroke} />}
+      {name === 'arrow-right' && <ArrowRight size={size} stroke={stroke} />}
     </>
   );
 };
