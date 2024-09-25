@@ -1,0 +1,44 @@
+$fieldsetHorisontalGap: 10px;
+$fieldsetVerticalGap: 10px;
+
+.Fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: $fieldsetVerticalGap $fieldsetHorisontalGap;
+  border: none;
+
+  &.col-auto > * {
+    width: auto;
+  }
+  &.col-1 > * {
+    width: 100%;
+  }
+  &.col-2 > * {
+    width: calc((100% - #{$fieldsetHorisontalGap}) / 2);
+  }
+  &.col-3 > * {
+    width: calc((100% - #{$fieldsetHorisontalGap * 2}) / 3);
+  }
+  &.col-4 > * {
+    width: calc((100% - #{$fieldsetHorisontalGap}* 3) / 4);
+  }
+  &.col-5 > * {
+    width: calc((100% - #{$fieldsetHorisontalGap}* 4) / 5);
+  }
+
+  .FieldsetLabel {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Header, Main, Footer } from '../../components';
+import { Header, Main, Footer, Popup } from '../../components';
 
 const Layout = ({ children }) => {
   return (
@@ -14,6 +14,7 @@ const Layout = ({ children }) => {
       <Header />
       <Main>{children}</Main>
       <Footer />
+      <Popup />
     </>
   );
 };
