@@ -1,8 +1,10 @@
+import { Section } from '../components';
+
 const HomePage = () => {
   return (
-    <section>
+    <Section>
       <h1>WortKraft App</h1>
-    </section>
+    </Section>
   );
 };
 

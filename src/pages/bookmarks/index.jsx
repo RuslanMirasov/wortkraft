@@ -1,8 +1,10 @@
+import { Section } from '../../components';
+
 const BookmarksPage = () => {
   return (
-    <section>
+    <Section>
       <h1>Bookmarks</h1>
-    </section>
+    </Section>
   );
 };
 

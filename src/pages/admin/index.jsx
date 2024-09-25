@@ -1,8 +1,10 @@
+import { Section } from '../../components';
+
 const AdminPanel = () => {
   return (
-    <section>
+    <Section>
       <h1>Admin panel</h1>
-    </section>
+    </Section>
   );
 };
 

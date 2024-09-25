@@ -1,12 +1,13 @@
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
+import { Section } from '../../../components';
 
 const LearnRoom = () => {
   const router = useRouter();
   const { id } = router.query;
   return (
-    <section>
+    <Section>
       <h1>Word with ID: &quot;{id}&quot;</h1>
-    </section>
+    </Section>
   );
 };
 
