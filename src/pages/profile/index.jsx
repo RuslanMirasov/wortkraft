@@ -1,8 +1,10 @@
+import { Section } from '../../components';
+
 const ProfilePage = () => {
   return (
-    <section>
+    <Section>
       <h1>Profile</h1>
-    </section>
+    </Section>
   );
 };
 

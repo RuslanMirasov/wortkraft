@@ -1,8 +1,10 @@
+import { Section } from '../../components';
+
 const SearchPage = () => {
   return (
-    <section>
+    <Section>
       <h1>Search</h1>
-    </section>
+    </Section>
   );
 };
 

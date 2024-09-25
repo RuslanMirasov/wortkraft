@@ -1,0 +1,23 @@
+.ProfileLink {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  height: 40px;
+  width: auto;
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  &:hover {
+    color: var(--orange-color);
+  }
+}

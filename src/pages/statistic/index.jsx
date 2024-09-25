@@ -1,8 +1,10 @@
+import { Section } from '../../components';
+
 const StatisticPage = () => {
   return (
-    <section>
+    <Section>
       <h1>Statistic Page</h1>
-    </section>
+    </Section>
   );
 };
 

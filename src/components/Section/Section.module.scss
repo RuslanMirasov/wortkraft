@@ -1,0 +1,10 @@
+.Section {
+  display: block;
+  padding-top: 100px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  &[data-full] {
+    min-height: 100vh;
+  }
+}

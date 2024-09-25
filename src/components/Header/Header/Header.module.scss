@@ -1,0 +1,16 @@
+.Header {
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: var(--white-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  > div {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
