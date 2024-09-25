@@ -20,7 +20,7 @@ Target group: people attending German integration courses or those who want to i
 - Scroll animation
 - Voice relay of words and dialogues
 
-## <b style="color:#0C7495;">User Story 1: Page structure and Layout component</b>
+## <b style="color:#0C7495;">User Story 1: Page structure and Navigation</b>
 
 <strong>As a user</strong> of a web application, I want to be able to access the main sections of the site via a navigation menu so that I can easily navigate between pages.
 
@@ -49,3 +49,8 @@ We are creating a page structure and a common `Layout` component for a web appli
    - Create a `Layout` component in the `Components` folder
    - Layout must include `Header`, `Main`, `Footer` components.
    - Layout should be connected in `_app.js` file and frame `<Component {...pageProps} />`
+
+3. **Navigation**:
+
+   - `Header` must include `Navigation` component.
+   - All links should navigate to the right pages, including dynamic ones, and be displayed as active.
