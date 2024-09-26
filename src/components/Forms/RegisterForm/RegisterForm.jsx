@@ -1,20 +1,15 @@
 import { Button, Fieldset, Form, Input } from '../../../components';
 import { usePopup } from '../../../hooks/usePopup';
 
-
 const RegisterForm = () => {
-  const { setLoading, unsetLoading, popupOpen } = usePopup(); 
+  const { setLoading, unsetLoading, popupOpen } = usePopup();
 
   const sendRegisterForm = form => {
     setLoading();
 
     setTimeout(() => {
       unsetLoading();
-      popupOpen(
-        'confirm',
-        `Hallo`,
-        'Bestätigen Sie bitte Ihre E-Mail, wir haben Ihnen einen Link an Ihre E-Mail-Adresse geschickt.'
-      );
+      popupOpen('confirm', `Danke dir`, 'Bestätigen Sie bitte Ihre E-Mail, wir haben einen Link an Ihre E-Mail-Adresse geschickt.');
     }, 1500);
   };
 
@@ -41,7 +36,7 @@ const RegisterForm = () => {
         }}
       />
       <Input type="email" name="email" label="Email" placeholder="mail@gmail.com" required />
-      <Input type="password" name="password" label="Passwort" placeholder="Mindestens 6 Zeichen (Az-09)" required />
+      <Input type="password" name="password" label="Password" placeholder="Mindestens 6 Zeichen" icon="password-hide" required />
       <Fieldset col="1" label="Datenschutzbestimmungen">
         <Input
           type="checkbox"
