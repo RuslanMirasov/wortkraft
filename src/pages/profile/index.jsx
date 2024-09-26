@@ -1,9 +1,11 @@
-import { Section } from '../../components';
+import { Section, Title } from '../../components';
 
 const ProfilePage = () => {
   return (
     <Section>
-      <h1>Profile</h1>
+      <Title tag="h1" size="h1">
+        Profile
+      </Title>
     </Section>
   );
 };

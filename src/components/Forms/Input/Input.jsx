@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { validateInput } from '../../../utils/formValidation';
 import { InputCheckbox, InputHidden, InputRadio, InputSelect, InputText, InputTextarea } from '../../../components';
 
-const Input = ({ type, name, required, label, placeholder, value = '', options, min, max, checked = false, onChange }) => {
+const Input = ({ type, icon, name, required, label, placeholder, value = '', options, min, max, checked = false, onChange }) => {
   const [inputValue, setInputValue] = useState(value);
   const [inputChecked, setInputChecked] = useState(checked);
 
@@ -30,6 +30,7 @@ const Input = ({ type, name, required, label, placeholder, value = '', options, 
       ) : (
         <InputText
           type={type}
+          icon={icon}
           name={name}
           label={label}
           value={inputValue}

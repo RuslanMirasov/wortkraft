@@ -1,9 +1,11 @@
-import { Section } from '../../components';
+import { Section, Title } from '../../components';
 
 const StatisticPage = () => {
   return (
     <Section>
-      <h1>Statistic Page</h1>
+      <Title tag="h1" size="h1">
+        Statistic
+      </Title>
     </Section>
   );
 };

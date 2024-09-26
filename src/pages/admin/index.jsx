@@ -1,9 +1,11 @@
-import { Section } from '../../components';
+import { Section, Title } from '../../components';
 
 const AdminPanel = () => {
   return (
     <Section>
-      <h1>Admin panel</h1>
+      <Title tag="h1" size="h1">
+        Admin panel
+      </Title>
     </Section>
   );
 };

@@ -1,9 +1,11 @@
-import { Section } from '../../components';
+import { Section, Title } from '../../components';
 
 const SearchPage = () => {
   return (
     <Section>
-      <h1>Search</h1>
+      <Title tag="h1" size="h1">
+        Search
+      </Title>
     </Section>
   );
 };
