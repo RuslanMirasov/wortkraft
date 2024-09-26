@@ -9,7 +9,7 @@ export const PopupProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState();
   const [isOpenPopup, setIsOpenPopup] = useState(false);
   const [isPopupLoading, setIsPopupLoading] = useState(false);
-  const [popupType, setPopupType] = useState('request');
+  const [popupType, setPopupType] = useState('login');
   const [popupTitle, setPopupTitle] = useState('');
   const [popupText, setPopupText] = useState('');
   const containerRef = useRef();
@@ -26,7 +26,7 @@ export const PopupProvider = ({ children }) => {
     };
   }, []);
 
-  //CLOSE POPUP AND MENU WITH ESCAPE
+  //CLOSE POPUP WITH ESCAPE
   useEffect(() => {
     const handleKeyPress = event => {
       if (event.key === 'Escape') {
@@ -68,7 +68,7 @@ export const PopupProvider = ({ children }) => {
     hidePopup();
     setTimeout(() => {
       setIsOpenPopup(false);
-      setPopupType('request');
+      setPopupType('login');
       setPopupTitle('');
       setPopupText('');
       bodyUnlock();
