@@ -1,6 +1,5 @@
-import { Button, Form, Input} from '../../../components';
+import { Button, Form, Input } from '../../../components';
 import { usePopup } from '../../../hooks/usePopup';
-
 
 const LoginForm = () => {
   const { setLoading, unsetLoading, popupClose } = usePopup();
@@ -8,7 +7,7 @@ const LoginForm = () => {
   const handleSubmit = form => {
     setLoading();
 
-    setTimeout(() => { 
+    setTimeout(() => {
       unsetLoading();
       popupClose();
     }, 1500);
@@ -17,10 +16,8 @@ const LoginForm = () => {
   return (
     <Form onSubmit={handleSubmit}>
       <Input type="email" name="email" label="E-mail" placeholder="example@example.com" required />
-      <Input type="password" name="password" label="Password" placeholder="Mindestens 6 Zeichen" required />
-
-        <Button full>Anmelden</Button>
-
+      <Input type="password" name="password" label="Password" placeholder="Mindestens 6 Zeichen" icon="password-hide" required />
+      <Button full>Anmelden</Button>
     </Form>
   );
 };

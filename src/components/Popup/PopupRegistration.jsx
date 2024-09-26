@@ -1,4 +1,4 @@
-import { RegisterForm } from '../../components';
+import { RegisterForm, Title, Text } from '../../components';
 import { usePopup } from '../../hooks/usePopup';
 import PopupAnimation from './PopupAnimation/PopupAnimation';
 
@@ -6,14 +6,15 @@ const PopupRegistration = () => {
   const { popupOpen } = usePopup();
   return (
     <PopupAnimation>
-      <h4>Registrierung</h4>
-      <p>Melden Sie sich an, um Ihren Fortschritt zu speichern und Ihre Leistungen zu verfolgen</p>
-      <RegisterForm/>
-      <div>
-        <button type="button" onClick={() => popupOpen('login')}>
-          back to login
-        </button>
-      </div>
+      <Title tag="h5" size="h5">
+        Registrierung
+      </Title>
+      <Text size="small">Melden Sie sich an, um Ihren Fortschritt zu speichern und Ihre Leistungen zu verfolgen</Text>
+      <RegisterForm />
+      <hr />
+      <Text size="small">
+        Haben Sie ein Konto? <a onClick={() => popupOpen('login')}>Anmeldung</a>
+      </Text>
     </PopupAnimation>
   );
 };

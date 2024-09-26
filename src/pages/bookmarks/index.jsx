@@ -1,9 +1,11 @@
-import { Section } from '../../components';
+import { Section, Title } from '../../components';
 
 const BookmarksPage = () => {
   return (
     <Section>
-      <h1>Bookmarks</h1>
+      <Title tag="h1" size="h1">
+        Bookmarks
+      </Title>
     </Section>
   );
 };

@@ -1,0 +1,25 @@
+.Text {
+  display: block;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+  white-space: pre-line;
+  a {
+    color: var(--blue-color);
+    border-bottom: 1px solid var(--blue-color);
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: var(--orange-color);
+      border-bottom: 1px solid var(--orange-color);
+    }
+  }
+}
+
+.Small {
+  font-size: 14px;
+}
+
+.Big {
+  font-size: 18px;
+}
