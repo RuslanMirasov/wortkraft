@@ -1,7 +1,7 @@
 # WortKraft App
 
-Web application for learning German words from current German textbooks in private and general education. <br>
-Target group: people attending German integration courses or those who want to improve their vocabulary on their own.
+Web application for learning German words from current German textbooks in private and general education. <br> Target group: people attending German
+integration courses or those who want to improve their vocabulary on their own.
 
 ### Required Tasks:
 
@@ -22,11 +22,13 @@ Target group: people attending German integration courses or those who want to i
 
 ## <b style="color:#0C7495;">User Story 1: Page structure and Navigation</b>
 
-<strong>As a user</strong> of a web application, I want to be able to access the main sections of the site via a navigation menu so that I can easily navigate between pages.
+<strong>As a user</strong> of a web application, I want to be able to access the main sections of the site via a navigation menu so that I can easily
+navigate between pages.
 
 #### Description:
 
-We are creating a page structure and a common `Layout` component for a web application. Layout should provide a navigation menu, header and footer on all pages.
+We are creating a page structure and a common `Layout` component for a web application. Layout should provide a navigation menu, header and footer on
+all pages.
 
 ![Project Structure](./public/readme-images/structure.png)
 
@@ -54,3 +56,19 @@ We are creating a page structure and a common `Layout` component for a web appli
 
    - `Header` must include `Navigation` component.
    - All links should navigate to the right pages, including dynamic ones, and be displayed as active.
+
+## <b style="color:#0C7495;">User Story 2: Popups and Forms</b>
+
+<strong>As a user</strong> of an App, I want to be able to access login and registration forms through popups, so that I can quickly authenticate and
+perform necessary actions without navigating to a new page.
+
+Create `Popup` and `Form` components to handle user authentication (login and registration) and provide dynamic feedback on success or error.
+
+![Project Structure](./public/readme-images/popups.jpg)
+
+### Acceptance Criteria:
+
+- Popups can be triggered from anywhere within the application.
+- Popup properties and actions must be accessible via the `usePopup` hook.
+- There is a registration form and a login form available.
+- A confirmation popup and an error popup are implemented, with the ability to dynamically update their content based on the specific context.

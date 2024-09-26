@@ -17,7 +17,7 @@ const Button = ({ onClick, variant, size, full, disabled, children }) => {
     .join(' ');
 
   return (
-    <button type={onClick ? 'button' : 'submit'} className={currentClasses} disabled={disabled}>
+    <button type={onClick ? 'button' : 'submit'} className={currentClasses} disabled={disabled} onClick={onClick}>
       <span>{children}</span>
     </button>
   );

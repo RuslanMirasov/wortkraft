@@ -2,15 +2,15 @@ import { Button, Form, Input } from '../../../components';
 import { usePopup } from '../../../hooks/usePopup';
 
 const LoginForm = () => {
-  const { setLoading, unsetLoading, popupClose } = usePopup();
+  const { setLoading, unsetLoading, popupOpen } = usePopup();
 
   const handleSubmit = form => {
     setLoading();
 
     setTimeout(() => {
       unsetLoading();
-      popupClose();
-    }, 1500);
+      popupOpen('error', 'Ooops...', 'Falsche Anmeldung oder falsches Passwort');
+    }, 2000);
   };
 
   return (
