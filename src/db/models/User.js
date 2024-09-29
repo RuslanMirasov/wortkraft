@@ -16,6 +16,7 @@ const userSchema = new mongoose.Schema({
   progress: { type: [progressSchema], default: [] },
   bookmarks: { type: [Schema.Types.ObjectId], default: [] },
   googleId: { type: String, default: null },
+  color: { type: String, default: '#F1A635' },
 });
 
 userSchema.pre('save', async function (next) {

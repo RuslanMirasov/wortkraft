@@ -1,12 +1,10 @@
-import { Section, Title, PrivatePage } from '../../components';
+import { Section, Profile, PrivatePage } from '../../components';
 
 const ProfilePage = () => {
   return (
     <PrivatePage>
       <Section>
-        <Title tag="h1" size="h1">
-          Profile
-        </Title>
+        <Profile />
       </Section>
     </PrivatePage>
   );

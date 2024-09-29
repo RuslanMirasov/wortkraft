@@ -11,11 +11,11 @@ const PrivatePage = ({ children }) => {
     return (
       <Section className={css.PrivatePage}>
         <div className={css.Info}>
-          <Title tag="h1" size="h2" align="center">
+          <Title tag="h1" size="h2">
             <Icon name="lock" stroke="var(--green-color)" size="60" />
             Privat
           </Title>
-          <Text size="big">
+          <Text>
             Sie müssen eingeloggt sein, <br />
             um diese Seite zu sehen
           </Text>

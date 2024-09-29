@@ -5,6 +5,7 @@ const Button = ({ onClick, variant, size, full, disabled, children }) => {
     [css.Button]: true,
     [css.Big]: size === 'big',
     [css.Small]: size === 'small',
+    [css.Orange]: variant === 'orange',
     [css.BorderLight]: variant === 'border-light',
     [css.BorderDark]: variant === 'border-dark',
     [css.Black]: variant === 'black',

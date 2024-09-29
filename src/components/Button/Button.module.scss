@@ -72,7 +72,7 @@
   &:hover,
   &:focus {
     background: var(--text-color);
-    color: var(--white);
+    color: var(--white-color);
   }
 }
 
@@ -83,7 +83,19 @@
   color: var(--text-color);
   &:hover,
   &:focus {
-    color: var(--white);
+    color: var(--white-color);
+  }
+}
+
+.Orange {
+  border: 2px solid var(--orange-color);
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  color: var(--text-color);
+  &:hover,
+  &:focus {
+    background: var(--orange-color);
+    color: var(--white-color);
   }
 }
 
@@ -91,7 +103,7 @@
   border: 2px solid var(--green-color);
   background: rgba(0, 0, 0, 0);
   box-shadow: none;
-  color: var(--white);
+  color: var(--white-color);
 }
 
 .Full {

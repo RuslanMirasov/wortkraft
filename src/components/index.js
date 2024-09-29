@@ -1,6 +1,7 @@
 // Layout
 export { default as Layout } from './Layout/Layout';
 export { default as PrivatePage } from './PrivatePage/PrivatePage';
+export { default as PageNotFound } from './PageNotFound/PageNotFound';
 export { default as Header } from './Header/Header/Header';
 export { default as Main } from './Main/Main';
 export { default as Footer } from './Footer/Footer';
@@ -17,6 +18,7 @@ export { default as Icon } from './Icon/Icon';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Popup } from './Popup/Popup';
 export { default as Button } from './Button/Button';
+export { default as Profile } from './Profile/Profile';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';
@@ -24,6 +26,7 @@ export { default as Input } from './Forms/Input/Input';
 export { default as LoginForm } from './Forms/LoginForm/LoginForm';
 export { default as RegisterForm } from './Forms/RegisterForm/RegisterForm';
 export { default as Fieldset } from './Forms/Fieldset/Fieldset';
+export { default as AvatarForm } from './Forms/AvatarForm/AvatarForm';
 
 // Input types
 export { default as InputText } from './Forms/InputTypes/InputText/InputText';
