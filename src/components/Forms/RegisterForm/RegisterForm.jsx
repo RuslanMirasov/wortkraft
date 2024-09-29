@@ -1,42 +1,57 @@
+import fetcher from '../../../utils/fatcher';
+import { mutate } from 'swr';
 import { Button, Fieldset, Form, Input } from '../../../components';
 import { usePopup } from '../../../hooks/usePopup';
 
 const RegisterForm = () => {
-  const { setLoading, unsetLoading, popupOpen } = usePopup();
+  const { setLoading, popupOpen } = usePopup();
 
-  const sendRegisterForm = form => {
-    setLoading();
-
-    setTimeout(() => {
-      unsetLoading();
-      popupOpen('confirm', `Danke dir`, 'Bestätigen Sie bitte Ihre E-Mail, wir haben einen Link an Ihre E-Mail-Adresse geschickt.');
-    }, 1500);
+  const handleRegistration = async data => {
+    setLoading(true);
+    try {
+      const result = await fetcher('/api/auth/register', 'POST', data);
+      mutate('/api/auth/user');
+      popupOpen(
+        'confirm',
+        `Hello ${data.name || 'New User'}`,
+        'Your account has been successfully created, you can start learning now. Have fun 🧐'
+      );
+    } catch (error) {
+      popupOpen('error', `Error ${error.status}`, error.message, 'registration');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <Form onSubmit={sendRegisterForm}>
-      <Input type="text" name="name" label="Ihre Vorname" placeholder="..." required />
+    <Form onSubmit={handleRegistration}>
+      <Input type="text" name="name" label="Vorname" placeholder="Zum Beispiel Klaus" />
       <Input
         type="select"
         name="language"
-        label="Ihre Muttersprache"
-        placeholder="..."
+        label="Sprache"
+        placeholder="Ihre Muttersprache"
         required
         options={{
           EN: 'English',
-          UA: 'Українська',
-          RU: 'Русский',
           FR: 'Français',
+          UA: 'Українська',
+          PL: 'Polski',
           IT: 'Italiano',
           ES: 'Español',
-          PL: 'Polski',
           TR: 'Türkçe',
-          AR: 'العربية',
-          FA: 'فارسی',
+          RU: 'Русский',
         }}
       />
       <Input type="email" name="email" label="Email" placeholder="mail@gmail.com" required />
-      <Input type="password" name="password" label="Password" placeholder="Mindestens 6 Zeichen" icon="password-hide" required />
+      <Input
+        type="password"
+        name="password"
+        label="Password"
+        placeholder="Mindestens 6 Zeichen"
+        icon="password-hide"
+        required
+      />
       <Fieldset col="1" label="Datenschutzbestimmungen">
         <Input
           type="checkbox"

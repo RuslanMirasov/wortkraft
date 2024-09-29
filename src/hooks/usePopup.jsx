@@ -8,10 +8,11 @@ export const usePopup = () => useContext(PopupContext);
 export const PopupProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState();
   const [isOpenPopup, setIsOpenPopup] = useState(false);
-  const [isPopupLoading, setIsPopupLoading] = useState(false);
-  const [popupType, setPopupType] = useState('request');
+  const [loading, setLoading] = useState(false);
+  const [popupType, setPopupType] = useState('login');
   const [popupTitle, setPopupTitle] = useState('');
   const [popupText, setPopupText] = useState('');
+  const [goBackTo, setGgoBackTo] = useState(null);
   const containerRef = useRef();
 
   // SCREEN WIDTH CHECK
@@ -26,7 +27,7 @@ export const PopupProvider = ({ children }) => {
     };
   }, []);
 
-  //CLOSE POPUP AND MENU WITH ESCAPE
+  //CLOSE POPUP WITH ESCAPE
   useEffect(() => {
     const handleKeyPress = event => {
       if (event.key === 'Escape') {
@@ -41,17 +42,8 @@ export const PopupProvider = ({ children }) => {
     };
   });
 
-  //POPUP LOADING
-  const setLoading = () => {
-    setIsPopupLoading(true);
-  };
-
-  const unsetLoading = () => {
-    setIsPopupLoading(false);
-  };
-
   //POPUP OPEN AND CLOSE
-  const popupOpen = (type, title, text) => {
+  const popupOpen = (type, title, text, goBackTo) => {
     setIsOpenPopup(true);
     if (!isOpenPopup) {
       bodyLock(window.innerWidth - document.body.clientWidth);
@@ -59,6 +51,7 @@ export const PopupProvider = ({ children }) => {
     setPopupType(type);
     title && setPopupTitle(title);
     text && setPopupText(text);
+    goBackTo && setGgoBackTo(goBackTo);
     setTimeout(() => {
       showPopup();
     }, 1);
@@ -68,11 +61,15 @@ export const PopupProvider = ({ children }) => {
     hidePopup();
     setTimeout(() => {
       setIsOpenPopup(false);
-      setPopupType('request');
+      setPopupType('login');
       setPopupTitle('');
       setPopupText('');
       bodyUnlock();
+      goBackTo && popupOpen(goBackTo);
     }, 310);
+    setTimeout(() => {
+      setGgoBackTo(null);
+    }, 320);
   };
 
   return (
@@ -80,13 +77,13 @@ export const PopupProvider = ({ children }) => {
       ref={containerRef}
       value={{
         isMobile,
-        isPopupLoading,
         isOpenPopup,
         popupType,
         popupTitle,
         popupText,
+        goBackTo,
+        loading,
         setLoading,
-        unsetLoading,
         popupClose,
         popupOpen,
       }}

@@ -1,12 +1,14 @@
-import { Section, Title } from '../../components';
+import { Section, Title, PrivatePage } from '../../components';
 
 const StatisticPage = () => {
   return (
-    <Section>
-      <Title tag="h1" size="h1">
-        Statistic
-      </Title>
-    </Section>
+    <PrivatePage>
+      <Section>
+        <Title tag="h1" size="h1">
+          Statistic
+        </Title>
+      </Section>
+    </PrivatePage>
   );
 };
 

@@ -7,7 +7,7 @@ import PopupLogin from './PopupLogin';
 import PopupRegistration from './PopupRegistration';
 
 const Popup = () => {
-  const { isPopupLoading, isOpenPopup, popupType, popupTitle, popupText, popupClose } = usePopup();
+  const { loading, isOpenPopup, popupType, popupTitle, popupText, popupClose } = usePopup();
   const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Popup = () => {
     'type-registration': popupType === 'registration',
     'type-error': popupType === 'error',
     'type-confirm': popupType === 'confirm',
-    'is-loading': isPopupLoading,
+    'is-loading': loading,
   };
 
   const currentPopupContentClasses = Object.keys(popupContentClasses)

@@ -1,9 +1,9 @@
 import css from './Section.module.scss';
 import { Container } from '../../components';
 
-const Section = ({ children }) => {
+const Section = ({ className, children }) => {
   return (
-    <section className={css.Section}>
+    <section className={`${css.Section} ${className ? className : ''}`}>
       <Container>{children}</Container>
     </section>
   );
