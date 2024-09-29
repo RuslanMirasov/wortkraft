@@ -1,5 +1,6 @@
 // Layout
 export { default as Layout } from './Layout/Layout';
+export { default as PrivatePage } from './PrivatePage/PrivatePage';
 export { default as Header } from './Header/Header/Header';
 export { default as Main } from './Main/Main';
 export { default as Footer } from './Footer/Footer';
@@ -36,4 +37,3 @@ export { default as InputSelect } from './Forms/InputTypes/InputSelect/InputSele
 export { default as Title } from './Typography/Title/Title';
 export { default as Text } from './Typography/Text/Text';
 export { default as TitleBox } from './Typography/TitleBox/TitleBox';
-

@@ -1,0 +1,32 @@
+.PrivatePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 14px;
+  max-width: 375px;
+  margin: auto;
+  h1 {
+    font-weight: 600;
+    letter-spacing: -2px;
+  }
+  svg {
+    opacity: 1;
+    margin-bottom: -6px;
+    margin-right: 6px;
+  }
+  button {
+    margin-top: 14px;
+  }
+}

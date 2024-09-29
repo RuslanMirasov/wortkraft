@@ -7,10 +7,11 @@ const progressSchema = new mongoose.Schema({
 });
 
 const userSchema = new mongoose.Schema({
+  status: { type: String, enum: ['user', 'admin', 'pro'], default: 'user' },
   name: { type: String, default: 'New User' },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  language: { type: String, required: true },
+  language: { type: String, default: 'EN' },
   avatar: { type: String, default: '' },
   progress: { type: [progressSchema], default: [] },
   bookmarks: { type: [Schema.Types.ObjectId], default: [] },

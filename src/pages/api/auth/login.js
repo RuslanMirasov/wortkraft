@@ -1,7 +1,8 @@
 import dbConnect from '../../../db/connect';
 import User from '../../../db/models/User';
+import { generateToken } from '../../../utils/jwt';
 
-export default async function handler(req, res) {
+const handler = async (req, res) => {
   await dbConnect();
 
   if (req.method !== 'POST') {
@@ -25,9 +26,13 @@ export default async function handler(req, res) {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
 
-    // Здесь ты можешь создать сессию, токен или что-то подобное
+    // Генерация JWT токена после успешного логина
+    generateToken(user, res);
+
     return res.status(200).json({ message: 'Login successful' });
   } catch (error) {
     return res.status(500).json({ message: 'Internal server error' });
   }
-}
+};
+
+export default handler;

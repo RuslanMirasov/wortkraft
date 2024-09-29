@@ -1,4 +1,3 @@
-
 import { validateForm } from '../../../utils/formValidation';
 import css from './Form.module.scss';
 
@@ -9,7 +8,15 @@ const Form = ({ children, onSubmit }) => {
     if (formErrors > 0) {
       return;
     }
-    onSubmit && onSubmit(e);
+
+    const formData = new FormData(e.target);
+    const data = {};
+
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    onSubmit && onSubmit(data);
   };
 
   return (

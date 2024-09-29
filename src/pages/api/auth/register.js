@@ -1,7 +1,8 @@
 import dbConnect from '../../../db/connect';
 import User from '../../../db/models/User';
+import { generateToken } from '../../../utils/jwt';
 
-export default async function handler(req, res) {
+const handler = async (req, res) => {
   await dbConnect();
 
   if (req.method !== 'POST') {
@@ -29,8 +30,13 @@ export default async function handler(req, res) {
 
     await user.save();
 
+    // Генерация JWT токена
+    generateToken(user, res);
+
     return res.status(201).json({ message: 'User created successfully' });
   } catch (error) {
     return res.status(500).json({ message: 'Internal server error' });
   }
-}
+};
+
+export default handler;
