@@ -1,6 +1,6 @@
 .ProfileLink {
   display: inline-flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
   align-content: center;
@@ -38,6 +38,33 @@
   &:hover {
     svg {
       color: var(--green-color);
+    }
+  }
+}
+
+.Name {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  pointer-events: none;
+  user-select: none;
+  i {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 11px;
+
+    white-space: nowrap; /* Запрещает перенос строк */
+    overflow: hidden; /* Скрывает переполненный текст */
+    text-overflow: ellipsis; /* Добавляет троеточие в конце */
+    max-width: 120px;
+    &:last-child {
+      font-size: 15px;
+      line-height: 1.2;
     }
   }
 }

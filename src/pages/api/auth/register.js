@@ -4,6 +4,9 @@ import { generateToken } from '../../../utils/jwt';
 
 const handler = async (req, res) => {
   await dbConnect();
+  const avatarColors = ['#3F80BC', '#3FBC71', '#F1A635', '#F62020', '#27B4AB'];
+  const colorNumber = Math.floor(Math.random() * avatarColors.length);
+  const color = avatarColors[colorNumber];
 
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
@@ -25,6 +28,7 @@ const handler = async (req, res) => {
       email,
       password,
       language,
+      color,
       name: name || 'New User',
     });
 
