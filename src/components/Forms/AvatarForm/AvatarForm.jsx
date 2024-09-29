@@ -7,19 +7,22 @@ import css from './AvatarForm.module.scss';
 
 const AvatarForm = ({ user }) => {
   const [loading, setLoading] = useState(false);
-  const [selectedFile, setSelectedFile] = useState(null);
   const { popupOpen } = usePopup();
   const { _id, avatar, color, email } = user;
 
   const handleFileChange = async e => {
     setLoading(true);
-    setSelectedFile(e.target.files[0]);
-    const data = {
-      userId: _id,
-      avatar: selectedFile,
-    };
+    const file = e.target.files[0]; // Получаем выбранный файл
+
+    const formData = new FormData();
+    formData.append('avatar', file);
+    formData.append('userId', _id);
+
+    console.log('avatar', file);
+    console.log('userId', _id);
+
     try {
-      await fetcher('/api/auth/avatar', 'POST', data);
+      await fetcher('/api/user/avatar', 'POST', formData, true);
       mutate('/api/auth/user');
     } catch (error) {
       popupOpen('error', `Error ${error.status}`, error.message);

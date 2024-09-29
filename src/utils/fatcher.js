@@ -1,13 +1,17 @@
-const fetcher = async (url, method = 'GET', data = null) => {
+const fetcher = async (url, method = 'GET', data = null, isFormData = false) => {
   const options = {
     method,
-    headers: {
-      'Content-Type': 'application/json',
-    },
   };
 
   if (data) {
-    options.body = JSON.stringify(data);
+    if (isFormData) {
+      options.body = data;
+    } else {
+      options.headers = {
+        'Content-Type': 'application/json',
+      };
+      options.body = JSON.stringify(data);
+    }
   }
 
   const res = await fetch(url, options);
