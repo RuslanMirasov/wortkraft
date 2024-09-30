@@ -11,13 +11,13 @@ export const generateToken = (user, res) => {
     { expiresIn: '7d' }
   );
 
-  // Установка JWT в HttpOnly cookie
+  // HttpOnly cookie
   res.setHeader(
     'Set-Cookie',
     cookie.serialize('token', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production', // В продакшн окружении токен будет передаваться только по https
-      maxAge: 60 * 60 * 24 * 7, // 7 дней
+      secure: process.env.NODE_ENV === 'production',
+      maxAge: 60 * 60 * 24 * 7, // 7 days
       sameSite: 'strict',
       path: '/',
     })
