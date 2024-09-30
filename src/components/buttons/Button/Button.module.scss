@@ -52,9 +52,9 @@
 }
 
 .Small {
-  font-size: 14px;
-  padding: 10px 20px;
-  min-height: 40px;
+  font-size: 12px;
+  padding: 8px 16px;
+  min-height: 30px;
 }
 
 .Black {
@@ -95,6 +95,18 @@
   &:hover,
   &:focus {
     background: var(--orange-color);
+    color: var(--white-color);
+  }
+}
+
+.Red {
+  border: 2px solid var(--invalid-color);
+  background: var(--invalid-color);
+  color: var(--white-color);
+  &:hover,
+  &:focus {
+    border: 2px solid var(--invalid-color);
+    background: var(--invalid-color);
     color: var(--white-color);
   }
 }

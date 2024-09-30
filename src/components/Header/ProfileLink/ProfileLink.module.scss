@@ -22,26 +22,6 @@
   }
 }
 
-.login {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: center;
-  gap: 4px;
-  font-size: 14px;
-  svg {
-    color: var(--text-color);
-    position: relative;
-    transition: 0.3s;
-    transform: rotate(180deg);
-  }
-  &:hover {
-    svg {
-      color: var(--green-color);
-    }
-  }
-}
-
 .Name {
   display: flex;
   position: relative;

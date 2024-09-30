@@ -19,6 +19,7 @@ const AvatarForm = ({ user }) => {
       maxWidthOrHeight: 400,
       useWebWorker: true,
     };
+
     if (file) {
       setLoading(true);
       try {

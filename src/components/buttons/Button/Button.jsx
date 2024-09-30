@@ -10,6 +10,7 @@ const Button = ({ onClick, variant, size, full, disabled, children }) => {
     [css.BorderDark]: variant === 'border-dark',
     [css.Black]: variant === 'black',
     [css.White]: variant === 'white',
+    [css.Red]: variant === 'red',
     [css.Full]: full,
   };
 

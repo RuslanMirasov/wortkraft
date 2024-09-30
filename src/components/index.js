@@ -17,7 +17,9 @@ export { default as Container } from './Container/Container';
 export { default as Icon } from './Icon/Icon';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Popup } from './Popup/Popup';
-export { default as Button } from './Button/Button';
+export { default as Button } from './Buttons/Button/Button';
+export { default as LoginButton } from './Buttons/AuthButtons/LoginButton';
+export { default as LogoutButton } from './Buttons/AuthButtons/LogoutButton';
 export { default as Profile } from './Profile/Profile';
 
 // Forms
