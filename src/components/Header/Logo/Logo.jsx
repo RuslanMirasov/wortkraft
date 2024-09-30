@@ -5,7 +5,8 @@ import css from './Logo.module.scss';
 const Logo = () => {
   return (
     <Link href="/" className={css.Logo}>
-      <Icon name="logo" stroke="var(--orange-color)" />
+      <Icon name="logo" stroke="var(--text-color)" />
+      <p>Deutsch lernen app</p>
     </Link>
   );
 };

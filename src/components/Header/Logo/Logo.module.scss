@@ -1,6 +1,17 @@
 .Logo {
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  width: 120px;
+  svg {
+    width: 100%;
+  }
+  p {
+    display: block;
+    width: 100%;
+    color: var(--grey-color);
+    font-size: 13.5px;
+  }
 }
