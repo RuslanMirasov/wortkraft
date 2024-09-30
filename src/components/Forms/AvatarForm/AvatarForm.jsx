@@ -18,9 +18,6 @@ const AvatarForm = ({ user }) => {
     formData.append('avatar', file);
     formData.append('userId', _id);
 
-    console.log('avatar', file);
-    console.log('userId', _id);
-
     try {
       await fetcher('/api/user/avatar', 'POST', formData, true);
       mutate('/api/auth/user');
