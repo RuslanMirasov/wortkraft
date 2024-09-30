@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>WortKraft</title>
+        <title>WortKraft | Deutsch lernen app</title>
         <meta
           name="description"
           content="Web application for learning German words from current German textbooks in private and general education."

@@ -1,4 +1,6 @@
 import fetcher from '../../../utils/fatcher';
+import imageCompression from 'browser-image-compression';
+import cropImageToSquare from '../../../utils/cropImageToSquare';
 import { useState } from 'react';
 import { mutate } from 'swr';
 import { Form, Avatar, Icon } from '../../../components';
@@ -11,20 +13,28 @@ const AvatarForm = ({ user }) => {
   const { _id, avatar, color, email } = user;
 
   const handleFileChange = async e => {
-    setLoading(true);
-    const file = e.target.files[0]; // Получаем выбранный файл
+    const file = e.target.files[0];
+    const options = {
+      maxSizeMB: 1,
+      maxWidthOrHeight: 400,
+      useWebWorker: true,
+    };
+    if (file) {
+      setLoading(true);
+      try {
+        const compressedFile = await imageCompression(file, options);
+        const croppedFile = await cropImageToSquare(compressedFile);
+        const formData = new FormData();
+        formData.append('avatar', croppedFile);
+        formData.append('userId', _id);
 
-    const formData = new FormData();
-    formData.append('avatar', file);
-    formData.append('userId', _id);
-
-    try {
-      await fetcher('/api/user/avatar', 'POST', formData, true);
-      mutate('/api/auth/user');
-    } catch (error) {
-      popupOpen('error', `Error ${error.status}`, error.message);
-    } finally {
-      setLoading(false);
+        await fetcher('/api/user/avatar', 'POST', formData, true);
+        mutate('/api/auth/user');
+      } catch (error) {
+        popupOpen('error', `Error ${error.status}`, error.message);
+      } finally {
+        setLoading(false);
+      }
     }
   };
 

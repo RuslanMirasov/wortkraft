@@ -34,6 +34,14 @@ const handler = async (req, res) => {
         return res.status(400).json({ message: 'No file uploaded or file is invalid' });
       }
 
+      // Проверяем, что размер файла не превышает 3 МБ
+      const maxSize = 3 * 1024 * 1024; // 3 МБ
+      if (file[0].size > maxSize) {
+        return res.status(400).json({
+          message: 'File size exceeds the limit of 3MB',
+        });
+      }
+
       // Проверяем, что файл является изображением
       const allowedMimetypes = ['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/bmp'];
       const mimeType = file[0].mimetype;
@@ -68,88 +76,3 @@ const handler = async (req, res) => {
 };
 
 export default handler;
-
-// import fs from 'fs';
-// import path from 'path';
-
-// export const config = {
-//   api: {
-//     bodyParser: false,
-//   },
-// };
-
-// const handler = async (req, res) => {
-//   await dbConnect();
-
-//   if (req.method === 'POST') {
-//     const form = formidable({
-//       uploadDir: path.join(process.cwd(), 'public/avatars'),
-//       keepExtensions: true,
-//     });
-
-//     // Создаем директорию, если ее нет
-//     if (!fs.existsSync(form.uploadDir)) {
-//       fs.mkdirSync(form.uploadDir, { recursive: true });
-//     }
-
-//     form.parse(req, async (err, fields, files) => {
-//       if (err) {
-//         return res.status(500).json({ message: 'Error processing file' });
-//       }
-
-//       const userId = fields.userId;
-//       const file = files.avatar;
-
-//       // если файла нет
-//       if (!file) {
-//         return res.status(400).json({ message: 'No file uploaded or file is invalid' });
-//       }
-
-//       // Проверяем, что файл является изображением
-//       const allowedMimetypes = ['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/bmp'];
-//       const mimeType = file[0].mimetype;
-//       if (!allowedMimetypes.includes(mimeType)) {
-//         return res
-//           .status(400)
-//           .json({ message: 'Invalid file type. Allowed types are: jpg, jpeg, png, webp, gif, bmp' });
-//       }
-
-//       // УСТАНОВКА ИМЕНИ ФАЙЛА КАК ID ПОЛЬЗОВАТЕЛЯ
-//       const oldPath = file[0].filepath;
-//       const newFilename = `${userId}${path.extname(file[0].originalFilename)}`;
-//       const newPath = path.join(form.uploadDir, newFilename);
-
-//       // НУЖНО ПРОВЕРИТЬ ЕСТЬ ЛИ ФАЙЛ С ТАКИМ ИМЕНЕМ, ЕСЛИ ЕСТЬ ТО УДАЛИТЬ/ЗАМЕНИТЬ НА НОВЫЙ НЕ ПРОСТО ЗАГРУЗИТЬ ЕЩЁ ОДИН ЭТО ВАЖНО
-//       const existingFiles = fs.readdirSync(form.uploadDir);
-//       const existingFile = existingFiles.find(fileName => fileName.startsWith(userId));
-//       if (existingFile) {
-//         const fileToDeletePath = path.join(form.uploadDir, existingFile);
-//         try {
-//           fs.unlinkSync(fileToDeletePath);
-//         } catch (error) {
-//           return res.status(500).json({ message: 'Error deleting old file' });
-//         }
-//       }
-
-//       //СОХРАНЯЕМ АВАТАРКУ
-//       try {
-//         fs.renameSync(oldPath, newPath);
-//       } catch (error) {
-//         return res.status(500).json({ message: 'Error saving file' });
-//       }
-
-//       //ДЕЛАЕМ ЗАПИСЬ В БАЗУ ПОЛЬЗОВАТЕЛЮ
-//       try {
-//         const avatarPath = `/avatars/${newFilename}?t=${Date.now()}`;
-//         await User.findByIdAndUpdate(userId, { avatar: avatarPath });
-//         res.status(200).json({ message: 'File uploaded and user avatar updated', avatarPath });
-//       } catch (error) {
-//         return res.status(500).json({ message: 'Error updating user avatar' });
-//       }
-//     });
-//   } else {
-//     res.status(405).json({ message: 'Method not allowed' });
-//   }
-// };
-
-// export default handler;
