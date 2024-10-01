@@ -1,5 +1,19 @@
-import dbConnect from '../../../db/connect';
+import { storage } from '../../../utils/firebase';
+import { ref, listAll, deleteObject } from 'firebase/storage'; 
+import dbConnect from '../../../db/connect'; 
 import User from '../../../db/models/User';
+
+
+
+const deleteUserImages = async (userId) => {
+  const storageRef = ref(storage, 'avatars/');
+  const list = await listAll(storageRef);
+  const deletionPromises = list.items
+    .filter((itemRef) => itemRef.name.includes(userId))
+    .map((itemRef) => deleteObject(ref(storage, itemRef.fullPath)));
+  await Promise.all(deletionPromises);
+};
+
 
 const handler = async (req, res) => {
   await dbConnect();
@@ -14,7 +28,7 @@ const handler = async (req, res) => {
         return res.status(404).json({ message: 'User not found' });
       }
 
-      //тут допиши логику удаления
+      await deleteUserImages(id);
       await User.findByIdAndDelete(id);
 
       return res.status(200).json(user);
