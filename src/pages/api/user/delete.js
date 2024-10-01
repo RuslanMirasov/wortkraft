@@ -1,18 +1,6 @@
-import { storage } from '../../../utils/firebase';
-import { ref, listAll, deleteObject } from 'firebase/storage'; 
+import deletAllAvatarsFromFirebase from "../../../utils/deletAllAvatarsFromFirebase";
 import dbConnect from '../../../db/connect'; 
 import User from '../../../db/models/User';
-
-
-
-const deleteUserImages = async (userId) => {
-  const storageRef = ref(storage, 'avatars/');
-  const list = await listAll(storageRef);
-  const deletionPromises = list.items
-    .filter((itemRef) => itemRef.name.includes(userId))
-    .map((itemRef) => deleteObject(ref(storage, itemRef.fullPath)));
-  await Promise.all(deletionPromises);
-};
 
 
 const handler = async (req, res) => {
@@ -28,7 +16,7 @@ const handler = async (req, res) => {
         return res.status(404).json({ message: 'User not found' });
       }
 
-      await deleteUserImages(id);
+      await deletAllAvatarsFromFirebase(id);
       await User.findByIdAndDelete(id);
 
       return res.status(200).json(user);
