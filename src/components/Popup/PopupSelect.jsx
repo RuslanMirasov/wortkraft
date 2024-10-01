@@ -1,12 +1,27 @@
+import fetcher from '../../utils/fatcher';
+import { mutate } from 'swr';
 import { usePopup } from '../../hooks/usePopup';
+import { useAuth } from '../../hooks/useAuth';
+import { useState } from 'react';
 import { Icon, Title, Text, Button, ButtonList } from '../../components';
 import PopupAnimation from './PopupAnimation/PopupAnimation';
 
 const PopupSelect = ({ title, text }) => {
-  const { popupClose } = usePopup();
+  const [loading, setLoading] = useState();
+  const { popupClose, popupOpen } = usePopup();
+  const { user } = useAuth();
 
-  const handleAgree = () => {
-    return true;
+  const handleUserDelete = async () => {
+    setLoading(true);
+    try {
+      await fetcher('/api/user/delete', 'DELETE', { id: user._id });
+      await mutate('/api/auth/user', null, false);
+      popupOpen('confirm', 'User deleted!', 'too bad', 'login');
+    } catch (error) {
+      popupOpen('error', `Error ${error.status}`, error.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -19,7 +34,7 @@ const PopupSelect = ({ title, text }) => {
       )}
       {text && <Text size="small">{text}</Text>}
       <ButtonList>
-        <Button variant="red" onClick={handleAgree}>
+        <Button variant="red" loading={loading} onClick={handleUserDelete}>
           Ja
         </Button>
         <Button variant="black" onClick={popupClose}>
