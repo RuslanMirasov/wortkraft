@@ -10,6 +10,11 @@ $input_font_size: 14px;
   align-items: center;
   position: relative;
   z-index: 1;
+  &.Disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    user-select: none;
+  }
   &.open {
     z-index: 5;
     .Input {
@@ -50,9 +55,10 @@ $input_font_size: 14px;
   border: 1px solid #ccc;
   user-select: none;
   transition: 0.3s;
-  background: none;
+  background: var(--white-color);
   outline: none;
   font-size: $input_font_size;
+  line-height: 19px;
   &[name='password'] {
     padding-right: 50px;
   }

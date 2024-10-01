@@ -285,6 +285,12 @@ const AvatarPlus = ({ size = 33, stroke = 'currentColor' }) => (
   </svg>
 );
 
+const Close = ({ size = 24, stroke }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 18L18 6M6 6L18 18" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
 const Icon = ({ name, fill = 'currentColor', stroke = 'currentColor', size }) => {
   return (
     <>
@@ -298,6 +304,7 @@ const Icon = ({ name, fill = 'currentColor', stroke = 'currentColor', size }) =>
       {name === 'arrow-left' && <ArrowLeft size={size} stroke={stroke} />}
       {name === 'arrow-right' && <ArrowRight size={size} stroke={stroke} />}
       {name === 'confirm' && <Confirm size={size} stroke={stroke} />}
+      {name === 'close' && <Close size={size} stroke={stroke} />}
       {name === 'error' && <Error size={size} stroke={stroke} />}
       {name === 'password-show' && <PasswordShow size={size} stroke={stroke} />}
       {name === 'password-hide' && <PasswordHide size={size} stroke={stroke} />}

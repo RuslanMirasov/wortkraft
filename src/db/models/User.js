@@ -7,7 +7,7 @@ const progressSchema = new mongoose.Schema({
 });
 
 const userSchema = new mongoose.Schema({
-  status: { type: String, enum: ['user', 'admin', 'pro'], default: 'user' },
+  status: { type: String, enum: ['free', 'admin', 'pro'], default: 'free' },
   name: { type: String, default: 'New User' },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },

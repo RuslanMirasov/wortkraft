@@ -105,6 +105,9 @@ export const validateInput = input => {
       if (currentInput.name === 'password' && !passwordRegex.test(currentInput.value)) {
         addError(errors.password);
       }
+      if (currentInput.name === 'password2' && !passwordRegex.test(currentInput.value)) {
+        addError(errors.password);
+      }
       //checkboxes
       if (currentInput.type === 'checkbox' && currentInput.checked === false) {
         addError(errors.checkbox);

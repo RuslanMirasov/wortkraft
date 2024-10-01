@@ -7,12 +7,12 @@
   align-items: center;
   align-content: center;
   border-radius: 8px;
-  padding: 12px 30px;
+  padding: 10px 28px;
   min-height: 50px;
   font-weight: 600;
   color: #fff;
   background: var(--green-color);
-  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s, border 0.3s;
   border: none;
   font-family: inherit;
   font-size: 16px;
@@ -52,17 +52,17 @@
 }
 
 .Small {
-  font-size: 14px;
-  padding: 10px 20px;
-  min-height: 40px;
+  font-size: 12px;
+  padding: 8px 16px;
+  min-height: 30px;
 }
 
 .Black {
   background: var(--text-color);
   &:hover,
   &:focus {
-    background: rgb(255, 255, 255);
-    color: var(--text-color);
+    background: var(--green-color);
+    color: var(--white-color);
   }
 }
 
@@ -99,6 +99,18 @@
   }
 }
 
+.Red {
+  border: 2px solid var(--invalid-color);
+  background: var(--invalid-color);
+  color: var(--white-color);
+  &:hover,
+  &:focus {
+    border: 2px solid var(--invalid-color);
+    background: var(--invalid-color);
+    color: var(--white-color);
+  }
+}
+
 .BorderLight {
   border: 2px solid var(--green-color);
   background: rgba(0, 0, 0, 0);
@@ -108,4 +120,32 @@
 
 .Full {
   width: 100%;
+}
+
+.Loading {
+  pointer-events: none;
+  span {
+    opacity: 0;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-left: 1px solid var(--white-color);
+    border-top: 1px solid var(--white-color);
+    border-right: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    animation: spin 0.3s linear infinite;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

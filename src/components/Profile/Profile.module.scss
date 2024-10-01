@@ -10,4 +10,36 @@
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.ProfileSection {
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  hr {
+    margin: 10px;
+  }
+}
+
+.Status {
+  font-size: 12px;
+  right: 0px;
+  top: 0px;
+  background: var(--grey-light-color);
+  color: var(--text-color);
+  padding: 6px 14px;
+  margin-top: -10px;
+  border-radius: 20px;
+  &.Admin,
+  &.Pro {
+    background: var(--green-color);
+    color: var(--white-color);
+  }
 }

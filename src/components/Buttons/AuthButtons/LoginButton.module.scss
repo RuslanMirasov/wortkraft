@@ -1,0 +1,37 @@
+.loginButton {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  gap: 4px;
+  font-size: 14px;
+  svg {
+    color: var(--text-color);
+    position: relative;
+    transition: 0.3s;
+  }
+  &:hover {
+    svg {
+      color: var(--green-color);
+    }
+  }
+}
+
+.Login {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.Delete {
+  color: var(--invalid-color);
+  svg {
+    color: var(--invalid-color);
+  }
+  &:hover,
+  &:focus {
+    svg {
+      color: var(--invalid-color);
+    }
+  }
+}

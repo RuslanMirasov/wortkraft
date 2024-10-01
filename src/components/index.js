@@ -17,7 +17,11 @@ export { default as Container } from './Container/Container';
 export { default as Icon } from './Icon/Icon';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Popup } from './Popup/Popup';
-export { default as Button } from './Button/Button';
+export { default as Button } from './Buttons/Button/Button';
+export { default as ButtonList } from './Buttons/ButtonList/ButtonList';
+export { default as LoginButton } from './Buttons/AuthButtons/LoginButton';
+export { default as LogoutButton } from './Buttons/AuthButtons/LogoutButton';
+export { default as DeleteAccaunt } from './Buttons/AuthButtons/DeleteAccaunt';
 export { default as Profile } from './Profile/Profile';
 
 // Forms
@@ -27,6 +31,8 @@ export { default as LoginForm } from './Forms/LoginForm/LoginForm';
 export { default as RegisterForm } from './Forms/RegisterForm/RegisterForm';
 export { default as Fieldset } from './Forms/Fieldset/Fieldset';
 export { default as AvatarForm } from './Forms/AvatarForm/AvatarForm';
+export { default as PasswordForm } from './Forms/PasswordForm/PasswordForm';
+export { default as ProfileForm } from './Forms/ProfileForm/ProfileForm';
 
 // Input types
 export { default as InputText } from './Forms/InputTypes/InputText/InputText';
@@ -35,6 +41,7 @@ export { default as InputTextarea } from './Forms/InputTypes/InputTextarea/Input
 export { default as InputRadio } from './Forms/InputTypes/InputRadio/InputRadio';
 export { default as InputCheckbox } from './Forms/InputTypes/InputCheckbox/InputCheckbox';
 export { default as InputSelect } from './Forms/InputTypes/InputSelect/InputSelect';
+export { default as InputFile } from './Forms/InputTypes/InputFile/InputFile';
 
 // Typography
 export { default as Title } from './Typography/Title/Title';

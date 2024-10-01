@@ -1,12 +1,10 @@
 import Link from 'next/link';
-import { usePopup } from '../../../hooks/usePopup';
 import { useAuth } from '../../../hooks/useAuth';
-import { Icon, Avatar } from '../../../components';
+import { Icon, Avatar, LoginButton } from '../../../components';
 import css from './ProfileLink.module.scss';
 
 const ProfileLink = () => {
   const { isLogin, user } = useAuth();
-  const { popupOpen } = usePopup();
 
   return (
     <div className={css.ProfileLink}>
@@ -26,9 +24,7 @@ const ProfileLink = () => {
           </Link>
         </>
       ) : (
-        <button className={css.login} onClick={() => popupOpen('login')}>
-          <span>Anmelden</span> <Icon name="login" size="24" />
-        </button>
+        <LoginButton />
       )}
     </div>
   );

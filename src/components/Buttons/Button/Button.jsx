@@ -1,6 +1,6 @@
 import css from './Button.module.scss';
 
-const Button = ({ onClick, variant, size, full, disabled, children }) => {
+const Button = ({ onClick, variant, size, full, disabled, loading, children }) => {
   const allButtonClasses = {
     [css.Button]: true,
     [css.Big]: size === 'big',
@@ -10,6 +10,8 @@ const Button = ({ onClick, variant, size, full, disabled, children }) => {
     [css.BorderDark]: variant === 'border-dark',
     [css.Black]: variant === 'black',
     [css.White]: variant === 'white',
+    [css.Red]: variant === 'red',
+    [css.Loading]: loading,
     [css.Full]: full,
   };
 

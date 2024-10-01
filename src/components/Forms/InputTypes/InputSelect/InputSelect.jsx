@@ -7,7 +7,7 @@ const InputSelect = ({ name, label, placeholder, required, options, value = '', 
   const selectInputRef = useRef(null);
   const selectWrapperRef = useRef(null);
   const [selectValue, setSelectValue] = useState(value);
-  const [selectValueText, setSelectValueText] = useState(value);
+  const [selectValueText, setSelectValueText] = useState(options[value]);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -44,9 +44,13 @@ const InputSelect = ({ name, label, placeholder, required, options, value = '', 
       <span className={css.LabelInput}>
         <input type="hidden" name={name} value={selectValue} required={required} ref={selectInputRef} />
         <div className={css.Input} onClick={handleOpen}>
-          {!selectValue ? <span className={css.Placeholder}>{placeholder}</span> : <span className={css.InputText}>{selectValueText}</span>}
+          {!selectValue ? (
+            <span className={css.Placeholder}>{placeholder}</span>
+          ) : (
+            <span className={css.InputText}>{selectValueText}</span>
+          )}
           <div className={css.SelectArrow}>
-            <Icon name="arrow-down"/>
+            <Icon name="arrow-down" />
           </div>
           {options && (
             <div className={`${css.Options} ${isOpen ? css.open : ''} custom-scrollbar`}>
