@@ -6,7 +6,6 @@ const Logo = () => {
   return (
     <Link href="/" className={css.Logo}>
       <Icon name="logo" stroke="var(--text-color)" />
-      <p>Deutsch lernen app</p>
     </Link>
   );
 };

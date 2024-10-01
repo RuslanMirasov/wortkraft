@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Icon } from '../../../../components';
 import css from './InputText.module.scss';
 
-const InputText = ({ type, icon, name, value, label, required, placeholder, min, max, onChange }) => {
+const InputText = ({ type, icon, name, value, label, required, placeholder, min, max, disabled, onChange }) => {
   const [currentType, setCorrentType] = useState(type);
   const [iconName, setIconName] = useState(icon);
 
@@ -17,7 +17,7 @@ const InputText = ({ type, icon, name, value, label, required, placeholder, min,
   };
 
   return (
-    <label className={css.Label}>
+    <label className={`${css.Label} ${disabled ? css.Disabled : ''}`}>
       {label && <span className={css.LabelText}>{label}</span>}
       <span className={css.LabelInput}>
         <input

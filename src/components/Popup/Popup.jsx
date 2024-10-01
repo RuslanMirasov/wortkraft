@@ -5,6 +5,7 @@ import PopupError from './PopupError';
 import PopupConfirm from './PopupConfirm';
 import PopupLogin from './PopupLogin';
 import PopupRegistration from './PopupRegistration';
+import PopupSelect from './PopupSelect';
 
 const Popup = () => {
   const { loading, isOpenPopup, popupType, popupTitle, popupText, popupClose } = usePopup();
@@ -41,6 +42,7 @@ const Popup = () => {
             </button>
             {popupType === 'error' && <PopupError title={popupTitle} text={popupText} />}
             {popupType === 'confirm' && <PopupConfirm title={popupTitle} text={popupText} />}
+            {popupType === 'select' && <PopupSelect title={popupTitle} text={popupText} />}
             {popupType === 'login' && <PopupLogin />}
             {popupType === 'registration' && <PopupRegistration />}
           </div>

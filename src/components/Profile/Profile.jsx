@@ -1,4 +1,4 @@
-import { AvatarForm, Button, LogoutButton, Title } from '../../components';
+import { AvatarForm, ProfileForm, LogoutButton, DeleteAccaunt, Title, PasswordForm } from '../../components';
 import { useAuth } from '../../hooks/useAuth';
 import css from './Profile.module.scss';
 
@@ -19,19 +19,19 @@ const Profile = () => {
           Profil Einstellungen
         </Title>
         <hr />
+        <ProfileForm user={user} />
       </div>
       <div className={css.ProfileSection}>
         <Title tag="h2" size="h6">
           Passwort ändern
         </Title>
         <hr />
+        <PasswordForm userId={user._id} />
       </div>
       <div className={css.ProfileSection}>
         <hr />
         <LogoutButton />
-        <Button variant="red" size="small">
-          Account löschen
-        </Button>
+        <DeleteAccaunt />
       </div>
     </div>
   );

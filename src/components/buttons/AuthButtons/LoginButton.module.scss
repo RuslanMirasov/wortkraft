@@ -22,3 +22,16 @@
     transform: rotate(180deg);
   }
 }
+
+.Delete {
+  color: var(--invalid-color);
+  svg {
+    color: var(--invalid-color);
+  }
+  &:hover,
+  &:focus {
+    svg {
+      color: var(--invalid-color);
+    }
+  }
+}
