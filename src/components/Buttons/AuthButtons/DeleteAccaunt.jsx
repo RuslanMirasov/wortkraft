@@ -1,5 +1,5 @@
 import { usePopup } from '../../../hooks/usePopup';
-import { Icon } from '../../../components';
+import { Icon } from '../..';
 import css from './LoginButton.module.scss';
 
 const DeleteAccaunt = ({ children }) => {
