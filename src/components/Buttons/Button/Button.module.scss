@@ -1,7 +1,7 @@
 .Button {
   display: inline-flex;
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--regular);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,6 @@
   background: var(--green-color);
   transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s, border 0.3s;
   border: none;
-  font-family: inherit;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
