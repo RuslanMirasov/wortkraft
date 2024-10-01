@@ -59,13 +59,14 @@ $input_font_size: 14px;
   outline: none;
   font-size: $input_font_size;
   line-height: 19px;
+  font-family: var(--light);
   &[name='password'] {
     padding-right: 50px;
   }
   &::placeholder {
     color: rgb(163, 163, 163);
     font-size: inherit;
-    font-family: inherit;
+    font-family: var(--light);
     opacity: 1;
     transition: 0.3s;
     font-size: $input_font_size;
@@ -104,7 +105,7 @@ div.Input {
 .Textarea {
   height: 150px;
   resize: none;
-  font-family: inherit;
+  font-family: var(--light);
 }
 
 .InputText {
@@ -115,7 +116,7 @@ div.Input {
 .Placeholder {
   color: rgb(163, 163, 163);
   font-size: inherit;
-  font-family: inherit;
+  font-family: var(--light);
   opacity: 1;
   transition: 0.3s;
 }

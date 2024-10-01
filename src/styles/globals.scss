@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'SF-Pro-Display-Regular';
+  src: url('/fonts/sf-pro-display-regular.woff2') format('woff2'),
+    url('/fonts/sf-pro-display-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Light';
+  src: url('/fonts/sf-pro-display-light.woff2') format('woff2'), url('/fonts/sf-pro-display-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #f0f0f0;
   --white-color: #fff;
@@ -12,6 +27,14 @@
   --blue-color: #0f4ead;
   --invalid-color: #ff0505;
   --error-color: #d32727;
+
+  --regular: 'SF-Pro-Display-Regular', sans-serif;
+  --light: 'SF-Pro-Display-Light', sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -39,7 +62,7 @@ body {
   }
   color: var(--text-color);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -99,12 +122,14 @@ hr {
   align-content: center;
   border-radius: 400px;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   &:after {
     content: '';
     display: block;
-    width: 40%;
-    height: 40%;
+    width: 25%;
+    height: 25%;
+    min-width: 25px;
+    min-height: 25px;
     border-left: 2px solid var(--white-color);
     border-top: 2px solid var(--white-color);
     border-right: 2px solid rgba(0, 0, 0, 0);

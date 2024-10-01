@@ -15,6 +15,7 @@ export { default as Container } from './Container/Container';
 
 // UI components
 export { default as Icon } from './Icon/Icon';
+export { default as ImageWrapp } from './ImageWrapp/ImageWrapp';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Popup } from './Popup/Popup';
 export { default as Button } from './Buttons/Button/Button';

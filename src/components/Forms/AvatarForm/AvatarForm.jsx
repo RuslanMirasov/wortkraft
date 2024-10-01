@@ -44,9 +44,6 @@ const AvatarForm = ({ user }) => {
       <Avatar avatar={avatar} color={color} email={email} />
       <Form>
         <Input type="file" name="avatar" onChange={handleFileChange} />
-        {/* <label>
-          <input type="file" name="avatar" onChange={handleFileChange} />
-        </label> */}
       </Form>
       {loading && <div className="loading"></div>}
       <Icon name="avatar-plus" stroke={color} />
