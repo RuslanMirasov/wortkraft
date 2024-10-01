@@ -34,7 +34,7 @@ const Input = ({
       setInputValue('');
       setInputChecked(false);
     }
-  }, [resetInputs]);
+  }, [resetInputs, type]);
 
   const handleChange = e => {
     validateInput(e.target);
