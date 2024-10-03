@@ -26,16 +26,17 @@
       padding-bottom: 20px;
     }
   }
-  &:hover,
-  &.Active {
-    .BookImage {
-      height: 350px;
-      margin-bottom: -80px;
-    }
-    .BookContent {
-      header {
-        button {
-          background: var(--text-color);
+  article {
+    &.Active {
+      .BookImage {
+        height: 350px;
+        margin-bottom: -80px;
+      }
+      .BookContent {
+        header {
+          button {
+            background: var(--text-color);
+          }
         }
       }
     }
@@ -97,6 +98,7 @@
   align-items: flex-start;
   align-content: flex-start;
   gap: 30px;
+  pointer-events: none;
   .Procent {
     font-size: 16px;
     font-family: var(--light);
@@ -104,6 +106,7 @@
   h2 {
     display: inline;
     vertical-align: top;
+
     span {
       display: inline;
       vertical-align: top;
@@ -161,6 +164,7 @@
   display: inline-flex;
   width: auto;
   gap: 10px;
+  pointer-events: none;
 
   li {
     border: 1px solid var(--white-color);
