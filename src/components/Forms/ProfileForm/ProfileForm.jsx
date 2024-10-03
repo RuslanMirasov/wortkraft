@@ -13,7 +13,6 @@ const ProfileForm = ({ user }) => {
     try {
       await fetcher('/api/user/profile', 'PATCH', data);
       mutate('/api/auth/user');
-      popupOpen('confirm', 'Erfolg!', 'Die Profildaten wurden erfolgreich aktualisiert.');
     } catch (error) {
       popupOpen('error', `Error ${error.status}`, error.message);
     } finally {

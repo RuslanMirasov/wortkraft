@@ -1,0 +1,172 @@
+.Books {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 16px;
+  h1 {
+    margin: 20px 0px;
+  }
+}
+
+.Book {
+  display: block;
+  position: relative;
+  color: var(--white-color);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-top: -50px;
+  &:first-child {
+    margin-top: 0px;
+  }
+  &:last-child {
+    .BookContent {
+      padding-bottom: 20px;
+    }
+  }
+  &:hover,
+  &.Active {
+    .BookImage {
+      height: 350px;
+      margin-bottom: -80px;
+    }
+    .BookContent {
+      header {
+        button {
+          background: var(--text-color);
+        }
+      }
+    }
+  }
+}
+
+.BookImage {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transition: 0.6s;
+  height: 0px;
+  margin-bottom: 0px;
+  will-change: transform;
+  background: inherit;
+
+  .Gradient {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 2;
+  }
+}
+
+.BookContent {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 20px 70px 20px;
+  will-change: transform;
+  transform: translate(0px, 0px);
+  transition: 0.6s;
+  header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+  }
+}
+
+.BookTitle {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+  .Procent {
+    font-size: 16px;
+    font-family: var(--light);
+  }
+  h2 {
+    display: inline;
+    vertical-align: top;
+    span {
+      display: inline;
+      vertical-align: top;
+      width: auto;
+      font-size: 12px;
+      padding-bottom: 20px;
+      font-family: var(--light);
+      white-space: nowrap;
+    }
+  }
+}
+
+.Level {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 4px;
+  width: auto;
+  padding: 7px 10px;
+  background: var(--white-color);
+  border-radius: 20px;
+  font-family: var(--light);
+  font-size: 12px;
+  // background: inherit;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1;
+    border-radius: 20px;
+  }
+}
+
+.Buttons {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.Statistic {
+  display: inline-flex;
+  width: auto;
+  gap: 10px;
+
+  li {
+    border: 1px solid var(--white-color);
+    font-size: 15px;
+    font-family: var(--light);
+    padding: 7px 12px;
+    border-radius: 30px;
+  }
+}

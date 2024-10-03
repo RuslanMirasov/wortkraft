@@ -1,11 +1,10 @@
-import { Section, Title } from '../components';
+import { Books, Section } from '../components';
+import books from '../json/books.json';
 
 const HomePage = () => {
   return (
     <Section>
-      <Title tag="h1" size="h1">
-        Wählen Sie ein Buch
-      </Title>
+      <Books books={books} />
     </Section>
   );
 };
