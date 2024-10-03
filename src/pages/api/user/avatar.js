@@ -1,3 +1,6 @@
+import jwt from 'jsonwebtoken';
+
+import cookie from 'cookie';
 import { storage } from '../../../utils/firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import formidable from 'formidable';
@@ -16,6 +19,14 @@ const handler = async (req, res) => {
   await dbConnect();
 
   if (req.method === 'POST') {
+    //Получение токена из cookie
+    const cookies = cookie.parse(req.headers.cookie || '');
+    const token = cookies.token;
+
+    if (!token) {
+      return res.status(401).json({ message: 'Unauthorized' });
+    }
+
     const form = formidable({
       keepExtensions: true,
     });

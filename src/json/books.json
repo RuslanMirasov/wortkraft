@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Schritte Plus",
+    "subname": "neu",
+    "slug": "schritte-plus-neu-a1-1",
+    "level": "A1.1",
+    "image": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F1.jpg?alt=media",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F1_thumb.jpg?alt=media",
+    "color": "#4BB012",
+    "words_count": 548,
+    "thems_count": 14,
+    "thems": [
+      {
+        "name": "Meine Wörter im Kurs",
+        "slug": "meine-worte-im-kurs",
+        "color": "#666666",
+        "words_count": 23
+      },
+      {
+        "name": "Guten Tag. Mein Name ist...",
+        "slug": "guten-tag-mein-name-ist",
+        "color": "#58A4BC",
+        "words_count": 77
+      },
+      {
+        "name": "Meine Familie",
+        "slug": "meine-familie",
+        "color": "#85BC3C",
+        "words_count": 57
+      },
+      {
+        "name": "Einkaufen",
+        "slug": "einkaufen",
+        "color": "#F58347",
+        "words_count": 50
+      },
+      {
+        "name": "Meine Wohnung",
+        "slug": "meine-wohnung",
+        "color": "#E8A123",
+        "words_count": 99
+      },
+      {
+        "name": "Mein Tag",
+        "slug": "mein-tag",
+        "color": "#00A9A4",
+        "words_count": 103
+      },
+      {
+        "name": "Freizeit",
+        "slug": "freizeit",
+        "color": "#D21677",
+        "words_count": 91
+      },
+      {
+        "name": "Kinder und Schule",
+        "slug": "kinder-und-schule",
+        "color": "#8E54A1",
+        "words_count": 48
+      }
+    ]
+  },
+  {
+    "name": "Schritte Plus",
+    "subname": "neu",
+    "slug": "schritte-plus-neu-a1-2",
+    "level": "A1.2",
+    "image": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F2.jpg?alt=media",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F2_thumb.jpg?alt=media",
+    "color": "#0193CF",
+    "words_count": 0,
+    "thems_count": 0,
+    "thems": []
+  },
+  {
+    "name": "Schritte Plus",
+    "subname": "neu",
+    "slug": "schritte-plus-neu-a2-1",
+    "level": "A2.1",
+    "image": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F3.jpg?alt=media",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F3_thumb.jpg?alt=media",
+    "color": "#FC142C",
+    "words_count": 0,
+    "thems_count": 0,
+    "thems": []
+  },
+  {
+    "name": "Schritte Plus",
+    "subname": "neu",
+    "slug": "schritte-plus-neu-a2-2",
+    "level": "A2.2",
+    "image": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F4.jpg?alt=media",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F4_thumb.jpg?alt=media",
+    "color": "#FFA200",
+    "words_count": 0,
+    "thems_count": 0,
+    "thems": []
+  },
+  {
+    "name": "Schritte Plus",
+    "subname": "neu",
+    "slug": "schritte-plus-neu-b1-1",
+    "level": "B1.1",
+    "image": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F5.jpg?alt=media",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F5_thumb.jpg?alt=media",
+    "color": "#94044E",
+    "words_count": 0,
+    "thems_count": 0,
+    "thems": []
+  },
+  {
+    "name": "Schritte Plus",
+    "subname": "neu",
+    "slug": "schritte-plus-neu-b1-2",
+    "level": "B1.2",
+    "image": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F6.jpg?alt=media",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F6_thumb.jpg?alt=media",
+    "color": "#009DC0",
+    "words_count": 0,
+    "thems_count": 0,
+    "thems": []
+  },
+  {
+    "name": "Schritte fur Schritte",
+    "subname": "zum DTZ",
+    "slug": "schritte-fur-schritte-zum-dtz",
+    "level": "A2+B1",
+    "image": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F7.jpg?alt=media",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F7_thumb.jpg?alt=media",
+    "color": "#94044E",
+    "words_count": 0,
+    "thems_count": 0,
+    "thems": []
+  },
+  {
+    "name": "Einfach besser! 500",
+    "subname": "zum DTB",
+    "slug": "einfach-besser-500-zum-dtb",
+    "level": "B2-Beruf",
+    "image": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F8.jpg?alt=media",
+    "thumbnail": "https://firebasestorage.googleapis.com/v0/b/wortkraft-c3080.appspot.com/o/books%2F8_thumb.jpg?alt=media",
+    "color": "#004C8A",
+    "words_count": 0,
+    "thems_count": 0,
+    "thems": []
+  }
+]

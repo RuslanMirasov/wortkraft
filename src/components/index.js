@@ -19,11 +19,15 @@ export { default as ImageWrapp } from './ImageWrapp/ImageWrapp';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Popup } from './Popup/Popup';
 export { default as Button } from './Buttons/Button/Button';
+export { default as LinkButton } from './Buttons/LinkButton/LinkButton';
+export { default as UnlockPro } from './Buttons/UnlockPro/UnlockPro';
 export { default as ButtonList } from './Buttons/ButtonList/ButtonList';
 export { default as LoginButton } from './Buttons/AuthButtons/LoginButton';
 export { default as LogoutButton } from './Buttons/AuthButtons/LogoutButton';
 export { default as DeleteAccaunt } from './Buttons/AuthButtons/DeleteAccaunt';
 export { default as Profile } from './Profile/Profile';
+export { default as Books } from './Books/Books';
+export { default as BookItem } from './Books/BookItem';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';
