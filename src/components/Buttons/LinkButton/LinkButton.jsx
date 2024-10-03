@@ -4,9 +4,9 @@ import css from './LinkButton.module.scss';
 
 const LinkButton = ({ href, locked = false }) => {
   return locked ? (
-    <span className={css.LinkButton}>
+    <button type="button" className={css.LinkButton}>
       <Icon name="lock" />
-    </span>
+    </button>
   ) : (
     <Link href={href} className={css.LinkButton}>
       <Icon name="next" />

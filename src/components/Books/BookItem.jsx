@@ -1,10 +1,19 @@
 import { Title, UnlockPro, ImageWrapp, LinkButton } from '../../components';
 import css from './Books.module.scss';
 
-const BookItem = ({ book, index, locked = false }) => {
+const BookItem = ({ book, index, locked = false, active, onSetActive }) => {
   const { slug, name, subname, thumbnail, level, color, words_count, thems_count } = book;
+
+  const handleOpen = e => {
+    const book = e.target;
+    if (book.tagName === 'A' || book.tagName === 'BUTTON') {
+      return;
+    }
+    onSetActive();
+  };
+
   return (
-    <article>
+    <article className={active ? css.Active : ''} onClick={handleOpen}>
       <div className={css.BookImage}>
         <ImageWrapp src={thumbnail} alt={name} width="400" height="600" />
         <div
