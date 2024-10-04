@@ -1,18 +1,20 @@
 import { useRouter } from 'next/router';
-import { Section, Title } from '../../components';
+import { Collection, Section, TitleBox, Title } from '../../components';
 
-const BookPage = () => {
+const BookPage = ({ books }) => {
   const router = useRouter();
-  const { book } = router.query;
+  const { book: bookSlug } = router.query;
+
+  const book = books.find(book => book.slug === bookSlug);
+
   return (
     <Section>
-      <Title tag="h6" size="h6">
-        Book: {book}
-      </Title>
-      <hr />
-      <Title tag="h1" size="h1">
-        Wählen Sie ein Thema
-      </Title>
+      <TitleBox margin={20}>
+        <Title tag="h2" size="h2">
+          Wählen Sie ein Thema
+        </Title>
+      </TitleBox>
+      <Collection collection={book.thems} />
     </Section>
   );
 };

@@ -1,12 +1,13 @@
-import { Collection, Section, Title } from '../components';
-import books from '../json/books.json';
+import { Collection, Section, TitleBox, Title } from '../components';
 
-const HomePage = () => {
+const HomePage = ({ books }) => {
   return (
     <Section>
-      <Title tag="h1" size="h1">
-        Wählen Sie ein Buch
-      </Title>
+      <TitleBox margin={20}>
+        <Title tag="h1" size="h1">
+          Wählen Sie ein Buch
+        </Title>
+      </TitleBox>
       <Collection collection={books} />
     </Section>
   );

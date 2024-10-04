@@ -2,8 +2,26 @@
   display: flex;
   position: relative;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 14px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: inline;
+    vertical-align: top;
+
+    span {
+      display: inline;
+      vertical-align: top;
+      width: auto;
+      font-size: 12px;
+      padding-bottom: 20px;
+      font-family: var(--light);
+      white-space: nowrap;
+    }
+  }
 }

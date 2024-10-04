@@ -1,8 +1,8 @@
 import css from './TitleBox.module.scss';
 
-const TitleBox = ({ align, children }) => {
+const TitleBox = ({ align, margin = 0, children }) => {
   return (
-    <div style={align && { textAlign: align }} className={css.TitleBox}>
+    <div className={css.TitleBox} style={{ textAlign: align, margin: `${margin}px 0px` }}>
       {children}
     </div>
   );

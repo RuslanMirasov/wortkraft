@@ -10,19 +10,19 @@ const handler = async (req, res) => {
       const { token } = req.cookies;
 
       if (!token) {
-        return res.status(401).json({ message: 'Unauthorized' }); // Не авторизован
+        return res.status(401).json({ message: 'Unauthorized' });
       }
 
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
       const user = await User.findById(decoded.id).select('-password');
 
       if (!user) {
-        return res.status(404).json({ message: 'User not found' }); // Пользователь не найден
+        return res.status(404).json({ message: 'User not found' });
       }
 
       return res.status(200).json(user);
     } catch (error) {
-      return res.status(500).json({ message: 'Server error' }); // Ошибка сервера
+      return res.status(500).json({ message: 'Server error' });
     }
   }
 };

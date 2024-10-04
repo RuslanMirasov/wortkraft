@@ -1,14 +1,7 @@
 .Collection {
   display: block;
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
-  margin-top: 16px;
-  h1,
-  h2,
-  h3 {
-    margin: 20px 0px;
-  }
 }
 
 .CollectionItem {
@@ -88,7 +81,6 @@
   flex-wrap: wrap;
   gap: 10px;
   padding: 20px 20px 70px 20px;
-  will-change: transform;
   transform: translate(0px, 0px);
   transition: 0.6s;
   header {
@@ -100,35 +92,6 @@
     align-items: center;
     align-content: center;
     gap: 20px;
-  }
-}
-
-.Title {
-  display: flex;
-  position: relative;
-  width: 100%;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 30px;
-  pointer-events: none;
-  .Procent {
-    font-size: 16px;
-    font-family: var(--light);
-  }
-  h2 {
-    display: inline;
-    vertical-align: top;
-
-    span {
-      display: inline;
-      vertical-align: top;
-      width: auto;
-      font-size: 12px;
-      padding-bottom: 20px;
-      font-family: var(--light);
-      white-space: nowrap;
-    }
   }
 }
 
@@ -160,15 +123,4 @@
     line-height: 1;
     border-radius: 20px;
   }
-}
-
-.Buttons {
-  display: flex;
-  position: relative;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  gap: 20px;
 }

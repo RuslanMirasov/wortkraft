@@ -30,7 +30,7 @@ $info_width: 340px;
   opacity: 0;
   visibility: hidden;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 40px 20px;

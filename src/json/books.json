@@ -11,48 +11,56 @@
     "thems_count": 14,
     "thems": [
       {
+        "thumbnail": null,
         "name": "Meine Wörter im Kurs",
         "slug": "meine-worte-im-kurs",
         "color": "#666666",
         "words_count": 23
       },
       {
+        "thumbnail": null,
         "name": "Guten Tag. Mein Name ist...",
         "slug": "guten-tag-mein-name-ist",
         "color": "#58A4BC",
         "words_count": 77
       },
       {
+        "thumbnail": null,
         "name": "Meine Familie",
         "slug": "meine-familie",
         "color": "#85BC3C",
         "words_count": 57
       },
       {
+        "thumbnail": null,
         "name": "Einkaufen",
         "slug": "einkaufen",
         "color": "#F58347",
         "words_count": 50
       },
       {
+        "thumbnail": null,
         "name": "Meine Wohnung",
         "slug": "meine-wohnung",
         "color": "#E8A123",
         "words_count": 99
       },
       {
+        "thumbnail": null,
         "name": "Mein Tag",
         "slug": "mein-tag",
         "color": "#00A9A4",
         "words_count": 103
       },
       {
+        "thumbnail": null,
         "name": "Freizeit",
         "slug": "freizeit",
         "color": "#D21677",
         "words_count": 91
       },
       {
+        "thumbnail": null,
         "name": "Kinder und Schule",
         "slug": "kinder-und-schule",
         "color": "#8E54A1",
