@@ -1,9 +1,12 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { TitleBox, Title, UnlockPro, ImageWrapp, LinkButton, Counters, Procent } from '../../components';
 import css from './Collection.module.scss';
 
 const CollectionItem = ({ item, index, locked = false, active, onSetActive }) => {
+  const router = useRouter();
   const { slug, name, subname, thumbnail, level, color, words_count, thems_count } = item;
+
   const handleOpen = e => {
     const book = e.target;
     if (book.tagName === 'A' || book.tagName === 'BUTTON') {
@@ -11,6 +14,8 @@ const CollectionItem = ({ item, index, locked = false, active, onSetActive }) =>
     }
     onSetActive();
   };
+
+  const cleanedPath = router.asPath.endsWith('/') ? router.asPath.slice(0, -1) : router.asPath;
 
   return (
     <article className={active ? css.Active : ''} onClick={handleOpen}>
@@ -21,7 +26,7 @@ const CollectionItem = ({ item, index, locked = false, active, onSetActive }) =>
             className={css.Gradient}
             style={{ background: `linear-gradient(0deg, ${color} 0%, rgba(0,0,0,0) 95%)` }}
           ></div>
-          {!locked && <Link href={`/${slug}`} />}
+          {!locked && <Link href={`${cleanedPath}/${slug}`} />}
         </div>
       )}
 
@@ -46,7 +51,7 @@ const CollectionItem = ({ item, index, locked = false, active, onSetActive }) =>
 
         <TitleBox>
           <Counters thems={thems_count} words={words_count} />
-          <LinkButton href={`/${slug}`} locked={locked} />
+          <LinkButton href={`${cleanedPath}/${slug}`} locked={locked} />
         </TitleBox>
       </div>
     </article>

@@ -1,18 +1,20 @@
 import { useRouter } from 'next/router';
-import { Section, Title } from '../../../components';
+import { Hero, Section, TitleBox, Title } from '../../../components';
 
-const ThemaPage = () => {
+const ThemaPage = ({ books }) => {
   const router = useRouter();
-  const { thema } = router.query;
+  const { book: bookSlug, thema: themaSlug } = router.query;
+
+  const thema = books.find(book => book.slug === bookSlug).thems.find(theme => theme.slug === themaSlug);
+
   return (
     <Section>
-      <Title tag="h6" size="h6">
-        Thema: {thema}
-      </Title>
-      <hr />
-      <Title tag="h1" size="h1">
-        45 Wörter
-      </Title>
+      <Hero content={thema} />
+      <TitleBox margin={20}>
+        <Title tag="h2" size="h2">
+          Deine Lernfortschritte:
+        </Title>
+      </TitleBox>
     </Section>
   );
 };
