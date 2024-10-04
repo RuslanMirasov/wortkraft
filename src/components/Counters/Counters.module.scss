@@ -1,0 +1,15 @@
+.Counters {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 10px;
+  pointer-events: none;
+
+  li {
+    border: 1px solid var(--white-color);
+    font-size: 15px;
+    font-family: var(--light);
+    padding: 7px 12px;
+    border-radius: 30px;
+  }
+}

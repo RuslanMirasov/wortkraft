@@ -1,8 +1,9 @@
-import { Title, UnlockPro, ImageWrapp, LinkButton } from '../../components';
-import css from './Books.module.scss';
+import Link from 'next/link';
+import { Title, UnlockPro, ImageWrapp, LinkButton, Counters } from '../../components';
+import css from './Collection.module.scss';
 
-const BookItem = ({ book, index, locked = false, active, onSetActive }) => {
-  const { slug, name, subname, thumbnail, level, color, words_count, thems_count } = book;
+const CollectionItem = ({ item, index, locked = false, active, onSetActive }) => {
+  const { slug, name, subname, thumbnail, level, color, words_count, thems_count } = item;
 
   const handleOpen = e => {
     const book = e.target;
@@ -14,14 +15,15 @@ const BookItem = ({ book, index, locked = false, active, onSetActive }) => {
 
   return (
     <article className={active ? css.Active : ''} onClick={handleOpen}>
-      <div className={css.BookImage}>
-        <ImageWrapp src={thumbnail} alt={name} width="400" height="600" />
+      <div className={css.Image}>
+        <ImageWrapp src={thumbnail} alt={name} width="600" height="600" />
         <div
           className={css.Gradient}
           style={{ background: `linear-gradient(0deg, ${color} 0%, rgba(0,0,0,0) 95%)` }}
         ></div>
+        {!locked && <Link href={`/${slug}`} />}
       </div>
-      <div className={css.BookContent}>
+      <div className={css.Content}>
         <header>
           <div className={css.Level}>
             <span style={{ background: color }}>{index + 1}</span>
@@ -30,7 +32,7 @@ const BookItem = ({ book, index, locked = false, active, onSetActive }) => {
           {locked && <UnlockPro />}
         </header>
 
-        <div className={css.BookTitle}>
+        <div className={css.Title}>
           <Title tag="h2" size="h2">
             {name}
             <span>{subname}</span>
@@ -39,11 +41,7 @@ const BookItem = ({ book, index, locked = false, active, onSetActive }) => {
         </div>
 
         <div className={css.Buttons}>
-          <ul className={css.Statistic}>
-            <li>{thems_count} Themen</li>
-            <li>{words_count} Wörter</li>
-          </ul>
-
+          <Counters thems={thems_count || '0'} words={words_count || '0'} />
           <LinkButton href={`/${slug}`} locked={locked} />
         </div>
       </div>
@@ -51,4 +49,4 @@ const BookItem = ({ book, index, locked = false, active, onSetActive }) => {
   );
 };
 
-export default BookItem;
+export default CollectionItem;
