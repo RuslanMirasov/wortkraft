@@ -45,7 +45,7 @@ const ProfileForm = ({ user }) => {
       />
 
       <Button size="small" loading={loading}>
-        Update
+        Aktualisieren
       </Button>
     </Form>
   );

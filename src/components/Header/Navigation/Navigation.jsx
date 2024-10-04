@@ -12,25 +12,25 @@ const Navigation = () => {
         <li data-active={pathname === '/' || pathname.includes('/[book]')}>
           <Link href="/">
             <Icon name="home" />
-            Books
+            Bibliothek
           </Link>
         </li>
         <li data-active={pathname === '/search'}>
           <Link href="/search">
             <Icon name="search" />
-            Search
+            Suchen
           </Link>
         </li>
         <li data-active={pathname === '/bookmarks'}>
           <Link href="/bookmarks">
-            <Icon name="bookmark" />
-            Bookmarks
+            <Icon name="bookmark" fill="rgba(0,0,0,0)" />
+            Merkliste
           </Link>
         </li>
         <li data-active={pathname === '/statistic'}>
           <Link href="/statistic">
             <Icon name="statistic" />
-            Statistic
+            Statistik
           </Link>
         </li>
       </ul>

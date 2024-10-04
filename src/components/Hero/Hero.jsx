@@ -15,7 +15,8 @@ const Hero = ({ content }) => {
           {subname && <span>{subname}</span>}
         </Title>
       </TitleBox>
-      <Counters color={color} level={level} learnt={10} words={words_count} />
+      {words_count && <Counters color={color} level={level} learnt={10} words={words_count} />}
+
       {image && (
         <div className={css.Thumbnail}>
           <ImageWrapp src={image} width="600" height="1200" alt={name} />

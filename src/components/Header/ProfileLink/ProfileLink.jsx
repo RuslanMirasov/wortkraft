@@ -18,10 +18,6 @@ const ProfileLink = () => {
           <Link href="/profile">
             <Avatar avatar={user.avatar} color={user.color} email={user.email} />
           </Link>
-
-          <Link href="/profile" className={css.Button}>
-            <Icon name="settings" size="24" />
-          </Link>
         </>
       ) : (
         <LoginButton />

@@ -6,7 +6,7 @@ const handler = async (req, res) => {
 
   if (req.method === 'GET') {
     try {
-      const books = await Book.find();
+      const books = await Book.find().sort({ _id: 1 });
       res.status(200).json(books); // Отправляем ответ с данными
     } catch (error) {
       console.log('error: ', error);

@@ -36,14 +36,15 @@
     display: block;
     width: 100%;
     text-align: right;
-    font-size: 11px;
-
+    font-size: 12px;
+    font-family: var(--light);
     white-space: nowrap; /* Запрещает перенос строк */
     overflow: hidden; /* Скрывает переполненный текст */
     text-overflow: ellipsis; /* Добавляет троеточие в конце */
     max-width: 120px;
     &:last-child {
-      font-size: 15px;
+      font-size: 14px;
+      font-family: var(--regular);
       line-height: 1.2;
     }
   }

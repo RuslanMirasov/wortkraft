@@ -80,12 +80,18 @@ const Logo = ({ size = 120, fill, stroke }) => (
 
 const Home = ({ size = 24, stroke }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.0002 3.54541V19.7727" stroke={stroke} strokeWidth="2" strokeMiterlimit="10" />
     <path
-      d="M2.25 12L11.2045 3.04551C11.6438 2.60617 12.3562 2.60617 12.7955 3.04551L21.75 12M4.5 9.75001V19.875C4.5 20.4963 5.00368 21 5.625 21H9.75V16.125C9.75 15.5037 10.2537 15 10.875 15H13.125C13.7463 15 14.25 15.5037 14.25 16.125V21H18.375C18.9963 21 19.5 20.4963 19.5 19.875V9.75001M8.25 21H16.5"
+      d="M12 3.54545C12 2.13909 10.8417 1 9.41173 1H3.58822C2.15823 1 1 2.13909 1 3.54545V16.2727C1 17.6791 2.15823 18.8182 3.58822 18.8182H9.41173C10.8417 18.8182 12 19.9573 12 21.3636V22"
       stroke={stroke}
-      strokeWidth="1"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      strokeWidth="2"
+      strokeMiterlimit="10"
+    />
+    <path
+      d="M12.0002 3.54545C12.0002 2.13909 13.1585 1 14.5885 1H20.412C21.842 1 23.0002 2.13909 23.0002 3.54545V16.2727C23.0002 17.6791 21.842 18.8182 20.412 18.8182H14.5885C13.1585 18.8182 12.0002 19.9573 12.0002 21.3636V22"
+      stroke={stroke}
+      strokeWidth="2"
+      strokeMiterlimit="10"
     />
   </svg>
 );
@@ -93,22 +99,25 @@ const Home = ({ size = 24, stroke }) => (
 const Search = ({ size = 24, stroke }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M21 21L15.8033 15.8033M15.8033 15.8033C17.1605 14.4461 18 12.5711 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18C12.5711 18 14.4461 17.1605 15.8033 15.8033Z"
+      d="M10.7023 20.3778C16.0608 20.3778 20.4047 16.0399 20.4047 10.6889C20.4047 5.33786 16.0608 1 10.7023 1C5.34388 1 1 5.33786 1 10.6889C1 16.0399 5.34388 20.3778 10.7023 20.3778Z"
       stroke={stroke}
-      strokeWidth="1"
-      strokeLinecap="round"
+      strokeWidth="2"
       strokeLinejoin="round"
     />
+    <path d="M23.1768 23.1461L17.6326 17.6096" stroke={stroke} strokeWidth="2" strokeLinejoin="round" />
   </svg>
 );
 
-const Bookmark = ({ size = 24, stroke }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Bookmark = ({ stroke, fill }) => (
+  <svg width={20} height={24} viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M17.5933 3.32241C18.6939 3.45014 19.5 4.399 19.5 5.50699V21L12 17.25L4.5 21V5.50699C4.5 4.399 5.30608 3.45014 6.40668 3.32241C8.24156 3.10947 10.108 3 12 3C13.892 3 15.7584 3.10947 17.5933 3.32241Z"
+      d="M6.46429 7.69565L6 1.47826L12.5 1L17.6071 1.47826L18.5357 3.3913L19 23L16.6786 22.0435L13.4286 18.6957L12.0357 18.2174L7.85714 22.0435H6V17.7391L6.46429 7.69565Z"
+      fill={fill}
+    />
+    <path
+      d="M3.5 1H16.3333C17.8067 1 19 2.19624 19 3.67316V22.3319C19 22.8932 18.3533 23.2006 17.92 22.8531L12.7533 18.7097C12.5067 18.5159 12.1667 18.5159 11.92 18.7097L6.75333 22.8531C6.32 23.2006 5.67333 22.8932 5.67333 22.3319V3.00487C5.67333 1.89551 4.60667 1 3.5 1ZM3.5 1C2.84345 1 2.2756 1.23755 1.84778 1.63162C1.31553 2.12188 1 2.85439 1 3.67316V7.68291C1 8.05047 1.3 8.3512 1.66667 8.3512H5.5"
       stroke={stroke}
-      strokeWidth="1"
-      strokeLinecap="round"
+      strokeWidth="1.5"
       strokeLinejoin="round"
     />
   </svg>
@@ -117,28 +126,60 @@ const Bookmark = ({ size = 24, stroke }) => (
 const Statistic = ({ size = 24, stroke }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M3 13.125C3 12.5037 3.50368 12 4.125 12H6.375C6.99632 12 7.5 12.5037 7.5 13.125V19.875C7.5 20.4963 6.99632 21 6.375 21H4.125C3.50368 21 3 20.4963 3 19.875V13.125Z"
+      d="M11.9985 23C17.9521 23 23 17.9454 23 12C23 6.05461 17.9521 1 11.9985 1C6.04488 1 1 6.05461 1 12C1 17.9454 6.04488 23 11.9985 23Z"
       stroke={stroke}
-      strokeWidth="1"
-      strokeLinecap="round"
+      strokeWidth="1.5"
       strokeLinejoin="round"
     />
     <path
-      d="M9.75 8.625C9.75 8.00368 10.2537 7.5 10.875 7.5H13.125C13.7463 7.5 14.25 8.00368 14.25 8.625V19.875C14.25 20.4963 13.7463 21 13.125 21H10.875C10.2537 21 9.75 20.4963 9.75 19.875V8.625Z"
+      d="M11.9985 13.6649C13.0492 13.6649 13.9009 12.8144 13.9009 11.7652C13.9009 10.716 13.0492 9.86548 11.9985 9.86548C10.9479 9.86548 10.0962 10.716 10.0962 11.7652C10.0962 12.8144 10.9479 13.6649 11.9985 13.6649Z"
       stroke={stroke}
-      strokeWidth="1"
-      strokeLinecap="round"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
+    />
+    <path d="M10.6541 10.4225L5.7207 5.49585" stroke={stroke} strokeWidth="1.5" strokeLinejoin="round" />
+    <path
+      d="M8.13037 5.21718C9.26544 4.54594 10.5844 4.16602 11.9985 4.16602C16.2027 4.16602 19.6079 7.56651 19.6079 11.7649"
+      stroke={stroke}
+      strokeWidth="1.5"
       strokeLinejoin="round"
     />
     <path
-      d="M16.5 4.125C16.5 3.50368 17.0037 3 17.625 3H19.875C20.4963 3 21 3.50368 21 4.125V19.875C21 20.4963 20.4963 21 19.875 21H17.625C17.0037 21 16.5 20.4963 16.5 19.875V4.125Z"
+      d="M5.4418 7.90234C4.76963 9.03584 4.38916 10.353 4.38916 11.7651"
       stroke={stroke}
-      strokeWidth="1"
-      strokeLinecap="round"
+      strokeWidth="1.5"
       strokeLinejoin="round"
     />
   </svg>
 );
+
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M11.9985 23C17.9521 23 23 17.9454 23 12C23 6.05461 17.9521 1 11.9985 1C6.04488 1 1 6.05461 1 12C1 17.9454 6.04488 23 11.9985 23Z"
+    stroke="white"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M11.9985 13.6649C13.0492 13.6649 13.9009 12.8144 13.9009 11.7652C13.9009 10.716 13.0492 9.86548 11.9985 9.86548C10.9479 9.86548 10.0962 10.716 10.0962 11.7652C10.0962 12.8144 10.9479 13.6649 11.9985 13.6649Z"
+    stroke="white"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+  <path d="M10.6541 10.4225L5.7207 5.49585" stroke="white" stroke-width="2" stroke-linejoin="round" />
+  <path
+    d="M8.13037 5.21718C9.26544 4.54594 10.5844 4.16602 11.9985 4.16602C16.2027 4.16602 19.6079 7.56651 19.6079 11.7649"
+    stroke="white"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M5.4418 7.90234C4.76963 9.03584 4.38916 10.353 4.38916 11.7651"
+    stroke="white"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+</svg>;
 
 const Settings = ({ size = 24, stroke }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -311,7 +352,7 @@ const Icon = ({ name, fill = 'currentColor', stroke = 'currentColor', size }) =>
       {name === 'logo' && <Logo size={size} fill={fill} stroke={stroke} />}
       {name === 'home' && <Home size={size} stroke={stroke} />}
       {name === 'search' && <Search size={size} stroke={stroke} />}
-      {name === 'bookmark' && <Bookmark size={size} stroke={stroke} />}
+      {name === 'bookmark' && <Bookmark size={size} stroke={stroke} fill={fill} />}
       {name === 'statistic' && <Statistic size={size} stroke={stroke} />}
       {name === 'settings' && <Settings size={size} stroke={stroke} />}
       {name === 'arrow-down' && <ArrowDown size={size} stroke={stroke} />}
