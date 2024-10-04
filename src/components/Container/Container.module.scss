@@ -1,6 +1,7 @@
 .Container {
   display: block;
   width: 100%;
-  max-width: 360px;
+  max-width: calc(390px);
   margin: 0 auto;
+  padding: 0px 20px;
 }
