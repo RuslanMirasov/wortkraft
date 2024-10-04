@@ -31,7 +31,7 @@ const PasswordForm = ({ userId }) => {
       <Input type="password" name="password" icon="password-hide" placeholder="Aktuelles Passwort" required />
       <Input type="password" name="password2" icon="password-hide" placeholder="Neues Passwort" required />
       <Button size="small" loading={loading}>
-        Update
+        Aktualisieren
       </Button>
     </Form>
   );

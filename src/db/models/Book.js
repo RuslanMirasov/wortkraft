@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const temaSchema = new mongoose.Schema({
-  thumbnail: { type: String, default: null },
+  image: { type: String, default: null },
   name: { type: String, required: true },
   color: { type: String, required: true },
   slug: { type: String, required: true },
