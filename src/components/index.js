@@ -26,8 +26,9 @@ export { default as LoginButton } from './Buttons/AuthButtons/LoginButton';
 export { default as LogoutButton } from './Buttons/AuthButtons/LogoutButton';
 export { default as DeleteAccaunt } from './Buttons/AuthButtons/DeleteAccaunt';
 export { default as Profile } from './Profile/Profile';
-export { default as Books } from './Books/Books';
-export { default as BookItem } from './Books/BookItem';
+export { default as Collection } from './Collection/Collection';
+export { default as CollectionItem } from './Collection/CollectionItem';
+export { default as Counters } from './Counters/Counters';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';

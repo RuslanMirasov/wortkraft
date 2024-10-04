@@ -1,15 +1,17 @@
-.Books {
+.Collection {
   display: block;
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
   margin-top: 16px;
-  h1 {
+  h1,
+  h2,
+  h3 {
     margin: 20px 0px;
   }
 }
 
-.Book {
+.CollectionItem {
   display: block;
   position: relative;
   color: var(--white-color);
@@ -22,17 +24,20 @@
     margin-top: 0px;
   }
   &:last-child {
-    .BookContent {
+    .Content {
       padding-bottom: 20px;
     }
   }
   article {
+    div > div {
+      background: none;
+    }
     &.Active {
-      .BookImage {
+      .Image {
         height: 350px;
         margin-bottom: -80px;
       }
-      .BookContent {
+      .Content {
         header {
           button {
             background: var(--text-color);
@@ -43,7 +48,7 @@
   }
 }
 
-.BookImage {
+.Image {
   display: flex;
   position: relative;
   overflow: hidden;
@@ -66,9 +71,17 @@
     bottom: 0px;
     z-index: 2;
   }
+  a {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
 }
 
-.BookContent {
+.Content {
   display: flex;
   position: relative;
   width: 100%;
@@ -90,7 +103,7 @@
   }
 }
 
-.BookTitle {
+.Title {
   display: flex;
   position: relative;
   width: 100%;
@@ -158,19 +171,4 @@
   align-items: center;
   align-content: center;
   gap: 20px;
-}
-
-.Statistic {
-  display: inline-flex;
-  width: auto;
-  gap: 10px;
-  pointer-events: none;
-
-  li {
-    border: 1px solid var(--white-color);
-    font-size: 15px;
-    font-family: var(--light);
-    padding: 7px 12px;
-    border-radius: 30px;
-  }
 }
