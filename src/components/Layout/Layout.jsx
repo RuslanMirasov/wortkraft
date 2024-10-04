@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { Header, Main, Footer, Popup } from '../../components';
+import { Header, Main, Footer, Popup, Section, Preloader } from '../../components';
 
-const Layout = ({ children }) => {
+const Layout = ({ loading, error, children }) => {
   return (
     <>
       <Head>
@@ -12,7 +12,17 @@ const Layout = ({ children }) => {
         />
       </Head>
       <Header />
-      <Main>{children}</Main>
+      <Main>
+        {loading ? (
+          <Preloader />
+        ) : error ? (
+          <Section>
+            <h1>ERROR</h1>
+          </Section>
+        ) : (
+          children
+        )}
+      </Main>
       <Footer />
       <Popup />
     </>

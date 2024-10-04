@@ -29,6 +29,8 @@ export { default as Profile } from './Profile/Profile';
 export { default as Collection } from './Collection/Collection';
 export { default as CollectionItem } from './Collection/CollectionItem';
 export { default as Counters } from './Counters/Counters';
+export { default as Procent } from './Procent/Procent';
+export { default as Preloader } from './Preloader/Preloader';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';

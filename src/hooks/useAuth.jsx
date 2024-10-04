@@ -3,11 +3,10 @@ import useSWR from 'swr';
 import fetcher from '../utils/fatcher';
 
 const AuthContext = createContext();
-
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
-  const { data: user } = useSWR('/api/auth/user', fetcher);
+  const { data: user, isLoading } = useSWR('/api/auth/user', fetcher);
 
   const isLogin = !!user;
 

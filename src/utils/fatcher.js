@@ -16,6 +16,10 @@ const fetcher = async (url, method = 'GET', data = null, isFormData = false) => 
 
   const res = await fetch(url, options);
 
+  // if (res.status === 401) {
+  //   return null;
+  // }
+
   if (!res.ok) {
     const errorText = await res.json();
     throw Object.assign(new Error(errorText.message), { status: res.status });
