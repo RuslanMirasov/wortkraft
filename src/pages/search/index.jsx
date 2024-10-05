@@ -1,11 +1,11 @@
-import { Section, Title } from '../../components';
+import { useAuth } from '../../hooks/useAuth';
+import { Section, Hero } from '../../components';
 
 const SearchPage = () => {
+  const { user } = useAuth();
   return (
     <Section>
-      <Title tag="h1" size="h1">
-        Search
-      </Title>
+      <Hero content={{ name: 'Suche', color: user?.color || 'var(--orange-color)' }} />
     </Section>
   );
 };

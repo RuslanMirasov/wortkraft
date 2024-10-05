@@ -13,12 +13,18 @@ const BookPage = ({ books }) => {
     return null;
   }
 
+  const bookContent = {
+    ...book,
+    words_count: book.words_count ? book.words_count.toString() : '0',
+    learnt: 0,
+  };
+
   return (
     <Section>
-      <Hero content={book} />
+      <Hero content={bookContent} />
       <TitleBox margin={20}>
         <Title tag="h2" size="h2">
-          Wählen Sie ein Thema
+          {book.thems.length > 0 ? 'Wählen Sie ein Thema' : 'Kein Inhalt'}
         </Title>
       </TitleBox>
       <Collection collection={book?.thems} />

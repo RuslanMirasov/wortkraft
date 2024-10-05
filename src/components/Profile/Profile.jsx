@@ -7,7 +7,7 @@ const Profile = () => {
 
   const profileContent = {
     name: 'Mein Profil',
-    color: user.color,
+    color: user?.color,
   };
 
   return (

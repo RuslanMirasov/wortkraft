@@ -5,7 +5,7 @@ import css from './Collection.module.scss';
 
 const CollectionItem = ({ item, index, locked = false, active, onSetActive }) => {
   const router = useRouter();
-  const { slug, name, subname, thumbnail, level, color, words_count, thems_count } = item;
+  const { slug, name, subname, thumbnail, level, color, words_count, thems_count, learnt } = item;
 
   const handleOpen = e => {
     const book = e.target;
@@ -46,7 +46,7 @@ const CollectionItem = ({ item, index, locked = false, active, onSetActive }) =>
             {name}
             <span>{subname}</span>
           </Title>
-          {!locked && <Procent all={words_count} done={10} />}
+          {!locked && <Procent all={words_count} done={learnt} />}
         </TitleBox>
 
         <TitleBox>
