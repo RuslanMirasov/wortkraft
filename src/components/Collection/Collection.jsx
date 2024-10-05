@@ -17,7 +17,7 @@ const Collection = ({ collection }) => {
       {collection.map((item, index) => (
         <li key={item.slug} className={css.CollectionItem} style={{ background: item.color }}>
           <CollectionItem
-            item={item}
+            item={{ ...item, learnt: 0 }}
             index={index}
             locked={index === 0 ? false : locked}
             active={activeIndex === index}

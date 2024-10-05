@@ -7,9 +7,15 @@ const ThemaPage = ({ books }) => {
 
   const thema = books.find(book => book.slug === bookSlug).thems.find(theme => theme.slug === themaSlug);
 
+  const themaContent = {
+    ...thema,
+    words_count: thema.words_count ? thema.words_count.toString() : '0',
+    learnt: 10,
+  };
+
   return (
     <Section>
-      <Hero content={thema} />
+      <Hero content={themaContent} />
       <TitleBox margin={20}>
         <Title tag="h2" size="h2">
           Deine Lernfortschritte:

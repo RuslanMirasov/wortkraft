@@ -2,12 +2,12 @@ import css from './Hero.module.scss';
 import { TitleBox, Title, ImageWrapp, GoBack, Counters, Procent } from '../../components';
 
 const Hero = ({ content }) => {
-  const { color, name, level, subname, words_count, image } = content;
+  const { color, name, level, subname, words_count, learnt, image } = content;
   return (
     <article className={css.Hero} style={{ background: color }}>
       <header>
         <GoBack />
-        <Procent all={words_count} done={10} />
+        {!words_count ? null : words_count === '0' ? '0%' : <Procent all={words_count} done={learnt} />}
       </header>
       <TitleBox margin="10">
         <Title tag="h1" size="h1">
@@ -15,7 +15,7 @@ const Hero = ({ content }) => {
           {subname && <span>{subname}</span>}
         </Title>
       </TitleBox>
-      {words_count && <Counters color={color} level={level} learnt={10} words={words_count} />}
+      {words_count && <Counters color={color} level={level} learnt={learnt} words={words_count} />}
 
       {image && (
         <div className={css.Thumbnail}>
