@@ -153,34 +153,6 @@ const Statistic = ({ size = 24, stroke }) => (
   </svg>
 );
 
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M11.9985 23C17.9521 23 23 17.9454 23 12C23 6.05461 17.9521 1 11.9985 1C6.04488 1 1 6.05461 1 12C1 17.9454 6.04488 23 11.9985 23Z"
-    stroke="white"
-    stroke-width="2"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M11.9985 13.6649C13.0492 13.6649 13.9009 12.8144 13.9009 11.7652C13.9009 10.716 13.0492 9.86548 11.9985 9.86548C10.9479 9.86548 10.0962 10.716 10.0962 11.7652C10.0962 12.8144 10.9479 13.6649 11.9985 13.6649Z"
-    stroke="white"
-    stroke-width="2"
-    stroke-linejoin="round"
-  />
-  <path d="M10.6541 10.4225L5.7207 5.49585" stroke="white" stroke-width="2" stroke-linejoin="round" />
-  <path
-    d="M8.13037 5.21718C9.26544 4.54594 10.5844 4.16602 11.9985 4.16602C16.2027 4.16602 19.6079 7.56651 19.6079 11.7649"
-    stroke="white"
-    stroke-width="2"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M5.4418 7.90234C4.76963 9.03584 4.38916 10.353 4.38916 11.7651"
-    stroke="white"
-    stroke-width="2"
-    stroke-linejoin="round"
-  />
-</svg>;
-
 const Settings = ({ size = 24, stroke }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -227,11 +199,8 @@ const ArrowLeft = ({ size = 24, stroke }) => (
 const ArrowRight = ({ size = 24, stroke }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M8.25 4.5L15.75 12L8.25 19.5"
-      stroke={stroke}
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      d="M16.7081 11.2929C17.0986 11.6834 17.0986 12.3166 16.7081 12.7071L10.3441 19.0711C9.9536 19.4616 9.32043 19.4616 8.92991 19.0711C8.53938 18.6805 8.53938 18.0474 8.92991 17.6569L14.5868 12L8.92991 6.34315C8.53938 5.95262 8.53939 5.31946 8.92991 4.92893C9.32043 4.53841 9.9536 4.53841 10.3441 4.92893L16.7081 11.2929ZM15 11L16.001 11L16.001 13L15 13L15 11Z"
+      fill={stroke}
     />
   </svg>
 );

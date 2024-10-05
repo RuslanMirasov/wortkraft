@@ -1,0 +1,2675 @@
+[
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "ansehen",
+    "level": "A1",
+    "examples": ["Willst du dir den Film ansehen?", "Ja, ich sehe mir den Film an."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "смотреть", "status": true },
+          { "name": "видеть", "status": false },
+          { "name": "наблюдать", "status": false },
+          { "name": "замечать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "дивитися", "status": true },
+          { "name": "бачити", "status": false },
+          { "name": "спостерігати", "status": false },
+          { "name": "помічати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to watch", "status": true },
+          { "name": "to see", "status": false },
+          { "name": "to observe", "status": false },
+          { "name": "to notice", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "regarder", "status": true },
+          { "name": "voir", "status": false },
+          { "name": "observer", "status": false },
+          { "name": "remarquer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "oglądać", "status": true },
+          { "name": "widzieć", "status": false },
+          { "name": "obserwować", "status": false },
+          { "name": "zauważać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "guardare", "status": true },
+          { "name": "vedere", "status": false },
+          { "name": "osservare", "status": false },
+          { "name": "notare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "mirar", "status": true },
+          { "name": "ver", "status": false },
+          { "name": "observar", "status": false },
+          { "name": "notar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "izlemek", "status": true },
+          { "name": "görmek", "status": false },
+          { "name": "gözlemlemek", "status": false },
+          { "name": "fark etmek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "das Bild",
+    "level": "A1",
+    "examples": ["Hast du das Bild gesehen?", "Ja, das Bild hängt an der Wand."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "картина", "status": true },
+          { "name": "фотография", "status": false },
+          { "name": "изображение", "status": false },
+          { "name": "пейзаж", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "картина", "status": true },
+          { "name": "фотографія", "status": false },
+          { "name": "зображення", "status": false },
+          { "name": "пейзаж", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "painting", "status": true },
+          { "name": "photograph", "status": false },
+          { "name": "image", "status": false },
+          { "name": "landscape", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "tableau", "status": true },
+          { "name": "photographie", "status": false },
+          { "name": "image", "status": false },
+          { "name": "paysage", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "obraz", "status": true },
+          { "name": "fotografia", "status": false },
+          { "name": "zdjęcie", "status": false },
+          { "name": "pejzaż", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "quadro", "status": true },
+          { "name": "fotografia", "status": false },
+          { "name": "immagine", "status": false },
+          { "name": "paesaggio", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "cuadro", "status": true },
+          { "name": "fotografía", "status": false },
+          { "name": "imagen", "status": false },
+          { "name": "paisaje", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "resim", "status": true },
+          { "name": "fotoğraf", "status": false },
+          { "name": "görüntü", "status": false },
+          { "name": "manzara", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "hören",
+    "level": "A1",
+    "examples": ["Kannst du mich hören?", "Ja, ich höre dich gut."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "слышать", "status": true },
+          { "name": "слушать", "status": false },
+          { "name": "воспринимать", "status": false },
+          { "name": "шуметь", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "чути", "status": true },
+          { "name": "слухати", "status": false },
+          { "name": "сприймати", "status": false },
+          { "name": "шуміти", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to hear", "status": true },
+          { "name": "to listen", "status": false },
+          { "name": "to perceive", "status": false },
+          { "name": "to noise", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "entendre", "status": true },
+          { "name": "écouter", "status": false },
+          { "name": "percevoir", "status": false },
+          { "name": "faire du bruit", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "słyszeć", "status": true },
+          { "name": "słuchać", "status": false },
+          { "name": "odbierać", "status": false },
+          { "name": "hałasować", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "sentire", "status": true },
+          { "name": "ascoltare", "status": false },
+          { "name": "percepire", "status": false },
+          { "name": "fare rumore", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "oír", "status": true },
+          { "name": "escuchar", "status": false },
+          { "name": "percibir", "status": false },
+          { "name": "hacer ruido", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "duymak", "status": true },
+          { "name": "dinlemek", "status": false },
+          { "name": "algılamak", "status": false },
+          { "name": "gürültü yapmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "noch einmal",
+    "level": "A1",
+    "examples": ["Kannst du das noch einmal erklären?", "Ja, ich erkläre es noch einmal."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "еще раз", "status": true },
+          { "name": "всегда", "status": false },
+          { "name": "снова", "status": false },
+          { "name": "вторично", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "ще раз", "status": true },
+          { "name": "завжди", "status": false },
+          { "name": "знову", "status": false },
+          { "name": "вдруге", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "once more", "status": true },
+          { "name": "always", "status": false },
+          { "name": "again", "status": false },
+          { "name": "second time", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "encore une fois", "status": true },
+          { "name": "toujours", "status": false },
+          { "name": "à nouveau", "status": false },
+          { "name": "deuxième fois", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "jeszcze raz", "status": true },
+          { "name": "zawsze", "status": false },
+          { "name": "ponownie", "status": false },
+          { "name": "drugi raz", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "ancora una volta", "status": true },
+          { "name": "sempre", "status": false },
+          { "name": "di nuovo", "status": false },
+          { "name": "seconda volta", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "una vez más", "status": true },
+          { "name": "siempre", "status": false },
+          { "name": "otra vez", "status": false },
+          { "name": "segunda vez", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "bir kez daha", "status": true },
+          { "name": "her zaman", "status": false },
+          { "name": "tekrar", "status": false },
+          { "name": "ikinci kez", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "ankreuzen",
+    "level": "A1",
+    "examples": ["Kreuzen Sie bitte die richtige Antwort an.", "Ich habe die Antwort schon angekreuzt."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "отметить крестиком", "status": true },
+          { "name": "подчеркнуть", "status": false },
+          { "name": "обвести", "status": false },
+          { "name": "зачеркнуть", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "позначити хрестиком", "status": true },
+          { "name": "підкреслити", "status": false },
+          { "name": "обвести", "status": false },
+          { "name": "закреслити", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to tick", "status": true },
+          { "name": "to underline", "status": false },
+          { "name": "to circle", "status": false },
+          { "name": "to cross out", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "cocher", "status": true },
+          { "name": "souligner", "status": false },
+          { "name": "encercler", "status": false },
+          { "name": "rayer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "zakreślić", "status": true },
+          { "name": "podkreślić", "status": false },
+          { "name": "obrysować", "status": false },
+          { "name": "skreślić", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "spuntare", "status": true },
+          { "name": "sottolineare", "status": false },
+          { "name": "cerchiare", "status": false },
+          { "name": "cancellare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "marcar con una cruz", "status": true },
+          { "name": "subrayar", "status": false },
+          { "name": "encerrar en un círculo", "status": false },
+          { "name": "tachar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "işaretlemek", "status": true },
+          { "name": "altını çizmek", "status": false },
+          { "name": "daire içine almak", "status": false },
+          { "name": "çizmek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "zuordnen",
+    "level": "A1",
+    "examples": ["Ordnen Sie die Sätze den Bildern zu.", "Ich habe die Bilder schon zugeordnet."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "соотнести", "status": true },
+          { "name": "перепутать", "status": false },
+          { "name": "переставить", "status": false },
+          { "name": "разделить", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "співвіднести", "status": true },
+          { "name": "переплутати", "status": false },
+          { "name": "переставити", "status": false },
+          { "name": "розділити", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to match", "status": true },
+          { "name": "to confuse", "status": false },
+          { "name": "to rearrange", "status": false },
+          { "name": "to divide", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "associer", "status": true },
+          { "name": "mélanger", "status": false },
+          { "name": "réorganiser", "status": false },
+          { "name": "diviser", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "dopasować", "status": true },
+          { "name": "pomylić", "status": false },
+          { "name": "przestawić", "status": false },
+          { "name": "podzielić", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "associare", "status": true },
+          { "name": "confondere", "status": false },
+          { "name": "riorganizzare", "status": false },
+          { "name": "dividere", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "asociar", "status": true },
+          { "name": "confundir", "status": false },
+          { "name": "reorganizar", "status": false },
+          { "name": "dividir", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "eşleştirmek", "status": true },
+          { "name": "karıştırmak", "status": false },
+          { "name": "yeniden düzenlemek", "status": false },
+          { "name": "bölmek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "ergänzen",
+    "level": "A1",
+    "examples": ["Ergänzen Sie den Satz.", "Ich habe den Satz schon ergänzt."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "дополнить", "status": true },
+          { "name": "улучшить", "status": false },
+          { "name": "заменить", "status": false },
+          { "name": "украсить", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "доповнити", "status": true },
+          { "name": "покращити", "status": false },
+          { "name": "замінити", "status": false },
+          { "name": "прикрашати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to complete", "status": true },
+          { "name": "to improve", "status": false },
+          { "name": "to replace", "status": false },
+          { "name": "to decorate", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "compléter", "status": true },
+          { "name": "améliorer", "status": false },
+          { "name": "remplacer", "status": false },
+          { "name": "décorer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "uzupełnić", "status": true },
+          { "name": "ulepszyć", "status": false },
+          { "name": "zamienić", "status": false },
+          { "name": "ozdobić", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "completare", "status": true },
+          { "name": "migliorare", "status": false },
+          { "name": "sostituire", "status": false },
+          { "name": "decorare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "completar", "status": true },
+          { "name": "mejorar", "status": false },
+          { "name": "reemplazar", "status": false },
+          { "name": "decorar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "tamamlamak", "status": true },
+          { "name": "iyileştirmek", "status": false },
+          { "name": "değiştirmek", "status": false },
+          { "name": "süslemek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "machen",
+    "level": "A1",
+    "examples": ["Was machst du heute?", "Ich mache meine Hausaufgaben."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "делать", "status": true },
+          { "name": "принимать", "status": false },
+          { "name": "готовить", "status": false },
+          { "name": "создавать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "робити", "status": true },
+          { "name": "приймати", "status": false },
+          { "name": "готувати", "status": false },
+          { "name": "створювати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to do", "status": true },
+          { "name": "to accept", "status": false },
+          { "name": "to prepare", "status": false },
+          { "name": "to create", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "faire", "status": true },
+          { "name": "accepter", "status": false },
+          { "name": "préparer", "status": false },
+          { "name": "créer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "robić", "status": true },
+          { "name": "przyjmować", "status": false },
+          { "name": "przygotowywać", "status": false },
+          { "name": "tworzyć", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "fare", "status": true },
+          { "name": "accettare", "status": false },
+          { "name": "preparare", "status": false },
+          { "name": "creare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "hacer", "status": true },
+          { "name": "aceptar", "status": false },
+          { "name": "preparar", "status": false },
+          { "name": "crear", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "yapmak", "status": true },
+          { "name": "kabul etmek", "status": false },
+          { "name": "hazırlamak", "status": false },
+          { "name": "yaratmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "der Kurs",
+    "level": "A1",
+    "examples": ["Wie lange dauert der Kurs?", "Ich besuche den Deutschkurs seit zwei Monaten."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "курс", "status": true },
+          { "name": "урок", "status": false },
+          { "name": "семинар", "status": false },
+          { "name": "практика", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "курс", "status": true },
+          { "name": "урок", "status": false },
+          { "name": "семінар", "status": false },
+          { "name": "практика", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "course", "status": true },
+          { "name": "lesson", "status": false },
+          { "name": "seminar", "status": false },
+          { "name": "practice", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "cours", "status": true },
+          { "name": "leçon", "status": false },
+          { "name": "séminaire", "status": false },
+          { "name": "pratique", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "kurs", "status": true },
+          { "name": "lekcja", "status": false },
+          { "name": "seminarium", "status": false },
+          { "name": "praktyka", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "corso", "status": true },
+          { "name": "lezione", "status": false },
+          { "name": "seminario", "status": false },
+          { "name": "pratica", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "curso", "status": true },
+          { "name": "lección", "status": false },
+          { "name": "seminario", "status": false },
+          { "name": "práctica", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "kurs", "status": true },
+          { "name": "ders", "status": false },
+          { "name": "seminer", "status": false },
+          { "name": "pratik", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "sprechen",
+    "level": "A1",
+    "examples": ["Können Sie bitte langsamer sprechen?", "Ich spreche gerade mit meinem Lehrer."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "говорить", "status": true },
+          { "name": "обсуждать", "status": false },
+          { "name": "рассказывать", "status": false },
+          { "name": "упоминать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "говорити", "status": true },
+          { "name": "обговорювати", "status": false },
+          { "name": "розповідати", "status": false },
+          { "name": "згадувати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to speak", "status": true },
+          { "name": "to discuss", "status": false },
+          { "name": "to tell", "status": false },
+          { "name": "to mention", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "parler", "status": true },
+          { "name": "discuter", "status": false },
+          { "name": "raconter", "status": false },
+          { "name": "mentionner", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "mówić", "status": true },
+          { "name": "dyskutować", "status": false },
+          { "name": "opowiadać", "status": false },
+          { "name": "wspominać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "parlare", "status": true },
+          { "name": "discutere", "status": false },
+          { "name": "raccontare", "status": false },
+          { "name": "menzionare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "hablar", "status": true },
+          { "name": "discutir", "status": false },
+          { "name": "contar", "status": false },
+          { "name": "mencionar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "konuşmak", "status": true },
+          { "name": "tartışmak", "status": false },
+          { "name": "anlatmak", "status": false },
+          { "name": "bahsetmek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "lesen",
+    "level": "A1",
+    "examples": ["Ich lese jeden Abend ein Buch.", "Können Sie bitte den Satz vorlesen?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "читать", "status": true },
+          { "name": "проверять", "status": false },
+          { "name": "перечитывать", "status": false },
+          { "name": "изучать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "читати", "status": true },
+          { "name": "перевіряти", "status": false },
+          { "name": "перечитувати", "status": false },
+          { "name": "вивчати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to read", "status": true },
+          { "name": "to check", "status": false },
+          { "name": "to re-read", "status": false },
+          { "name": "to study", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "lire", "status": true },
+          { "name": "vérifier", "status": false },
+          { "name": "relire", "status": false },
+          { "name": "étudier", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "czytać", "status": true },
+          { "name": "sprawdzać", "status": false },
+          { "name": "przeczytać ponownie", "status": false },
+          { "name": "studiować", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "leggere", "status": true },
+          { "name": "verificare", "status": false },
+          { "name": "rileggere", "status": false },
+          { "name": "studiare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "leer", "status": true },
+          { "name": "revisar", "status": false },
+          { "name": "releer", "status": false },
+          { "name": "estudiar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "okumak", "status": true },
+          { "name": "kontrol etmek", "status": false },
+          { "name": "tekrar okumak", "status": false },
+          { "name": "incelemek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "das Gespräch",
+    "level": "A1",
+    "examples": ["Das Gespräch dauert nicht lange.", "Wir führen ein Gespräch über das Wetter."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "разговор", "status": true },
+          { "name": "дискуссия", "status": false },
+          { "name": "встреча", "status": false },
+          { "name": "переговоры", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "розмова", "status": true },
+          { "name": "дискусія", "status": false },
+          { "name": "зустріч", "status": false },
+          { "name": "переговори", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "conversation", "status": true },
+          { "name": "discussion", "status": false },
+          { "name": "meeting", "status": false },
+          { "name": "negotiation", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "conversation", "status": true },
+          { "name": "discussion", "status": false },
+          { "name": "rencontre", "status": false },
+          { "name": "négociation", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "rozmowa", "status": true },
+          { "name": "dyskusja", "status": false },
+          { "name": "spotkanie", "status": false },
+          { "name": "negocjacje", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "conversazione", "status": true },
+          { "name": "discussione", "status": false },
+          { "name": "incontro", "status": false },
+          { "name": "negoziazione", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "conversación", "status": true },
+          { "name": "discusión", "status": false },
+          { "name": "reunión", "status": false },
+          { "name": "negociación", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "konuşma", "status": true },
+          { "name": "tartışma", "status": false },
+          { "name": "toplantı", "status": false },
+          { "name": "müzakere", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "spielen",
+    "level": "A1",
+    "examples": ["Die Kinder spielen im Park.", "Wir spielen ein neues Spiel."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "играть", "status": true },
+          { "name": "развлекаться", "status": false },
+          { "name": "участвовать", "status": false },
+          { "name": "конкурс", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "грати", "status": true },
+          { "name": "розважатися", "status": false },
+          { "name": "брати участь", "status": false },
+          { "name": "конкурс", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to play", "status": true },
+          { "name": "to have fun", "status": false },
+          { "name": "to participate", "status": false },
+          { "name": "contest", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "jouer", "status": true },
+          { "name": "s'amuser", "status": false },
+          { "name": "participer", "status": false },
+          { "name": "concours", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "grać", "status": true },
+          { "name": "bawić się", "status": false },
+          { "name": "brać udział", "status": false },
+          { "name": "konkurs", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "giocare", "status": true },
+          { "name": "divertirsi", "status": false },
+          { "name": "partecipare", "status": false },
+          { "name": "concorso", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "jugar", "status": true },
+          { "name": "divertirse", "status": false },
+          { "name": "participar", "status": false },
+          { "name": "concurso", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "oynamak", "status": true },
+          { "name": "eğlenmek", "status": false },
+          { "name": "katılmak", "status": false },
+          { "name": "yarışma", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "suchen",
+    "level": "A1",
+    "examples": ["Ich suche mein Buch.", "Kannst du den Schlüssel suchen?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "искать", "status": true },
+          { "name": "находить", "status": false },
+          { "name": "проверять", "status": false },
+          { "name": "покупать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "шукати", "status": true },
+          { "name": "знаходити", "status": false },
+          { "name": "перевіряти", "status": false },
+          { "name": "купувати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to search", "status": true },
+          { "name": "to find", "status": false },
+          { "name": "to check", "status": false },
+          { "name": "to buy", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "chercher", "status": true },
+          { "name": "trouver", "status": false },
+          { "name": "vérifier", "status": false },
+          { "name": "acheter", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "szukać", "status": true },
+          { "name": "znaleźć", "status": false },
+          { "name": "sprawdzać", "status": false },
+          { "name": "kupować", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "cercare", "status": true },
+          { "name": "trovare", "status": false },
+          { "name": "verificare", "status": false },
+          { "name": "comprare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "buscar", "status": true },
+          { "name": "encontrar", "status": false },
+          { "name": "verificar", "status": false },
+          { "name": "comprar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "aramak", "status": true },
+          { "name": "bulmak", "status": false },
+          { "name": "kontrol etmek", "status": false },
+          { "name": "satın almak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "zeigen",
+    "level": "A1",
+    "examples": ["Kannst du mir das Bild zeigen?", "Ich zeige dir meinen neuen Laptop."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "показывать", "status": true },
+          { "name": "демонстрировать", "status": false },
+          { "name": "представлять", "status": false },
+          { "name": "делать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "показувати", "status": true },
+          { "name": "демонструвати", "status": false },
+          { "name": "представляти", "status": false },
+          { "name": "робити", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to show", "status": true },
+          { "name": "to demonstrate", "status": false },
+          { "name": "to present", "status": false },
+          { "name": "to do", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "montrer", "status": true },
+          { "name": "démontrer", "status": false },
+          { "name": "présenter", "status": false },
+          { "name": "faire", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "pokazywać", "status": true },
+          { "name": "demonstrować", "status": false },
+          { "name": "prezentować", "status": false },
+          { "name": "robić", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "mostrare", "status": true },
+          { "name": "demonstrare", "status": false },
+          { "name": "presentare", "status": false },
+          { "name": "fare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "mostrar", "status": true },
+          { "name": "demostrar", "status": false },
+          { "name": "presentar", "status": false },
+          { "name": "hacer", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "göstermek", "status": true },
+          { "name": "demonstrasyon yapmak", "status": false },
+          { "name": "sunmak", "status": false },
+          { "name": "yapmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "fragen",
+    "level": "A1",
+    "examples": ["Ich habe eine Frage.", "Kannst du mir eine Frage stellen?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "спрашивать", "status": true },
+          { "name": "допрашивать", "status": false },
+          { "name": "запрашивать", "status": false },
+          { "name": "просить", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "питати", "status": true },
+          { "name": "допитувати", "status": false },
+          { "name": "запитувати", "status": false },
+          { "name": "просити", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to ask", "status": true },
+          { "name": "to interrogate", "status": false },
+          { "name": "to request", "status": false },
+          { "name": "to beg", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "demander", "status": true },
+          { "name": "interroger", "status": false },
+          { "name": "demander", "status": false },
+          { "name": "supplier", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "pytać", "status": true },
+          { "name": "przesłuchiwać", "status": false },
+          { "name": "prosić", "status": false },
+          { "name": "błagać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "chiedere", "status": true },
+          { "name": "interrogare", "status": false },
+          { "name": "richiedere", "status": false },
+          { "name": "implorare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "preguntar", "status": true },
+          { "name": "interrogar", "status": false },
+          { "name": "solicitar", "status": false },
+          { "name": "rogar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "sormak", "status": true },
+          { "name": "sorgulamak", "status": false },
+          { "name": "istemek", "status": false },
+          { "name": "yalvarmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "markieren",
+    "level": "A1",
+    "examples": ["Bitte markiere die wichtigen Wörter.", "Ich markiere den Text mit einem Stift."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "подчёркивать", "status": true },
+          { "name": "выделять", "status": false },
+          { "name": "замечать", "status": false },
+          { "name": "проверять", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "підкреслювати", "status": true },
+          { "name": "виділяти", "status": false },
+          { "name": "зауважувати", "status": false },
+          { "name": "перевіряти", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to underline", "status": true },
+          { "name": "to highlight", "status": false },
+          { "name": "to notice", "status": false },
+          { "name": "to check", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "souligner", "status": true },
+          { "name": "mettre en évidence", "status": false },
+          { "name": "remarquer", "status": false },
+          { "name": "vérifier", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "podkreślać", "status": true },
+          { "name": "wyróżniać", "status": false },
+          { "name": "zauważać", "status": false },
+          { "name": "sprawdzać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "sottolineare", "status": true },
+          { "name": "evidenziare", "status": false },
+          { "name": "notare", "status": false },
+          { "name": "controllare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "subrayar", "status": true },
+          { "name": "resaltar", "status": false },
+          { "name": "notar", "status": false },
+          { "name": "verificar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "altını çizmek", "status": true },
+          { "name": "vurgulamak", "status": false },
+          { "name": "gözlemlemek", "status": false },
+          { "name": "kontrol etmek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "die Frage",
+    "level": "A1",
+    "examples": ["Ich habe eine Frage.", "Kannst du mir eine Frage stellen?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "вопрос", "status": true },
+          { "name": "запрос", "status": false },
+          { "name": "задание", "status": false },
+          { "name": "исследование", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "питання", "status": true },
+          { "name": "запит", "status": false },
+          { "name": "завдання", "status": false },
+          { "name": "дослідження", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "question", "status": true },
+          { "name": "request", "status": false },
+          { "name": "assignment", "status": false },
+          { "name": "research", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "question", "status": true },
+          { "name": "demande", "status": false },
+          { "name": "devoir", "status": false },
+          { "name": "recherche", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "pytanie", "status": true },
+          { "name": "prośba", "status": false },
+          { "name": "zadanie", "status": false },
+          { "name": "badanie", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "domanda", "status": true },
+          { "name": "richiesta", "status": false },
+          { "name": "compito", "status": false },
+          { "name": "ricerca", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "pregunta", "status": true },
+          { "name": "solicitud", "status": false },
+          { "name": "tarea", "status": false },
+          { "name": "investigación", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "soru", "status": true },
+          { "name": "istek", "status": false },
+          { "name": "görev", "status": false },
+          { "name": "araştırma", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "notieren",
+    "level": "A1",
+    "examples": ["Ich notiere wichtige Informationen.", "Kannst du das bitte notieren?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "записывать", "status": true },
+          { "name": "записывать на пленку", "status": false },
+          { "name": "запоминать", "status": false },
+          { "name": "замечать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "записувати", "status": true },
+          { "name": "фіксувати", "status": false },
+          { "name": "запам'ятовувати", "status": false },
+          { "name": "помічати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to note", "status": true },
+          { "name": "to record", "status": false },
+          { "name": "to memorize", "status": false },
+          { "name": "to notice", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "noter", "status": true },
+          { "name": "enregistrer", "status": false },
+          { "name": "mémoriser", "status": false },
+          { "name": "remarquer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "notować", "status": true },
+          { "name": "nagrać", "status": false },
+          { "name": "zapamiętywać", "status": false },
+          { "name": "zauważać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "annotare", "status": true },
+          { "name": "registrare", "status": false },
+          { "name": "memorizzare", "status": false },
+          { "name": "notare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "anotar", "status": true },
+          { "name": "grabar", "status": false },
+          { "name": "memorizar", "status": false },
+          { "name": "notar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "not almak", "status": true },
+          { "name": "kaydetmek", "status": false },
+          { "name": "ezberlemek", "status": false },
+          { "name": "gözlemlemek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "vergleichen",
+    "level": "A1",
+    "examples": ["Ich vergleiche die Antworten.", "Kannst du die Sätze vergleichen?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "сравнивать", "status": true },
+          { "name": "сравнивать с", "status": false },
+          { "name": "сравнивать между", "status": false },
+          { "name": "анализировать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "порівнювати", "status": true },
+          { "name": "порівнювати з", "status": false },
+          { "name": "порівнювати між", "status": false },
+          { "name": "аналізувати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to compare", "status": true },
+          { "name": "to contrast", "status": false },
+          { "name": "to analyze", "status": false },
+          { "name": "to evaluate", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "comparer", "status": true },
+          { "name": "contraster", "status": false },
+          { "name": "analyser", "status": false },
+          { "name": "évaluer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "porównywać", "status": true },
+          { "name": "kontrastować", "status": false },
+          { "name": "analizować", "status": false },
+          { "name": "oceniać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "confrontare", "status": true },
+          { "name": "contrapporre", "status": false },
+          { "name": "analizzare", "status": false },
+          { "name": "valutare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "comparar", "status": true },
+          { "name": "contrastar", "status": false },
+          { "name": "analizar", "status": false },
+          { "name": "evaluar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "karşılaştırmak", "status": true },
+          { "name": "zıtlaştırmak", "status": false },
+          { "name": "analiz etmek", "status": false },
+          { "name": "değerlendirmek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "nachsprechen",
+    "level": "A1",
+    "examples": ["Ich spreche die Wörter nach.", "Kannst du das bitte nachsprechen?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "повторять", "status": true },
+          { "name": "дублировать", "status": false },
+          { "name": "отвечать", "status": false },
+          { "name": "пересказывать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "повторювати", "status": true },
+          { "name": "дублювати", "status": false },
+          { "name": "відповідати", "status": false },
+          { "name": "пересказувати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to repeat", "status": true },
+          { "name": "to echo", "status": false },
+          { "name": "to respond", "status": false },
+          { "name": "to recount", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "répéter", "status": true },
+          { "name": "dupliquer", "status": false },
+          { "name": "répondre", "status": false },
+          { "name": "raconter", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "powtarzać", "status": true },
+          { "name": "duplikować", "status": false },
+          { "name": "odpowiadać", "status": false },
+          { "name": "opowiadać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "ripetere", "status": true },
+          { "name": "duplicare", "status": false },
+          { "name": "rispondere", "status": false },
+          { "name": "raccontare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "repetir", "status": true },
+          { "name": "duplicar", "status": false },
+          { "name": "responder", "status": false },
+          { "name": "contar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "tekrar etmek", "status": true },
+          { "name": "kopyalamak", "status": false },
+          { "name": "cevap vermek", "status": false },
+          { "name": "anlatmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "raten",
+    "level": "A1",
+    "examples": ["Ich rate die Antwort.", "Kannst du die Frage raten?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "угадывать", "status": true },
+          { "name": "предполагать", "status": false },
+          { "name": "догадываться", "status": false },
+          { "name": "проверять", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "вгадувати", "status": true },
+          { "name": "припускати", "status": false },
+          { "name": "додумуватися", "status": false },
+          { "name": "перевіряти", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to guess", "status": true },
+          { "name": "to suppose", "status": false },
+          { "name": "to figure out", "status": false },
+          { "name": "to verify", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "deviner", "status": true },
+          { "name": "supposer", "status": false },
+          { "name": "comprendre", "status": false },
+          { "name": "vérifier", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "zgadywać", "status": true },
+          { "name": "zakładać", "status": false },
+          { "name": "domyślać się", "status": false },
+          { "name": "sprawdzać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "indovinare", "status": true },
+          { "name": "supporre", "status": false },
+          { "name": "capire", "status": false },
+          { "name": "verificare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "adivinar", "status": true },
+          { "name": "suponer", "status": false },
+          { "name": "comprender", "status": false },
+          { "name": "verificar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "tahmin etmek", "status": true },
+          { "name": "varsaymak", "status": false },
+          { "name": "anlamak", "status": false },
+          { "name": "doğrulamak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "das Wort",
+    "level": "A1",
+    "examples": ["Was bedeutet dieses Wort?", "Das Wort ist sehr wichtig."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "слово", "status": true },
+          { "name": "термин", "status": false },
+          { "name": "выражение", "status": false },
+          { "name": "фраза", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "слово", "status": true },
+          { "name": "термін", "status": false },
+          { "name": "висловлення", "status": false },
+          { "name": "фраза", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "word", "status": true },
+          { "name": "term", "status": false },
+          { "name": "phrase", "status": false },
+          { "name": "expression", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "mot", "status": true },
+          { "name": "terme", "status": false },
+          { "name": "expression", "status": false },
+          { "name": "phrase", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "słowo", "status": true },
+          { "name": "termin", "status": false },
+          { "name": "wyrażenie", "status": false },
+          { "name": "fraza", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "parola", "status": true },
+          { "name": "termine", "status": false },
+          { "name": "espressione", "status": false },
+          { "name": "frase", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "palabra", "status": true },
+          { "name": "término", "status": false },
+          { "name": "frase", "status": false },
+          { "name": "expresión", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "kelime", "status": true },
+          { "name": "terim", "status": false },
+          { "name": "ifade", "status": false },
+          { "name": "cümle", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "die Lektion",
+    "level": "A1",
+    "examples": ["Ich habe die Lektion verstanden.", "Wie viele Lektionen gibt es?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "урок", "status": true },
+          { "name": "занятие", "status": false },
+          { "name": "раздел", "status": false },
+          { "name": "тематика", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "урок", "status": true },
+          { "name": "заняття", "status": false },
+          { "name": "розділ", "status": false },
+          { "name": "тематика", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "lesson", "status": true },
+          { "name": "class", "status": false },
+          { "name": "section", "status": false },
+          { "name": "topic", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "leçon", "status": true },
+          { "name": "cours", "status": false },
+          { "name": "section", "status": false },
+          { "name": "thème", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "lekcja", "status": true },
+          { "name": "zajęcia", "status": false },
+          { "name": "sekcja", "status": false },
+          { "name": "temat", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "lezione", "status": true },
+          { "name": "corso", "status": false },
+          { "name": "sezione", "status": false },
+          { "name": "tema", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "lección", "status": true },
+          { "name": "clase", "status": false },
+          { "name": "sección", "status": false },
+          { "name": "tema", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "ders", "status": true },
+          { "name": "sınıf", "status": false },
+          { "name": "bölüm", "status": false },
+          { "name": "konu", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "meinen",
+    "level": "A1",
+    "examples": ["Ich meine das ernst.", "Was meinst du?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "думать", "status": true },
+          { "name": "иметь в виду", "status": false },
+          { "name": "предполагать", "status": false },
+          { "name": "считать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "думати", "status": true },
+          { "name": "мати на увазі", "status": false },
+          { "name": "припускати", "status": false },
+          { "name": "вважати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to mean", "status": true },
+          { "name": "to think", "status": false },
+          { "name": "to imply", "status": false },
+          { "name": "to believe", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "signifier", "status": true },
+          { "name": "penser", "status": false },
+          { "name": "sous-entendre", "status": false },
+          { "name": "croire", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "znaczyć", "status": true },
+          { "name": "myśleć", "status": false },
+          { "name": "implikować", "status": false },
+          { "name": "wierzyć", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "significare", "status": true },
+          { "name": "pensare", "status": false },
+          { "name": "implicare", "status": false },
+          { "name": "credere", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "significar", "status": true },
+          { "name": "pensar", "status": false },
+          { "name": "implicar", "status": false },
+          { "name": "creer", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "anlamına gelmek", "status": true },
+          { "name": "düşünmek", "status": false },
+          { "name": "ima etmek", "status": false },
+          { "name": "inanmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "sagen",
+    "level": "A1",
+    "examples": ["Ich sage dir die Wahrheit.", "Was hast du gesagt?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "говорить", "status": true },
+          { "name": "сказать", "status": false },
+          { "name": "называть", "status": false },
+          { "name": "изъяснять", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "говорити", "status": true },
+          { "name": "сказати", "status": false },
+          { "name": "називати", "status": false },
+          { "name": "висловлювати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to say", "status": true },
+          { "name": "to tell", "status": false },
+          { "name": "to name", "status": false },
+          { "name": "to express", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "dire", "status": true },
+          { "name": "parler", "status": false },
+          { "name": "nommer", "status": false },
+          { "name": "expliquer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "mówić", "status": true },
+          { "name": "powiedzieć", "status": false },
+          { "name": "nazywać", "status": false },
+          { "name": "wyjaśniać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "dire", "status": true },
+          { "name": "parlare", "status": false },
+          { "name": "nominare", "status": false },
+          { "name": "spiegare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "decir", "status": true },
+          { "name": "hablar", "status": false },
+          { "name": "nombrar", "status": false },
+          { "name": "explicar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "söylemek", "status": true },
+          { "name": "anlatmak", "status": false },
+          { "name": "adlandırmak", "status": false },
+          { "name": "açıklamak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "schreiben",
+    "level": "A1",
+    "examples": ["Ich schreibe einen Brief.", "Was schreibst du?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "писать", "status": true },
+          { "name": "записывать", "status": false },
+          { "name": "рассказывать", "status": false },
+          { "name": "чертить", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "писати", "status": true },
+          { "name": "записувати", "status": false },
+          { "name": "розповідати", "status": false },
+          { "name": "малювати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to write", "status": true },
+          { "name": "to record", "status": false },
+          { "name": "to tell", "status": false },
+          { "name": "to draw", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "écrire", "status": true },
+          { "name": "enregistrer", "status": false },
+          { "name": "raconter", "status": false },
+          { "name": "dessiner", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "pisać", "status": true },
+          { "name": "zapisywać", "status": false },
+          { "name": "opowiadać", "status": false },
+          { "name": "rysować", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "scrivere", "status": true },
+          { "name": "registrare", "status": false },
+          { "name": "raccontare", "status": false },
+          { "name": "disegnare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "escribir", "status": true },
+          { "name": "grabar", "status": false },
+          { "name": "contar", "status": false },
+          { "name": "dibujar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "yazmak", "status": true },
+          { "name": "kaydetmek", "status": false },
+          { "name": "anlatmak", "status": false },
+          { "name": "çizmek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "variieren",
+    "level": "A1",
+    "examples": ["Wir variieren die Übungen.", "Kannst du das variieren?"],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "вариировать", "status": true },
+          { "name": "изменять", "status": false },
+          { "name": "переделывать", "status": false },
+          { "name": "колебаться", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "варіювати", "status": true },
+          { "name": "змінювати", "status": false },
+          { "name": "переробляти", "status": false },
+          { "name": "коливатися", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to vary", "status": true },
+          { "name": "to change", "status": false },
+          { "name": "to redo", "status": false },
+          { "name": "to fluctuate", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "varier", "status": true },
+          { "name": "changer", "status": false },
+          { "name": "refaire", "status": false },
+          { "name": "fluctuer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "wariować", "status": true },
+          { "name": "zmieniać", "status": false },
+          { "name": "przerabiać", "status": false },
+          { "name": "wahać się", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "variare", "status": true },
+          { "name": "cambiare", "status": false },
+          { "name": "rifare", "status": false },
+          { "name": "fluttuare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "variar", "status": true },
+          { "name": "cambiar", "status": false },
+          { "name": "rehacer", "status": false },
+          { "name": "fluctuar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "değiştirmek", "status": true },
+          { "name": "şekil vermek", "status": false },
+          { "name": "yeniden yapmak", "status": false },
+          { "name": "dalgalanmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "erzählen",
+    "level": "A1",
+    "examples": ["Was erzählt der Lehrer?", "Er erzählt eine Geschichte."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "рассказывать", "status": true },
+          { "name": "излагать", "status": false },
+          { "name": "сообщать", "status": false },
+          { "name": "описывать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "розповідати", "status": true },
+          { "name": "викладати", "status": false },
+          { "name": "повідомляти", "status": false },
+          { "name": "описувати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to tell", "status": true },
+          { "name": "to explain", "status": false },
+          { "name": "to report", "status": false },
+          { "name": "to describe", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "raconter", "status": true },
+          { "name": "expliquer", "status": false },
+          { "name": "rapporter", "status": false },
+          { "name": "décrire", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "opowiadać", "status": true },
+          { "name": "wyjaśniać", "status": false },
+          { "name": "raportować", "status": false },
+          { "name": "opisywać", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "raccontare", "status": true },
+          { "name": "spiegare", "status": false },
+          { "name": "riportare", "status": false },
+          { "name": "descrivere", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "contar", "status": true },
+          { "name": "explicar", "status": false },
+          { "name": "informar", "status": false },
+          { "name": "describir", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "anlatmak", "status": true },
+          { "name": "açıklamak", "status": false },
+          { "name": "bildirmek", "status": false },
+          { "name": "tanımlamak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "arbeiten",
+    "level": "A1",
+    "examples": ["Was machst du beruflich?", "Ich arbeite als Lehrer."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "работать", "status": true },
+          { "name": "действовать", "status": false },
+          { "name": "заниматься", "status": false },
+          { "name": "трудиться", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "працювати", "status": true },
+          { "name": "діяти", "status": false },
+          { "name": "займатися", "status": false },
+          { "name": "працювати важко", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to work", "status": true },
+          { "name": "to act", "status": false },
+          { "name": "to engage", "status": false },
+          { "name": "to toil", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "travailler", "status": true },
+          { "name": "agir", "status": false },
+          { "name": "s'engager", "status": false },
+          { "name": "lutter", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "pracować", "status": true },
+          { "name": "działać", "status": false },
+          { "name": "angażować się", "status": false },
+          { "name": "męczyć się", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "lavorare", "status": true },
+          { "name": "agire", "status": false },
+          { "name": "impegnarsi", "status": false },
+          { "name": "faticare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "trabajar", "status": true },
+          { "name": "actuar", "status": false },
+          { "name": "comprometerse", "status": false },
+          { "name": "fatigar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "çalışmak", "status": true },
+          { "name": "hareket etmek", "status": false },
+          { "name": "katılmak", "status": false },
+          { "name": "zorlu çalışmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "zeichnen",
+    "level": "A1",
+    "examples": ["Was machst du in deiner Freizeit?", "Ich zeichne gern Bilder."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "рисовать", "status": true },
+          { "name": "черчить", "status": false },
+          { "name": "красить", "status": false },
+          { "name": "создавать", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "малювати", "status": true },
+          { "name": "креслити", "status": false },
+          { "name": "фарбувати", "status": false },
+          { "name": "створювати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to draw", "status": true },
+          { "name": "to sketch", "status": false },
+          { "name": "to paint", "status": false },
+          { "name": "to create", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "dessiner", "status": true },
+          { "name": "tracer", "status": false },
+          { "name": "peindre", "status": false },
+          { "name": "créer", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "rysować", "status": true },
+          { "name": "rysować linie", "status": false },
+          { "name": "malować", "status": false },
+          { "name": "tworzyć", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "disegnare", "status": true },
+          { "name": "tracciare", "status": false },
+          { "name": "colorare", "status": false },
+          { "name": "creare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "dibujar", "status": true },
+          { "name": "esbozar", "status": false },
+          { "name": "pintar", "status": false },
+          { "name": "crear", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "çizmek", "status": true },
+          { "name": "taslak hazırlamak", "status": false },
+          { "name": "boyamak", "status": false },
+          { "name": "oluşturmak", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "verbinden",
+    "level": "A1",
+    "examples": ["Wie kann ich die zwei Sätze verbinden?", "Du kannst 'und' benutzen."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "связывать", "status": true },
+          { "name": "соединять", "status": false },
+          { "name": "разъединять", "status": false },
+          { "name": "объединять", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "пов'язувати", "status": true },
+          { "name": "з'єднувати", "status": false },
+          { "name": "роз'єднувати", "status": false },
+          { "name": "об'єднувати", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "to connect", "status": true },
+          { "name": "to link", "status": false },
+          { "name": "to separate", "status": false },
+          { "name": "to unite", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "connecter", "status": true },
+          { "name": "lier", "status": false },
+          { "name": "séparer", "status": false },
+          { "name": "unir", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "łączyć", "status": true },
+          { "name": "związywać", "status": false },
+          { "name": "rozłączać", "status": false },
+          { "name": "jednoczyć", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "collegare", "status": true },
+          { "name": "unire", "status": false },
+          { "name": "separare", "status": false },
+          { "name": "aggregare", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "conectar", "status": true },
+          { "name": "unir", "status": false },
+          { "name": "separar", "status": false },
+          { "name": "juntar", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "bağlamak", "status": true },
+          { "name": "birleştirmek", "status": false },
+          { "name": "ayırmak", "status": false },
+          { "name": "birleştirmek", "status": false }
+        ]
+      }
+    ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "meine-worte-im-kurs",
+    "name": "die Antwort",
+    "level": "A1",
+    "examples": ["Was ist die Antwort auf die Frage?", "Die Antwort ist 'ja'."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "ответ", "status": true },
+          { "name": "реакция", "status": false },
+          { "name": "объяснение", "status": false },
+          { "name": "ответственность", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "відповідь", "status": true },
+          { "name": "реакція", "status": false },
+          { "name": "пояснення", "status": false },
+          { "name": "відповідальність", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "answer", "status": true },
+          { "name": "reaction", "status": false },
+          { "name": "explanation", "status": false },
+          { "name": "responsibility", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "réponse", "status": true },
+          { "name": "réaction", "status": false },
+          { "name": "explication", "status": false },
+          { "name": "responsabilité", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "odpowiedź", "status": true },
+          { "name": "reakcja", "status": false },
+          { "name": "wyjaśnienie", "status": false },
+          { "name": "odpowiedzialność", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "risposta", "status": true },
+          { "name": "reazione", "status": false },
+          { "name": "spiegazione", "status": false },
+          { "name": "responsabilità", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "respuesta", "status": true },
+          { "name": "reacción", "status": false },
+          { "name": "explicación", "status": false },
+          { "name": "responsabilidad", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "cevap", "status": true },
+          { "name": "tepki", "status": false },
+          { "name": "açıklama", "status": false },
+          { "name": "sorumluluk", "status": false }
+        ]
+      }
+    ]
+  }
+]

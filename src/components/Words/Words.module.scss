@@ -1,0 +1,56 @@
+.Words {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  li {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    border-radius: 60px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 10px 20px 10px 54px;
+    div {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      p {
+        display: inline-block;
+        opacity: 0.5;
+      }
+    }
+    span {
+      font-size: 16px;
+      line-height: 1;
+      flex: 1;
+      padding-right: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &[data-points='0'] {
+      background: #f1f2f4;
+      order: 3;
+    }
+    &[data-points='5'] {
+      background: var(--green-color);
+      color: var(--white-color);
+      order: 1;
+    }
+    &[data-points='1'],
+    &[data-points='2'],
+    &[data-points='3'],
+    &[data-points='4'] {
+      background: var(--orange-color);
+      color: var(--white-color);
+      order: 2;
+    }
+    width: 100%;
+  }
+}
