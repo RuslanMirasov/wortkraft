@@ -10,7 +10,7 @@ const handler = async (req, res) => {
       const { token } = req.cookies;
 
       if (!token) {
-        return res.status(401).json({ message: 'Unauthorized' });
+        return res.status(200).json({ message: 'Unauthorized' });
       }
 
       const decoded = jwt.verify(token, process.env.JWT_SECRET);

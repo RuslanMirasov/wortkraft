@@ -33,6 +33,7 @@ export { default as Profile } from './Profile/Profile';
 export { default as Counters } from './Counters/Counters';
 export { default as Procent } from './Procent/Procent';
 export { default as Preloader } from './Preloader/Preloader';
+export { default as Words } from './Words/Words';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';

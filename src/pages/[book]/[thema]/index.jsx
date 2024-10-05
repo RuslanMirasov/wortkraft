@@ -1,26 +1,44 @@
 import { useRouter } from 'next/router';
-import { Hero, Section, TitleBox, Title } from '../../../components';
+import useSWR from 'swr';
+import fetcher from '../../../utils/fatcher';
+import { useAuth } from '../../../hooks/useAuth';
+import { Hero, Section, TitleBox, Title, Preloader, Words } from '../../../components';
 
 const ThemaPage = ({ books }) => {
   const router = useRouter();
+  const { user } = useAuth();
   const { book: bookSlug, thema: themaSlug } = router.query;
 
+  const { data: words, isLoading } = useSWR(
+    bookSlug && themaSlug ? `/api/words?book=${bookSlug}&theme=${themaSlug}` : null,
+    fetcher
+  );
+
+  if (!words || isLoading) return <Preloader />;
+
   const thema = books.find(book => book.slug === bookSlug).thems.find(theme => theme.slug === themaSlug);
+  const learnt = user ? user.progress.filter(wort => wort.points === 5) : [];
 
   const themaContent = {
     ...thema,
-    words_count: thema.words_count ? thema.words_count.toString() : '0',
-    learnt: 10,
+    words_count: words.length > 0 ? thema.words_count.toString() : '0',
+    learnt: learnt.length,
   };
+
+  const wordsWithProgress = words.map(word => {
+    const userProgress = user ? user.progress.find(progress => progress.id === word._id) : null;
+    return userProgress ? { ...word, points: userProgress.points } : { ...word, points: 0 };
+  });
 
   return (
     <Section>
       <Hero content={themaContent} />
       <TitleBox margin={20}>
         <Title tag="h2" size="h2">
-          Deine Lernfortschritte:
+          {words.length > 0 ? 'Deine Lernfortschritte:' : 'Es gibt keine Wörter'}
         </Title>
       </TitleBox>
+      <Words words={wordsWithProgress} />
     </Section>
   );
 };
