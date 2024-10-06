@@ -22,6 +22,7 @@ export { default as ImageWrapp } from './ImageWrapp/ImageWrapp';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Popup } from './Popup/Popup';
 export { default as Button } from './Buttons/Button/Button';
+export { default as BookmarkButton } from './Buttons/BookmarkButton/BookmarkButton';
 export { default as GoBack } from './Buttons/GoBack/GoBack';
 export { default as LinkButton } from './Buttons/LinkButton/LinkButton';
 export { default as UnlockPro } from './Buttons/UnlockPro/UnlockPro';

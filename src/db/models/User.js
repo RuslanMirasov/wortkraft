@@ -2,8 +2,8 @@ import mongoose, { Schema } from 'mongoose';
 import bcrypt from 'bcrypt';
 
 const progressSchema = new mongoose.Schema({
-  word_id: { type: Schema.Types.ObjectId, required: true },
-  points: { type: Number, min: 1, max: 5, required: true },
+  word_id: { type: Schema.Types.ObjectId, required: false },
+  points: { type: Number, min: 1, max: 5, required: false },
 });
 
 const userSchema = new mongoose.Schema({

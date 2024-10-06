@@ -17,12 +17,13 @@ const ThemaPage = ({ books }) => {
   if (!words || isLoading) return <Preloader />;
 
   const thema = books.find(book => book.slug === bookSlug).thems.find(theme => theme.slug === themaSlug);
-  const learnt = user ? user.progress.filter(wort => wort.points === 5) : [];
+  const successes = user ? user.progress.filter(wort => wort.points === 5) : [];
+  const alreadyLearnt = successes.filter(success => words.some(word => word._id === success.id));
 
   const themaContent = {
     ...thema,
     words_count: words.length > 0 ? thema.words_count.toString() : '0',
-    learnt: learnt.length,
+    learnt: alreadyLearnt.length,
   };
 
   const wordsWithProgress = words.map(word => {

@@ -1,0 +1,34 @@
+.BookmarkButton {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+  &[data-add='yes'] {
+    svg {
+      opacity: 1;
+    }
+  }
+  &[data-position='left'] {
+    left: 0px;
+  }
+  &[data-position='right'] {
+    right: 0px;
+  }
+  svg {
+    opacity: 0.4;
+  }
+  div {
+    width: 50%;
+    height: 50%;
+    left: auto;
+    top: auto;
+    background: none;
+  }
+}
