@@ -1,6 +1,6 @@
-import produce, { freeze } from "immer";
-import { useCallback } from "react";
-import useLocalStorageState from "use-local-storage-state";
+import produce, { freeze } from 'immer';
+import { useCallback } from 'react';
+import useLocalStorageState from 'use-local-storage-state';
 
 const useImmerLocalStorageState = (key, options) => {
   const [value, setValue] = useLocalStorageState(key, {
@@ -11,8 +11,8 @@ const useImmerLocalStorageState = (key, options) => {
   return [
     value,
     useCallback(
-      (updater) => {
-        if (typeof updater === "function") setValue(produce(updater));
+      updater => {
+        if (typeof updater === 'function') setValue(produce(updater));
         else setValue(freeze(updater));
       },
       [setValue]

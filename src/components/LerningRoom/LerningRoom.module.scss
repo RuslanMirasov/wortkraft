@@ -1,0 +1,119 @@
+.LerningRoom {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.Header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 14px;
+  font-size: 16px;
+  span {
+    font-family: var(--light);
+    font-size: 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 50px;
+    padding: 5px 12px;
+  }
+}
+
+.Range {
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--grey-light-color);
+  &:before {
+    content: '';
+    display: block;
+    width: 28%;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--text-color);
+    transition: 1.6s;
+  }
+  &[data-range='0'] {
+    &:before {
+      width: 0%;
+    }
+  }
+  &[data-range='1'] {
+    &:before {
+      width: 20%;
+      background: var(--yellow-color);
+    }
+  }
+  &[data-range='2'] {
+    &:before {
+      width: 40%;
+      background: var(--yellow-color);
+    }
+  }
+  &[data-range='3'] {
+    &:before {
+      width: 60%;
+      background: var(--orange-color);
+    }
+  }
+  &[data-range='4'] {
+    &:before {
+      width: 80%;
+      background: var(--orange-color);
+    }
+  }
+  &[data-range='5'] {
+    &:before {
+      width: 100%;
+      background: var(--green-color);
+    }
+  }
+}
+
+// ======================================== WordDescription
+
+.WordDescription {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+  gap: 20px;
+  padding: 24px 20px;
+  background: var(--grey-light-color);
+  border-radius: 30px;
+  position: relative;
+  color: var(--text-color);
+  [class*='BookmarkButton_'] {
+    right: 10px;
+    top: 10px;
+  }
+  h1 {
+    width: 100%;
+    line-height: 1;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.Translation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+}

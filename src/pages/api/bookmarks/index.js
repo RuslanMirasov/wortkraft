@@ -6,7 +6,6 @@ import jwt from 'jsonwebtoken';
 const handler = async (req, res) => {
   await dbConnect();
 
-  // Извлечение и проверка токена из cookies
   const { cookies } = req;
   const token = cookies.token;
 
@@ -37,12 +36,11 @@ const handler = async (req, res) => {
         return res.status(201).json({ message: 'Word added to bookmarks' });
       }
     } else if (req.method === 'GET') {
-      // Получение слов по id из bookmarks
       const words = await Word.find({
-        _id: { $in: user.bookmarks }, // Используем $in для поиска всех слов, ID которых есть в массиве bookmarks
+        _id: { $in: user.bookmarks },
       });
 
-      const response = words.map(({ _id, name }) => ({ _id, name }));
+      const response = words.map(({ _id, name, book, theme }) => ({ _id, name, book, theme }));
 
       return res.status(200).json(response);
     } else {

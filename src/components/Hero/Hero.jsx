@@ -1,10 +1,10 @@
 import css from './Hero.module.scss';
 import { TitleBox, Title, ImageWrapp, GoBack, Counters, Procent } from '../../components';
 
-const Hero = ({ content }) => {
+const Hero = ({ content, gap = 0 }) => {
   const { color, name, level, subname, words_count, learnt, image } = content;
   return (
-    <article className={css.Hero} style={{ background: color }}>
+    <article className={css.Hero} style={{ background: color, marginBottom: `${gap}px` }}>
       <header>
         <GoBack />
         {!words_count ? null : words_count === '0' ? '0%' : <Procent all={words_count} done={learnt} />}

@@ -1,16 +1,12 @@
+import { Icon } from '../../../components';
 import css from './Button.module.scss';
 
-const Button = ({ onClick, variant, size, full, disabled, loading, children }) => {
+const Button = ({ onClick, size, variant, full, disabled, loading, children, icon }) => {
   const allButtonClasses = {
     [css.Button]: true,
-    [css.Big]: size === 'big',
-    [css.Small]: size === 'small',
-    [css.Orange]: variant === 'orange',
-    [css.BorderLight]: variant === 'border-light',
-    [css.BorderDark]: variant === 'border-dark',
-    [css.Black]: variant === 'black',
-    [css.White]: variant === 'white',
+    [css.Green]: variant === 'green',
     [css.Red]: variant === 'red',
+    [css.Small]: size === 'small',
     [css.Loading]: loading,
     [css.Full]: full,
   };
@@ -22,6 +18,11 @@ const Button = ({ onClick, variant, size, full, disabled, loading, children }) =
   return (
     <button type={onClick ? 'button' : 'submit'} className={currentClasses} disabled={disabled} onClick={onClick}>
       <span>{children}</span>
+      {icon && (
+        <div className={css.Icon}>
+          <Icon name={icon} />
+        </div>
+      )}
     </button>
   );
 };
