@@ -143,6 +143,14 @@ hr {
     top: 50%;
     animation: spin 0.4s linear infinite;
   }
+  &.light {
+    &:after {
+      border-left: 2px solid var(--text-color);
+      border-top: 2px solid var(--text-color);
+      border-right: 2px solid rgba(0, 0, 0, 0);
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+  }
 }
 
 @keyframes spin {
