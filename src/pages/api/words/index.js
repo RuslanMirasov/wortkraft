@@ -14,7 +14,7 @@ const handler = async (req, res) => {
         return res.status(200).json([]);
       }
 
-      const response = words.map(({ _id, name }) => ({ _id, name }));
+      const response = words.map(({ _id, name, book, theme }) => ({ _id, name, book, theme }));
 
       res.status(200).json(response);
     } catch (error) {

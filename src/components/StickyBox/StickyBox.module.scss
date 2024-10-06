@@ -1,0 +1,18 @@
+.StickyBox {
+  display: block;
+  position: sticky;
+  top: 60px;
+  padding: 20px 0px 20px 0px;
+  z-index: 6;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: calc(100% + 50px);
+    background: linear-gradient(180deg, var(--white-color) 50%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+  }
+}

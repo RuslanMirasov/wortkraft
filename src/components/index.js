@@ -22,6 +22,7 @@ export { default as ImageWrapp } from './ImageWrapp/ImageWrapp';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Popup } from './Popup/Popup';
 export { default as Button } from './Buttons/Button/Button';
+export { default as StartButton } from './Buttons/StartButton/StartButton';
 export { default as BookmarkButton } from './Buttons/BookmarkButton/BookmarkButton';
 export { default as GoBack } from './Buttons/GoBack/GoBack';
 export { default as LinkButton } from './Buttons/LinkButton/LinkButton';
@@ -35,6 +36,10 @@ export { default as Counters } from './Counters/Counters';
 export { default as Procent } from './Procent/Procent';
 export { default as Preloader } from './Preloader/Preloader';
 export { default as Words } from './Words/Words';
+export { default as StickyBox } from './StickyBox/StickyBox';
+export { default as LerningRoom } from './LerningRoom/LerningRoom';
+export { default as RoomHeader } from './LerningRoom/RoomHeader';
+export { default as WordDescription } from './LerningRoom/WordDescription';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';

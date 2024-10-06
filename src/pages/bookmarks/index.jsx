@@ -1,8 +1,17 @@
 import fetcher from '../../utils/fatcher';
 import useSWR from 'swr';
 import { useAuth } from '../../hooks/useAuth';
-
-import { Section, TitleBox, Title, PrivatePage, Hero, Preloader, Words } from '../../components';
+import {
+  Section,
+  TitleBox,
+  Title,
+  PrivatePage,
+  Hero,
+  Preloader,
+  Words,
+  StickyBox,
+  StartButton,
+} from '../../components';
 
 const BookmarksPage = () => {
   const { user } = useAuth();
@@ -20,21 +29,36 @@ const BookmarksPage = () => {
     learnt: learntBookmarks.length,
   };
 
-  const wordsWithProgress = bookmarks.map(word => {
-    const userProgress = user ? user.progress.find(progress => progress.id === word._id) : null;
-    return userProgress ? { ...word, points: userProgress.points } : { ...word, points: 0 };
-  });
+  const wordsWithProgress = bookmarks
+    .map(word => {
+      const userProgress = user ? user.progress.find(progress => progress.id === word._id) : null;
+      return userProgress ? { ...word, points: userProgress.points } : { ...word, points: 0 };
+    })
+    .sort((a, b) => b.points - a.points);
 
   return (
     <PrivatePage>
       <Section>
         <Hero content={heroContent} />
-        <TitleBox margin={20}>
-          <Title tag="h2" size="h2">
-            {heroContent.words_count > 0 ? 'Deine Lernfortschritte:' : 'Kein Inhalt'}
-          </Title>
-        </TitleBox>
-        <Words words={wordsWithProgress} />
+        {bookmarks.length > 0 ? (
+          <>
+            <StickyBox>
+              <StartButton words={wordsWithProgress}>Starten Sie</StartButton>
+            </StickyBox>
+            <TitleBox margin={20}>
+              <Title tag="h2" size="h2">
+                Deine Lernfortschritte:
+              </Title>
+            </TitleBox>
+            <Words words={wordsWithProgress} />
+          </>
+        ) : (
+          <TitleBox margin={20}>
+            <Title tag="h2" size="h2">
+              Es gibt keine Wörter
+            </Title>
+          </TitleBox>
+        )}
       </Section>
     </PrivatePage>
   );

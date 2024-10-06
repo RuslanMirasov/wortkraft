@@ -315,6 +315,31 @@ const Next = ({ size = 16, stroke }) => (
   </svg>
 );
 
+const Sound = ({ size = 24, stroke }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M14 2.60227V21.4004C14 21.9217 13.3474 22.1914 12.9419 21.8438L6.78353 16.5046C6.5491 16.3009 6.24498 16.187 5.92819 16.187H3.90074C2.849 16.187 2 15.384 2 14.3893V9.61935C2 8.62462 2.849 7.82164 3.90074 7.82164H5.92819C6.24498 7.82164 6.5491 7.70778 6.78353 7.50404L12.9419 2.15883C13.3474 1.80528 14 2.08093 14 2.60227Z"
+      stroke={stroke}
+      strokeWidth="2"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M16 7C18.6667 9.86341 18.6667 14.1366 16 17"
+      stroke={stroke}
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+    />
+    <path
+      d="M19 4C23 8.51678 23 15.4832 19 20"
+      stroke={stroke}
+      strokeWidth="2"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
 const Icon = ({ name, fill = 'currentColor', stroke = 'currentColor', size }) => {
   return (
     <>
@@ -336,6 +361,7 @@ const Icon = ({ name, fill = 'currentColor', stroke = 'currentColor', size }) =>
       {name === 'login' && <Login size={size} stroke={stroke} />}
       {name === 'avatar-plus' && <AvatarPlus size={size} stroke={stroke} />}
       {name === 'next' && <Next size={size} stroke={stroke} />}
+      {name === 'sound' && <Sound size={size} stroke={stroke} />}
     </>
   );
 };

@@ -30,7 +30,7 @@ const PasswordForm = ({ userId }) => {
       <Input type="hidden" name="id" value={userId} />
       <Input type="password" name="password" icon="password-hide" placeholder="Aktuelles Passwort" required />
       <Input type="password" name="password2" icon="password-hide" placeholder="Neues Passwort" required />
-      <Button size="small" loading={loading}>
+      <Button size="small" loading={loading} icon="arrow-right" variant="green" full>
         Aktualisieren
       </Button>
     </Form>

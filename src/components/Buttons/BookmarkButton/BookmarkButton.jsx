@@ -27,8 +27,8 @@ const BookmarkButton = ({ position = 'left', wordId, points }) => {
     setIsLoading(true);
     try {
       await fetcher('/api/bookmarks', 'PATCH', { wordId });
-      mutate('/api/auth/user');
-      mutate('/api/bookmarks');
+      await mutate('/api/auth/user');
+      await mutate('/api/bookmarks');
     } catch (error) {
       popupOpen('error', `Error ${error.status}`, error.message);
     } finally {
