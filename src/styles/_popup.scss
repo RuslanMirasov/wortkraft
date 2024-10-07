@@ -1,12 +1,3 @@
-$popup_background: var(--white-color);
-$popup_border_radius: 14px;
-$popup_padding: 40px 20px 30px 20px;
-$popup_padding_tablet: 40px 20px 30px 20px;
-$popup_padding_mobil: 30px 20px 30px 20px;
-
-$request_width: 440px;
-$info_width: 340px;
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -55,11 +46,11 @@ $info_width: 340px;
     transform: translate(0px, 20px);
     transition: transform 0.4s, opacity 0.4s, height 0.4s;
     background: var(--white-color);
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
-    max-width: 320px;
+    max-width: 290px;
     overflow: hidden;
-    padding: 40px 20px 30px 20px;
+    padding: 40px 20px 20px 20px;
     z-index: 1;
     svg {
       margin: 0 auto;
@@ -111,18 +102,19 @@ $info_width: 340px;
       }
     }
     &.type-error {
+      max-width: 250px;
       background: var(--error-color);
-      padding: 30px 20px;
+      padding: 30px 20px 22px 20px;
       color: var(--white-color);
       p {
         color: var(--white-color);
       }
-      svg {
-        margin-bottom: -10px;
+      h5 {
+        margin-top: -10px;
       }
       hr {
         background: var(--white-color);
-        opacity: 0.6;
+        opacity: 0.3;
         margin-top: 14px;
       }
       .popup-close {
@@ -132,8 +124,28 @@ $info_width: 340px;
         }
       }
     }
+
+    &.type-select {
+      max-width: 280px;
+      padding: 30px 20px 22px 20px;
+      h5 {
+        margin-top: -10px;
+      }
+      hr {
+        background: var(--text-color);
+        opacity: 0.2;
+        margin-top: 4px;
+      }
+      .popup-close {
+        &::before,
+        &::after {
+          background: var(--white-color);
+        }
+      }
+    }
+
     &.type-confirm {
-      padding: 30px 20px;
+      padding: 30px 20px 24px 20px;
       hr {
         height: 1px;
         margin-top: 14px;
@@ -155,8 +167,8 @@ $info_width: 340px;
   cursor: pointer;
   background: none;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 16px;
+  top: 16px;
   transition: 0.3s;
   transform: rotate(0deg);
   z-index: 3;

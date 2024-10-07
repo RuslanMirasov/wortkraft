@@ -13,8 +13,8 @@ const RegisterForm = () => {
       mutate('/api/auth/user');
       popupOpen(
         'confirm',
-        `Hello ${data.name || 'New User'}`,
-        'Your account has been successfully created, you can start learning now. Have fun 🧐'
+        `Hallo ${data.name || 'Neuer Benutzer'}`,
+        'Ihr Konto ist erstellt! Starten Sie jetzt mit dem Lernen. Viel Spaß! 🎉'
       );
     } catch (error) {
       popupOpen('error', `Error ${error.status}`, error.message, 'registration');
@@ -25,11 +25,10 @@ const RegisterForm = () => {
 
   return (
     <Form onSubmit={handleRegistration}>
-      <Input type="text" name="name" label="Vorname" placeholder="Zum Beispiel Klaus" />
+      <Input type="text" name="name" placeholder="Ihre Vorname" />
       <Input
         type="select"
         name="language"
-        label="Sprache"
         placeholder="Ihre Muttersprache"
         required
         options={{
@@ -43,27 +42,22 @@ const RegisterForm = () => {
           RU: 'Русский',
         }}
       />
-      <Input type="email" name="email" label="Email" placeholder="mail@gmail.com" required />
-      <Input
-        type="password"
-        name="password"
-        label="Password"
-        placeholder="Mindestens 6 Zeichen"
-        icon="password-hide"
-        required
-      />
-      <Fieldset col="1" label="Datenschutzbestimmungen">
+      <Input type="email" name="email" placeholder="E-mail" required />
+      <Input type="password" name="password" placeholder="Passwort" icon="password-hide" required />
+      <Fieldset col="1">
         <Input
           type="checkbox"
           name="agree"
-          label="Wenn Sie auf die Schaltfläche klicken, erklären Sie sich mit den Datenschutzbestimmungen einverstanden."
+          label="Mit Klick auf den Button stimmen Sie den Datenschutzbestimmungen zu"
           value="ok"
           required
           checked
         />
       </Fieldset>
 
-      <Button full>Registrieren</Button>
+      <Button size="small" icon="arrow-right" full variant="green">
+        Registrieren
+      </Button>
     </Form>
   );
 };

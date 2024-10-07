@@ -8,10 +8,10 @@ export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
   const [room, setRoom] = useImmerLocalStorageState('room', { defaultValue: null });
-  const { data } = useSWR('/api/auth/user', fetcher);
+  const { data, isLoading } = useSWR('/api/auth/user', fetcher);
 
   const user = data?.message !== 'Unauthorized' ? data : null;
   const isLogin = !!user;
 
-  return <AuthContext.Provider value={{ user, isLogin, room, setRoom }}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={{ user, isLogin, isLoading, room, setRoom }}>{children}</AuthContext.Provider>;
 };

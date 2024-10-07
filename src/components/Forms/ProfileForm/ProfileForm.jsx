@@ -23,12 +23,10 @@ const ProfileForm = ({ user }) => {
   return (
     <Form onSubmit={handleProfileUpdate}>
       <Input type="hidden" name="id" value={user._id} />
-      <Input type="email" name="email" label="Email" placeholder={user.email} value={user.email} disabled />
-      <Input type="text" name="name" label="Ihre Vorname" placeholder={user.name} value={user.name} required />
+      <Input type="email" name="email" placeholder={user.email} value={user.email} disabled />
       <Input
         type="select"
         name="language"
-        label="Sprache"
         placeholder="Ihre Muttersprache"
         required
         value={user.language}
@@ -43,8 +41,9 @@ const ProfileForm = ({ user }) => {
           RU: 'Русский',
         }}
       />
+      <Input type="text" name="name" placeholder="Ihre Vorname" value={user.name} required />
 
-      <Button size="small" loading={loading} icon="arrow-right" variant="green">
+      <Button size="small" loading={loading} icon="arrow-right" variant="green" full>
         Aktualisieren
       </Button>
     </Form>

@@ -1,7 +1,9 @@
 import Head from 'next/head';
+import { useAuth } from '../../hooks/useAuth';
 import { Header, Main, Footer, Popup, Section, Preloader } from '../../components';
 
-const Layout = ({ loading, error, children }) => {
+const Layout = ({ booksLoading, error, children }) => {
+  const { isLoading: userLoading } = useAuth();
   return (
     <>
       <Head>
@@ -13,7 +15,7 @@ const Layout = ({ loading, error, children }) => {
       </Head>
       <Header />
       <Main>
-        {loading ? (
+        {booksLoading || userLoading ? (
           <Preloader />
         ) : error ? (
           <Section>

@@ -12,14 +12,8 @@
   }
   &:hover {
     svg {
-      color: var(--green-color);
+      color: var(--orange-color);
     }
-  }
-}
-
-.Login {
-  svg {
-    transform: rotate(180deg);
   }
 }
 

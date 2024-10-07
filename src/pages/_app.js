@@ -6,12 +6,12 @@ import { AuthProvider } from '../hooks/useAuth';
 import '@/styles/globals.scss';
 
 export default function App({ Component, pageProps }) {
-  const { data: books, error, isLoading } = useSWR('/api/books', fetcher);
+  const { data: books, error, isLoading: booksLoading } = useSWR('/api/books', fetcher);
 
   return (
     <AuthProvider>
       <PopupProvider>
-        <Layout loading={isLoading} error={error}>
+        <Layout booksLoading={booksLoading} error={error}>
           <Component {...pageProps} books={books} />
         </Layout>
       </PopupProvider>

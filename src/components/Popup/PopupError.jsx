@@ -13,9 +13,9 @@ const PopupError = ({ title, text }) => {
           <hr />
         </Title>
       )}
-      {text && <Text size="small">{text}</Text>}
-      <Button size="small" variant="white" full onClick={popupClose}>
-        Ok
+      {text && <Text>{text}</Text>}
+      <Button variant="white" size="small" icon="arrow-right" full onClick={popupClose}>
+        OK
       </Button>
     </PopupAnimation>
   );

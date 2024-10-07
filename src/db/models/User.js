@@ -8,7 +8,7 @@ const progressSchema = new mongoose.Schema({
 
 const userSchema = new mongoose.Schema({
   status: { type: String, enum: ['free', 'admin', 'pro'], default: 'free' },
-  name: { type: String, default: 'New User' },
+  name: { type: String, default: 'Neuer Benutzer' },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   language: { type: String, default: 'EN' },

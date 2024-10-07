@@ -20,6 +20,7 @@ const Popup = () => {
     'type-login': popupType === 'login',
     'type-registration': popupType === 'registration',
     'type-error': popupType === 'error',
+    'type-select': popupType === 'select',
     'type-confirm': popupType === 'confirm',
     'is-loading': loading,
   };

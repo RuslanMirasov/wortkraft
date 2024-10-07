@@ -6,6 +6,7 @@ const Button = ({ onClick, size, variant, full, disabled, loading, children, ico
     [css.Button]: true,
     [css.Green]: variant === 'green',
     [css.Red]: variant === 'red',
+    [css.White]: variant === 'white',
     [css.Small]: size === 'small',
     [css.Loading]: loading,
     [css.Full]: full,

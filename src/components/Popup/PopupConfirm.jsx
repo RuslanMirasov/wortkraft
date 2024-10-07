@@ -14,8 +14,8 @@ const PopupConfirm = ({ title, text }) => {
           <hr />
         </Title>
       )}
-      {text && <Text size="small">{text}</Text>}
-      <Button full onClick={popupClose}>
+      {text && <Text>{text}</Text>}
+      <Button variant="green" size="small" icon="arrow-right" full onClick={popupClose}>
         Ok
       </Button>
     </PopupAnimation>

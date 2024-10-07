@@ -18,7 +18,7 @@ const LogoutButton = () => {
 
   return (
     <button className={`${css.loginButton} ${css.logout}`} onClick={handleLogout}>
-      <Icon name="login" size="24" />
+      <Icon name="logout" size="24" />
       <span>Abmeldung</span>
     </button>
   );

@@ -1,4 +1,3 @@
-import { Section } from '../../components';
 import css from './Preloader.module.scss';
 
 const Preloader = () => {

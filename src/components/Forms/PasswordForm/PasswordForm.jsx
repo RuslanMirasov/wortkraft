@@ -15,7 +15,7 @@ const PasswordForm = ({ userId }) => {
       mutate('/api/auth/user');
       popupOpen(
         'confirm',
-        'Erfolg!',
+        'Passwort geändert',
         'Das Passwort wurde erfolgreich aktualisiert. Sie können sich jetzt mit dem neuen Passwort anmelden.'
       );
     } catch (error) {
