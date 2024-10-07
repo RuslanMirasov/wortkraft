@@ -16,7 +16,7 @@ const PopupSelect = ({ title, text }) => {
     try {
       await fetcher('/api/user/delete', 'DELETE', { id: user._id });
       await mutate('/api/auth/user', null, false);
-      popupOpen('confirm', 'User deleted!', 'too bad', 'login');
+      popupOpen('confirm', 'User gelöscht', 'Das ist eine Schande', 'login');
     } catch (error) {
       popupOpen('error', `Error ${error.status}`, error.message);
     } finally {
@@ -33,14 +33,16 @@ const PopupSelect = ({ title, text }) => {
         </Title>
       )}
       {text && <Text size="small">{text}</Text>}
-      <ButtonList>
-        <Button variant="red" loading={loading} onClick={handleUserDelete}>
+      <hr />
+      <div style={{ width: '100%' }}>
+        <Button size="small" variant="red" icon="arrow-right" full loading={loading} onClick={handleUserDelete}>
           Ja
         </Button>
-        <Button variant="black" onClick={popupClose}>
+
+        <Button size="small" variant="black" icon="arrow-right" full onClick={popupClose}>
           Nein
         </Button>
-      </ButtonList>
+      </div>
     </PopupAnimation>
   );
 };

@@ -22,6 +22,7 @@ export { default as ImageWrapp } from './ImageWrapp/ImageWrapp';
 export { default as Avatar } from './Avatar/Avatar';
 export { default as Popup } from './Popup/Popup';
 export { default as Button } from './Buttons/Button/Button';
+export { default as SoundButton } from './Buttons/SoundButton/SoundButton';
 export { default as StartButton } from './Buttons/StartButton/StartButton';
 export { default as BookmarkButton } from './Buttons/BookmarkButton/BookmarkButton';
 export { default as GoBack } from './Buttons/GoBack/GoBack';

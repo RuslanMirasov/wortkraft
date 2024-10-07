@@ -54,6 +54,16 @@
   }
 }
 
+.White {
+  background: var(--white-color);
+  color: var(--text-color);
+  &:hover,
+  &:focus {
+    background: var(--text-color);
+    color: var(--white-color);
+  }
+}
+
 .Green {
   background: var(--green-color);
   &:hover,

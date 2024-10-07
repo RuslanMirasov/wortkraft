@@ -1,17 +1,24 @@
+import fetcher from '../../utils/fatcher';
+import useSWR from 'swr';
 import { useAuth } from '../../hooks/useAuth';
-import { Section, PrivatePage, LerningRoom } from '../../components';
+import { Section, PrivatePage, Preloader, LerningRoom } from '../../components';
 import { useState, useEffect } from 'react';
 
-const StatisticPage = () => {
+const RoomPage = () => {
   const { room } = useAuth();
-  const [word, setWord] = useState([]);
-  const [prevIndex, setPrevIndex] = useState(null);
+  const [points, setPoints] = useState(null);
+  const [prevIndex, setPrevIndex] = useState(0);
+  const [wordId, setWordId] = useState(null);
 
-  const getNewWord = () => {
+  const { data: word, isLoading } = useSWR(wordId ? `/api/words/${wordId}` : null, fetcher);
+
+  const getRandomWord = () => {
+    if (!room) return;
     const firstTenWords = room.filter(word => word.points < 5).slice(0, 10);
 
     if (firstTenWords.length === 1) {
-      setWord(firstTenWords[0]);
+      setWordId(firstTenWords[0]._id);
+      setPoints(firstTenWords[0].points);
       return;
     }
 
@@ -22,21 +29,27 @@ const StatisticPage = () => {
     } while (randomIndex === prevIndex);
 
     const randomWord = firstTenWords[randomIndex];
-    setWord(randomWord);
+
+    setWordId(randomWord._id);
+    setPoints(randomWord.points);
     setPrevIndex(randomIndex);
   };
 
   useEffect(() => {
-    getNewWord();
+    getRandomWord();
   }, [room]);
+
+  if (!word || isLoading) return <Preloader />;
+
+  console.log(word);
 
   return (
     <PrivatePage>
       <Section>
-        <LerningRoom word={word} getNewWord={getNewWord} />
+        <LerningRoom word={word} points={points} getRandomWord={getRandomWord} />
       </Section>
     </PrivatePage>
   );
 };
 
-export default StatisticPage;
+export default RoomPage;

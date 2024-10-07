@@ -1,5 +1,5 @@
 $input_height: 50px;
-$input_border_radius: 8px;
+$input_border_radius: 25px;
 $input_font_size: 14px;
 
 .Label {
@@ -17,9 +17,6 @@ $input_font_size: 14px;
   }
   &.open {
     z-index: 5;
-    .Input {
-      border: 1px solid var(--yellow-color);
-    }
     .SelectArrow {
       svg {
         transform: rotate(180deg);
@@ -52,7 +49,7 @@ $input_font_size: 14px;
   position: relative;
   padding: 14px 18px;
   border-radius: $input_border_radius;
-  border: 1px solid #ccc;
+  border: 1px solid var(--grey-color);
   user-select: none;
   transition: 0.3s;
   background: var(--white-color);
@@ -64,7 +61,7 @@ $input_font_size: 14px;
     padding-right: 50px;
   }
   &::placeholder {
-    color: rgb(163, 163, 163);
+    color: var(--grey-color);
     font-size: inherit;
     font-family: var(--light);
     opacity: 1;
@@ -73,7 +70,7 @@ $input_font_size: 14px;
   }
 
   &:focus {
-    border: 1px solid var(--yellow-color);
+    border: 1px solid var(--orange-color);
     &::placeholder {
       opacity: 0;
     }
@@ -131,11 +128,10 @@ div.Input {
   left: -1px;
   right: -1px;
   top: 120%;
-  height: auto;
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid var(--grey-color);
   padding: 10px;
-  border-radius: $input_border_radius;
+  border-radius: 14px;
   transition: 0.3s;
   visibility: hidden;
   opacity: 0;
@@ -148,13 +144,13 @@ div.Input {
     opacity: 1;
     pointer-events: all;
     transform: translate(0px, 0px);
-    border: 1px solid var(--yellow-color);
+    border: 1px solid var(--orange-color);
   }
   ul {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    max-height: 168px;
+    max-height: 130px;
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;

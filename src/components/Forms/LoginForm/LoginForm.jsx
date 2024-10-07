@@ -21,16 +21,11 @@ const LoginForm = () => {
 
   return (
     <Form onSubmit={handleLogin}>
-      <Input type="email" name="email" label="E-mail" placeholder="example@example.com" required />
-      <Input
-        type="password"
-        name="password"
-        label="Password"
-        placeholder="Mindestens 6 Zeichen"
-        icon="password-hide"
-        required
-      />
-      <Button full>Anmelden</Button>
+      <Input type="email" name="email" placeholder="E-mail" required />
+      <Input type="password" name="password" placeholder="Passwort" icon="password-hide" required />
+      <Button size="small" icon="arrow-right" full variant="green">
+        Anmelden
+      </Button>
     </Form>
   );
 };

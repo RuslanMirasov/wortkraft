@@ -29,7 +29,7 @@ const handler = async (req, res) => {
       password,
       language,
       color,
-      name: name || 'New User',
+      name: name || 'Neuer Benutzer',
     });
 
     await user.save();

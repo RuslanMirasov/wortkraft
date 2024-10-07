@@ -15,7 +15,7 @@ const DeleteAccaunt = ({ children }) => {
         )
       }
     >
-      <Icon name="close" size="24" />
+      <Icon name="user" size="24" />
       <span>Account löschen</span>
     </button>
   );
