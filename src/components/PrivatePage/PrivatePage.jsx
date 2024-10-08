@@ -11,15 +11,17 @@ const PrivatePage = ({ children }) => {
     return (
       <Section className={css.PrivatePage}>
         <div className={css.Info}>
-          <Title tag="h1" size="h2">
-            <Icon name="lock" stroke="var(--green-color)" size="60" />
+          <Title tag="h1" size="h1">
+            <Icon name="lock" stroke="var(--green-color)" size="46" />
             Privat
           </Title>
           <Text>
             Sie müssen eingeloggt sein, <br />
             um diese Seite zu sehen
           </Text>
-          <Button onClick={() => popupOpen('login')}>Anmelden</Button>
+          <Button size="small" icon="arrow-right" onClick={() => popupOpen('login')}>
+            Anmelden
+          </Button>
         </div>
       </Section>
     );

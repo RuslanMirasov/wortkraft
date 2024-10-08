@@ -39,6 +39,8 @@ export { default as Preloader } from './Preloader/Preloader';
 export { default as Words } from './Words/Words';
 export { default as StickyBox } from './StickyBox/StickyBox';
 export { default as LerningRoom } from './LerningRoom/LerningRoom';
+export { default as WriteForm } from './LerningRoom/WriteForm';
+export { default as Keyboard } from './LerningRoom/Keyboard';
 export { default as RoomHeader } from './LerningRoom/RoomHeader';
 export { default as WordDescription } from './LerningRoom/WordDescription';
 

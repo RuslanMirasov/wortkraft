@@ -49,7 +49,7 @@
     height: 5px;
     border-radius: 5px;
     background: var(--text-color);
-    transition: 1.6s;
+    transition: 1s;
   }
   &[data-range='0'] {
     &:before {
@@ -115,6 +115,36 @@
   p {
     font-size: 18px;
   }
+  form {
+    width: 100%;
+    [class*='InputText_LabelText'] {
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+    label svg {
+      color: var(--grey-color);
+      width: 24px;
+      height: 24px;
+    }
+    input {
+      height: 58px;
+      border-radius: 58px;
+      font-size: 16px;
+      padding: 10px 60px 10px 24px;
+      &::placeholder {
+        font-size: 20px;
+      }
+      + span {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    button {
+      &:disabled {
+        opacity: 0.2;
+      }
+    }
+  }
 }
 
 .Translation {
@@ -122,4 +152,31 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 16px;
+  p {
+    width: 100%;
+  }
+}
+
+// Keyboard
+
+.Keyboard {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px 0px;
+  button {
+    background: var(--green-color);
+    color: var(--white-color);
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 28px;
+    min-width: 60px;
+    min-height: 60px;
+    transition: 0.3s;
+  }
 }

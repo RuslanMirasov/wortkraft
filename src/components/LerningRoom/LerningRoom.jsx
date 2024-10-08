@@ -1,26 +1,28 @@
 import { useEffect, useState } from 'react';
+
 import { Button, ButtonList, RoomHeader, WordDescription } from '../../components';
 import css from './LerningRoom.module.scss';
 
 const LerningRoom = ({ word, points, getRandomWord }) => {
-  const [result, setResult] = useState('winn');
+  const [result, setResult] = useState('');
   const [point, setPoint] = useState(points);
   const [step, setStep] = useState(points + 1);
   const [substep, setSubstep] = useState(1);
-  const { _id, name } = word;
+  const { _id, name, examples, translates } = word;
 
   useEffect(() => {
     setPoint(points);
     setStep(points + 1);
     setSubstep(1);
-    setResult(null);
-  }, [points]);
+    setResult('');
+  }, [word, points]);
 
   const handleNextStep = () => {
     if (step <= 5) {
       setStep(prev => prev + 1);
       setPoint(prev => prev + 1);
       setSubstep(1);
+      // setResult('winn');
     }
   };
 
@@ -35,58 +37,52 @@ const LerningRoom = ({ word, points, getRandomWord }) => {
   return (
     <div className={css.LerningRoom}>
       <RoomHeader step={step} point={point} />
-      {!result && (
+      {!result ? (
         <>
-          <h1>{substep}</h1>
-          <WordDescription
-            wordId={_id}
-            name={name}
-            translation={step > 1 || substep === 2 ? '' : 'Перевод на русский'}
-          />
-          {substep === 1 && step < 3 && <div>ДИАЛОГ</div>}
-          {(substep === 2 && step < 3) || (substep === 1 && step >= 3 && step < 5) ? (
-            <div>
-              <h3>Выберите перевод</h3>
-              <ul>
-                <li>
-                  <Button icon="arrow-right" full onClick={handleNextStep}>
-                    Перевод 1
-                  </Button>
-                </li>
-                <li>
-                  <Button icon="arrow-right" full onClick={handlePrevStep}>
-                    Перевод 2
-                  </Button>
-                </li>
-                <li>
-                  <Button icon="arrow-right" full onClick={handlePrevStep}>
-                    Перевод 3
-                  </Button>
-                </li>
-                <li>
-                  <Button icon="arrow-right" full onClick={handlePrevStep}>
-                    Перевод 4
-                  </Button>
-                </li>
-              </ul>
-            </div>
-          ) : null}
+          <WordDescription wordId={_id} name={name} translates={translates} step={step} substep={substep} />
 
-          {substep === 1 && (
-            <Button icon="arrow-right" onClick={() => setSubstep(2)} full>
-              Weiter gehen
-            </Button>
-          )}
+          {/* {substep === 1 && step < 3 && <div>ДИАЛОГ</div>} */}
 
+          {/* <div>
+            <h3>Выберите перевод</h3>
+            <ul>
+              <li>
+                <Button icon="arrow-right" full onClick={handleNextStep}>
+                  Перевод 1
+                </Button>
+              </li>
+              <li>
+                <Button icon="arrow-right" full onClick={handlePrevStep}>
+                  Перевод 2
+                </Button>
+              </li>
+              <li>
+                <Button icon="arrow-right" full onClick={handlePrevStep}>
+                  Перевод 3
+                </Button>
+              </li>
+              <li>
+                <Button icon="arrow-right" full onClick={handlePrevStep}>
+                  Перевод 4
+                </Button>
+              </li>
+            </ul>
+          </div> */}
+
+          <Button icon="arrow-right" onClick={() => setSubstep(2)} full>
+            Step = {step} (sub = {substep})
+          </Button>
+          <Button icon="arrow-right" onClick={getRandomWord} full>
+            Next word
+          </Button>
           <ButtonList>
             <Button onClick={handlePrevStep}>-</Button>
             <Button onClick={handleNextStep}>+</Button>
           </ButtonList>
         </>
-      )}
-      {result && (
+      ) : (
         <Button icon="arrow-right" onClick={getRandomWord} full>
-          Weiter gehen
+          You winn / loose
         </Button>
       )}
     </div>
