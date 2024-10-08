@@ -41,8 +41,6 @@ const RoomPage = () => {
 
   if (!word || isLoading) return <Preloader />;
 
-  console.log(word);
-
   return (
     <PrivatePage>
       <Section>

@@ -285,8 +285,8 @@ const Login = ({ size = 24, stroke }) => (
       d="M14 10C13.4477 10 13 10.4477 13 11C13 11.5523 13.4477 12 14 12C14.5523 12 15 11.5523 15 11C15 10.4477 14.5523 10 14 10Z"
       fill={stroke}
     />
-    <path d="M4.35303 10L6.70597 12.375L4.35303 14.75" stroke={stroke} strokeLinejoin="round" />
-    <path d="M2.00017 12.375H6.70605" stroke={stroke} strokeMiterlimit="10" />
+    <path d="M3.35303 10L5.70597 12.375L3.35303 14.75" stroke={stroke} strokeLinejoin="round" />
+    <path d="M1.00017 12.375H5.70605" stroke={stroke} strokeMiterlimit="10" />
   </svg>
 );
 
@@ -362,11 +362,24 @@ const User = ({ size = 20, stroke }) => (
   </svg>
 );
 
+const Pencil = ({ size = 20, stroke }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.8617 4.48667L18.5492 2.79917C19.2814 2.06694 20.4686 2.06694 21.2008 2.79917C21.9331 3.53141 21.9331 4.71859 21.2008 5.45083L10.5822 16.0695C10.0535 16.5981 9.40144 16.9868 8.68489 17.2002L6 18L6.79978 15.3151C7.01323 14.5986 7.40185 13.9465 7.93052 13.4178L16.8617 4.48667ZM16.8617 4.48667L19.5 7.12499M18 14V18.75C18 19.9926 16.9926 21 15.75 21H5.25C4.00736 21 3 19.9926 3 18.75V8.24999C3 7.00735 4.00736 5.99999 5.25 5.99999H10"
+      stroke={stroke}
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 const Icon = ({ name, fill = 'currentColor', stroke = 'currentColor', size }) => {
   return (
     <>
       {name === 'logo' && <Logo size={size} fill={fill} stroke={stroke} />}
       {name === 'user' && <User size={size} fill={fill} stroke={stroke} />}
+      {name === 'pencil' && <Pencil size={size} stroke={stroke} />}
       {name === 'home' && <Home size={size} stroke={stroke} />}
       {name === 'search' && <Search size={size} stroke={stroke} />}
       {name === 'bookmark' && <Bookmark size={size} stroke={stroke} fill={fill} />}

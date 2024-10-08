@@ -32,7 +32,10 @@ const InputText = ({ type, icon, name, value, label, required, placeholder, min,
           onChange={onChange}
         />
         {icon && (
-          <span className={css.InputIcon} onClick={handleIconClick}>
+          <span
+            className={css.InputIcon}
+            onClick={name === 'password' || name === 'password2' ? handleIconClick : null}
+          >
             <Icon name={iconName} />
           </span>
         )}

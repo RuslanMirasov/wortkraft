@@ -9,14 +9,16 @@ const PageNotFound = () => {
     <Section className={css.PageNotFound}>
       <div className={css.Info}>
         <Title tag="h1" size="h1">
-          404
+          4<Icon name="search" stroke="var(--grey-color)" size="50" />4
         </Title>
-        <Text>
+        <Text size="small">
           Leider wurde nichts zu Ihrer Anfrage <br />
           gefunden, die Seite wurde wahrscheinlich verschoben oder gelöscht.
         </Text>
         <Link href="/">
-          <Button>Zurück zu Startseite</Button>
+          <Button size="small" icon="arrow-right">
+            Zurück zu Startseite
+          </Button>
         </Link>
       </div>
     </Section>
