@@ -15,7 +15,6 @@ const WordDescription = ({ wordId, name, translates, step, substep }) => {
   let showForm = false;
 
   if (step === 1) {
-    showForm = true;
     currentTranslete = transletesVariants[0].name;
     if (substep === 2) {
       currentTranslete = '';
