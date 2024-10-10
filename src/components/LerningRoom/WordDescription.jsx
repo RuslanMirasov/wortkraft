@@ -1,13 +1,19 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useAuth } from '../../hooks/useAuth';
 import addWordStyles from '../../utils/addWordStyles';
 import { BookmarkButton, GoBack, SoundButton, WriteForm } from '../../components';
 import css from './LerningRoom.module.scss';
 
-const WordDescription = ({ wordId, name, translates, step, substep }) => {
+const WordDescription = ({ wordId, name, translates, step, substep, setResult }) => {
   const { user } = useAuth();
+  const [currentTransleteName, setCurrentTransleteName] = useState('');
   const titleRef = useRef(null);
-  const transletesVariants = translates.find(item => item.language === user.language).translation;
+
+  useEffect(() => {
+    const transletesVariants = translates.find(item => item.language === user.language).translation;
+    const transleteName = transletesVariants.find(item => item.status === true).name;
+    setCurrentTransleteName(transleteName);
+  }, [translates]);
 
   let currentName = name;
   let currentTranslete = '';
@@ -15,7 +21,7 @@ const WordDescription = ({ wordId, name, translates, step, substep }) => {
   let showForm = false;
 
   if (step === 1) {
-    currentTranslete = transletesVariants[0].name;
+    currentTranslete = currentTransleteName;
     if (substep === 2) {
       currentTranslete = '';
       showSoundButton = false;
@@ -27,19 +33,19 @@ const WordDescription = ({ wordId, name, translates, step, substep }) => {
   } else if (step === 3) {
     showSoundButton = false;
     if (substep === 2) {
-      currentName = transletesVariants[0].name;
+      currentName = currentTransleteName;
       showForm = true;
     }
   } else if (step === 4) {
     showSoundButton = false;
     if (substep === 2) {
       showForm = true;
-      currentName = transletesVariants[0].name;
+      currentName = currentTransleteName;
     }
   } else if (step === 5) {
     showForm = true;
     showSoundButton = false;
-    currentName = transletesVariants[0].name;
+    currentName = currentTransleteName;
   }
 
   useEffect(() => {
@@ -56,7 +62,7 @@ const WordDescription = ({ wordId, name, translates, step, substep }) => {
         <h1 ref={titleRef}>{currentName}</h1>
         {currentTranslete && <p>{currentTranslete}</p>}
         {showSoundButton && <SoundButton name={name} />}
-        {showForm && <WriteForm name={name} />}
+        {showForm && <WriteForm name={name} setResult={setResult} step={step} />}
       </div>
     </div>
   );

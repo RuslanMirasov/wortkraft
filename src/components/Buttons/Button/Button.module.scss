@@ -25,6 +25,7 @@
     font-family: var(--regular);
     font-size: 24px;
     line-height: 1;
+    pointer-events: none;
   }
   &:disabled {
     opacity: 0.5;
@@ -60,6 +61,16 @@
   &:hover,
   &:focus {
     background: var(--text-color);
+    color: var(--white-color);
+  }
+}
+
+.Orange {
+  background: var(--orange-color);
+  color: var(--white-color);
+  &:hover,
+  &:focus {
+    background: var(--green-color);
     color: var(--white-color);
   }
 }

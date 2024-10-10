@@ -2,8 +2,10 @@ import mongoose, { Schema } from 'mongoose';
 import bcrypt from 'bcrypt';
 
 const progressSchema = new mongoose.Schema({
-  word_id: { type: Schema.Types.ObjectId, required: false },
-  points: { type: Number, min: 1, max: 5, required: false },
+  id: { type: String, required: true },
+  book: { type: String, required: true },
+  theme: { type: String, required: true },
+  points: { type: Number, min: 1, max: 5, required: true },
 });
 
 const userSchema = new mongoose.Schema({

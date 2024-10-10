@@ -1,28 +1,39 @@
 import { useEffect, useState } from 'react';
-
-import { Button, ButtonList, RoomHeader, WordDescription } from '../../components';
+import { useAuth } from '../../hooks/useAuth';
+import fetcher from '../../utils/fatcher';
+import { mutate } from 'swr';
+import { usePopup } from '../../hooks/usePopup';
+import { Title, Button, RoomHeader, WordDescription, Dialog, Quiz } from '../../components';
 import css from './LerningRoom.module.scss';
 
-const LerningRoom = ({ word, points, getRandomWord }) => {
+const LerningRoom = ({ word, getRandomWord }) => {
+  const { setRoom } = useAuth();
+  const { popupOpen } = usePopup();
+  const [loading, setLoading] = useState(false);
   const [result, setResult] = useState('');
-  const [point, setPoint] = useState(points);
-  const [step, setStep] = useState(points + 1);
+  const [point, setPoint] = useState(null);
+  const [step, setStep] = useState(null);
   const [substep, setSubstep] = useState(1);
   const { _id, name, examples, translates } = word;
 
   useEffect(() => {
-    setPoint(points);
-    setStep(points + 1);
-    setSubstep(1);
-    setResult('');
-  }, [word, points]);
+    if (result === 'win') {
+      handleNextStep();
+    } else if (result === 'loss') {
+      handlePrevStep();
+    }
+  }, [result]);
+
+  useEffect(() => {
+    setPoint(word.points);
+    setStep(word.points + 1);
+  }, [word]);
 
   const handleNextStep = () => {
     if (step <= 5) {
       setStep(prev => prev + 1);
       setPoint(prev => prev + 1);
       setSubstep(1);
-      // setResult('winn');
     }
   };
 
@@ -34,56 +45,78 @@ const LerningRoom = ({ word, points, getRandomWord }) => {
     }
   };
 
+  const handleSubmitProgress = async () => {
+    setLoading(true);
+
+    const data = {
+      id: word._id,
+      book: word.book,
+      theme: word.theme,
+      points: point,
+    };
+
+    try {
+      await fetcher('/api/user/progress', 'PATCH', data);
+      await mutate('/api/auth/user');
+    } catch (error) {
+      popupOpen('error', `Error ${error.status}`, error.message);
+    } finally {
+      if (point === 5) {
+        setRoom(prevRoom => prevRoom.filter(item => item._id !== _id));
+      } else {
+        setRoom(prevRoom => prevRoom.map(item => (item._id === _id ? { ...item, points: point } : item)));
+      }
+
+      setResult('');
+      setLoading(false);
+      getRandomWord();
+    }
+  };
+
   return (
     <div className={css.LerningRoom}>
       <RoomHeader step={step} point={point} />
       {!result ? (
         <>
-          <WordDescription wordId={_id} name={name} translates={translates} step={step} substep={substep} />
+          <WordDescription
+            wordId={_id}
+            name={name}
+            translates={translates}
+            step={step}
+            substep={substep}
+            setResult={setResult}
+          />
 
-          {/* {substep === 1 && step < 3 && <div>ДИАЛОГ</div>} */}
+          {substep === 1 && step < 3 && <Dialog examples={examples} />}
 
-          {/* <div>
-            <h3>Выберите перевод</h3>
-            <ul>
-              <li>
-                <Button icon="arrow-right" full onClick={handleNextStep}>
-                  Перевод 1
-                </Button>
-              </li>
-              <li>
-                <Button icon="arrow-right" full onClick={handlePrevStep}>
-                  Перевод 2
-                </Button>
-              </li>
-              <li>
-                <Button icon="arrow-right" full onClick={handlePrevStep}>
-                  Перевод 3
-                </Button>
-              </li>
-              <li>
-                <Button icon="arrow-right" full onClick={handlePrevStep}>
-                  Перевод 4
-                </Button>
-              </li>
-            </ul>
-          </div> */}
+          {(substep === 2 && step < 3) || (substep === 1 && step >= 3 && step < 5) ? (
+            <Quiz translates={translates} setResult={setResult} step={step} setSubstep={setSubstep} />
+          ) : null}
 
-          <Button icon="arrow-right" onClick={() => setSubstep(2)} full>
-            Step = {step} (sub = {substep})
-          </Button>
-          <Button icon="arrow-right" onClick={getRandomWord} full>
-            Next word
-          </Button>
-          <ButtonList>
-            <Button onClick={handlePrevStep}>-</Button>
-            <Button onClick={handleNextStep}>+</Button>
-          </ButtonList>
+          {substep === 1 && step < 3 && (
+            <>
+              <Button icon="arrow-right" onClick={() => setSubstep(2)} full>
+                Weiter gehen
+              </Button>
+            </>
+          )}
         </>
       ) : (
-        <Button icon="arrow-right" onClick={getRandomWord} full>
-          You winn / loose
-        </Button>
+        <>
+          {result === 'win' && (
+            <Title tag="h1" size="h1">
+              You Win! ({point})
+            </Title>
+          )}
+          {result === 'loss' && (
+            <Title tag="h1" size="h1">
+              LOSSER! ({point})
+            </Title>
+          )}
+          <Button icon="arrow-right" onClick={handleSubmitProgress} full loading={loading}>
+            Weiter gehen
+          </Button>
+        </>
       )}
     </div>
   );

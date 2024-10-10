@@ -165,6 +165,9 @@
         opacity: 0.2;
       }
     }
+    > button {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -188,7 +191,7 @@
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  margin: 20px 0px;
+  margin-top: 20px;
   li {
     width: calc((100% - 16px) / 5);
     button {
@@ -218,5 +221,92 @@
         padding-top: 100%;
       }
     }
+  }
+}
+
+//--------------------------Dialog
+
+.Dialog {
+  display: block;
+  width: 100%;
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.DialogItem {
+  display: block;
+  position: relative;
+  width: calc(100% - 54px);
+  border-radius: 10px 10px 0px 10px;
+
+  font-size: 16px;
+  background: var(--green-light-color);
+  padding: 16px 24px;
+  margin-bottom: 30px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: inherit;
+    bottom: 0px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    border-width: 14px;
+    border-style: solid;
+  }
+
+  &[data-index='0'] {
+    margin-left: 54px;
+    background: var(--grey-light-color);
+    border-radius: 10px 10px 10px 0px;
+    &:before {
+      right: 100%;
+      margin-right: 14px;
+    }
+    &:after {
+      left: 0%;
+      margin-left: -12px;
+      border-color: transparent transparent var(--grey-light-color) transparent;
+    }
+  }
+  &[data-index='1'] {
+    &:before {
+      left: 100%;
+      margin-left: 14px;
+    }
+    &:after {
+      right: 0%;
+      margin-right: -12px;
+      border-color: transparent transparent var(--green-light-color) transparent;
+    }
+  }
+}
+
+//--------------------------Quize
+
+.Quize {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.QuizeList {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  li {
+    width: 100%;
   }
 }

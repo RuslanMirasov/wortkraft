@@ -17,7 +17,6 @@ const addWordStyles = (element, minFontSize = 24, initialFontSize = 38, defaultF
   while (element.scrollWidth > parent.clientWidth && fontSize > minFontSize) {
     fontSize--;
     element.style.fontSize = `${fontSize}px`;
-    console.log(`Reducing font size: ${fontSize}`);
   }
 
   const text = element.innerText.toLowerCase().trim();
