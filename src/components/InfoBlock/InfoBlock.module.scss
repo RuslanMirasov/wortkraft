@@ -1,0 +1,16 @@
+.InfoBlock {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  margin: 20px 0px;
+  text-align: center;
+  button,
+  a {
+    margin-top: 10px;
+  }
+}

@@ -2,12 +2,13 @@ import { Button, Section, InfoBlock } from '../components';
 import css from '../components/PageNotFound/PageNotFound.module.scss';
 import Link from 'next/link';
 
-const NotFoundPage = () => {
+const ServerErrorPage = () => {
   return (
     <Section className={css.PageNotFound}>
       <InfoBlock
-        name="404"
-        subtitle={`Leider wurde nichts zu Ihrer Anfrage\n gefunden, die Seite wurde wahrscheinlich verschoben oder gelöscht.`}
+        name="500"
+        title="Es tut uns leid"
+        subtitle={`Es besteht keine Verbindung zum Server.\n Bitte versuchen Sie es später erneut.`}
       >
         <Link href="/">
           <Button size="small" full icon="arrow-right">
@@ -19,4 +20,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default ServerErrorPage;

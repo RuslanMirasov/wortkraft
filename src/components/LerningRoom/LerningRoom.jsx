@@ -3,7 +3,7 @@ import { useAuth } from '../../hooks/useAuth';
 import fetcher from '../../utils/fatcher';
 import { mutate } from 'swr';
 import { usePopup } from '../../hooks/usePopup';
-import { Title, Button, RoomHeader, WordDescription, Dialog, Quiz } from '../../components';
+import { Title, Button, RoomHeader, WordDescription, Dialog, Quiz, InfoBlock } from '../../components';
 import css from './LerningRoom.module.scss';
 
 const LerningRoom = ({ word, getRandomWord }) => {
@@ -104,18 +104,24 @@ const LerningRoom = ({ word, getRandomWord }) => {
       ) : (
         <>
           {result === 'win' && (
-            <Title tag="h1" size="h1">
-              You Win! ({point})
-            </Title>
+            <InfoBlock name="win" title="Erfolg!" subtitle="Gut gemacht, mach weiter so!" color="var(--green-color)">
+              <Button icon="arrow-right" onClick={handleSubmitProgress} full loading={loading}>
+                Weiter gehen
+              </Button>
+            </InfoBlock>
           )}
           {result === 'loss' && (
-            <Title tag="h1" size="h1">
-              LOSSER! ({point})
-            </Title>
+            <InfoBlock
+              name="loss"
+              title="Ach, Mist"
+              subtitle={'Keine Sorge, beim nächsten Mal\n schaffst du es bestimmt!'}
+              color="var(--invalid-color)"
+            >
+              <Button icon="arrow-right" onClick={handleSubmitProgress} full loading={loading}>
+                Weiter gehen
+              </Button>
+            </InfoBlock>
           )}
-          <Button icon="arrow-right" onClick={handleSubmitProgress} full loading={loading}>
-            Weiter gehen
-          </Button>
         </>
       )}
     </div>

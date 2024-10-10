@@ -229,29 +229,30 @@
 .Dialog {
   display: block;
   width: 100%;
-  h2 {
-    margin-bottom: 20px;
-  }
+  padding: 30px 20px 20px 20px;
+  background: var(--grey-light-color);
+  border-radius: 30px;
+  margin-top: -20px;
 }
 
 .DialogItem {
   display: block;
   position: relative;
-  width: calc(100% - 54px);
-  border-radius: 10px 10px 0px 10px;
-
+  width: calc(100% - 74px);
+  border-radius: 20px 20px 0px 20px;
   font-size: 16px;
   background: var(--green-light-color);
-  padding: 16px 24px;
-  margin-bottom: 30px;
-  &:before {
-    content: '';
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  svg {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 40px;
     background: inherit;
     bottom: 0px;
+    background-color: var(--green-light-color);
   }
   &:after {
     content: '';
@@ -263,22 +264,23 @@
 
   &[data-index='0'] {
     margin-left: 54px;
-    background: var(--grey-light-color);
-    border-radius: 10px 10px 10px 0px;
-    &:before {
+    background: var(--white-color);
+    border-radius: 20px 20px 20px 0px;
+    svg {
       right: 100%;
-      margin-right: 14px;
+      margin-right: 20px;
+      background: var(--orange-color);
     }
     &:after {
       left: 0%;
       margin-left: -12px;
-      border-color: transparent transparent var(--grey-light-color) transparent;
+      border-color: transparent transparent var(--white-color) transparent;
     }
   }
   &[data-index='1'] {
-    &:before {
+    svg {
       left: 100%;
-      margin-left: 14px;
+      margin-left: 20px;
     }
     &:after {
       right: 0%;
