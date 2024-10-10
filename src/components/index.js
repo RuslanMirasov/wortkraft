@@ -45,6 +45,7 @@ export { default as RoomHeader } from './LerningRoom/RoomHeader';
 export { default as WordDescription } from './LerningRoom/WordDescription';
 export { default as Dialog } from './LerningRoom/Dialog';
 export { default as Quiz } from './LerningRoom/Quiz';
+export { default as InfoBlock } from './InfoBlock/InfoBlock';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';
