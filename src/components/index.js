@@ -43,6 +43,8 @@ export { default as WriteForm } from './LerningRoom/WriteForm';
 export { default as Keyboard } from './LerningRoom/Keyboard';
 export { default as RoomHeader } from './LerningRoom/RoomHeader';
 export { default as WordDescription } from './LerningRoom/WordDescription';
+export { default as Dialog } from './LerningRoom/Dialog';
+export { default as Quiz } from './LerningRoom/Quiz';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';

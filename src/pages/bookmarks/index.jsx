@@ -1,4 +1,5 @@
 import fetcher from '../../utils/fatcher';
+import getWordsWithProgress from '../../utils/getWordsWithProgress';
 import useSWR from 'swr';
 import { useAuth } from '../../hooks/useAuth';
 import {
@@ -19,7 +20,7 @@ const BookmarksPage = () => {
   const { data: bookmarks = [], isLoading } = useSWR(user ? `/api/bookmarks` : null, fetcher);
   if (!bookmarks || isLoading) return <Preloader />;
 
-  const learnt = user ? user.progress.filter(wort => wort.points === 5) : [];
+  const learnt = user ? user.progress.filter(word => word.points === 5) : [];
   const learntBookmarks = learnt.filter(word => bookmarks.some(bookmark => bookmark._id === word.id));
 
   const heroContent = {
@@ -29,12 +30,7 @@ const BookmarksPage = () => {
     learnt: learntBookmarks.length,
   };
 
-  const wordsWithProgress = bookmarks
-    .map(word => {
-      const userProgress = user ? user.progress.find(progress => progress.id === word._id) : null;
-      return userProgress ? { ...word, points: userProgress.points } : { ...word, points: 0 };
-    })
-    .sort((a, b) => b.points - a.points);
+  const wordsWithProgress = getWordsWithProgress(user, bookmarks);
 
   return (
     <PrivatePage>
@@ -43,7 +39,7 @@ const BookmarksPage = () => {
         {bookmarks.length > 0 ? (
           <>
             <StickyBox>
-              <StartButton words={wordsWithProgress}>Starten Sie</StartButton>
+              <StartButton>Starten Sie</StartButton>
             </StickyBox>
             <TitleBox margin={20}>
               <Title tag="h2" size="h2">

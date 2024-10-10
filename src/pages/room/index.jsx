@@ -6,19 +6,28 @@ import { useState, useEffect } from 'react';
 
 const RoomPage = () => {
   const { room } = useAuth();
-  const [points, setPoints] = useState(null);
-  const [prevIndex, setPrevIndex] = useState(0);
-  const [wordId, setWordId] = useState(null);
+  const [isEmpty, setIsEmpty] = useState(false);
+  const [prevIndex, setPrevIndex] = useState(null);
+  const [randomWordId, setRandomWordId] = useState(null);
+  const [randomWordPoints, setRandomWordPoints] = useState(null);
 
-  const { data: word, isLoading } = useSWR(wordId ? `/api/words/${wordId}` : null, fetcher);
+  useEffect(() => {
+    if (room && room.length > 0) {
+      getRandomWord();
+    } else {
+      setIsEmpty(true);
+    }
+  }, [room]);
 
   const getRandomWord = () => {
     if (!room) return;
+
     const firstTenWords = room.filter(word => word.points < 5).slice(0, 10);
 
     if (firstTenWords.length === 1) {
-      setWordId(firstTenWords[0]._id);
-      setPoints(firstTenWords[0].points);
+      setPrevIndex(null);
+      setRandomWordId(firstTenWords[0]._id);
+      setRandomWordPoints(firstTenWords[0].points);
       return;
     }
 
@@ -28,24 +37,27 @@ const RoomPage = () => {
       randomIndex = Math.floor(Math.random() * firstTenWords.length);
     } while (randomIndex === prevIndex);
 
-    const randomWord = firstTenWords[randomIndex];
-
-    setWordId(randomWord._id);
-    setPoints(randomWord.points);
     setPrevIndex(randomIndex);
+    setRandomWordId(firstTenWords[randomIndex]._id);
+    setRandomWordPoints(firstTenWords[randomIndex].points);
   };
 
-  useEffect(() => {
-    getRandomWord();
-  }, [room]);
+  const { data, isLoading } = useSWR(randomWordId ? `/api/words/${randomWordId}` : null, fetcher);
+  if (isLoading) return <Preloader />;
 
-  if (!word || isLoading) return <Preloader />;
+  if (isEmpty || !data) {
+    return (
+      <Section>
+        <p>Пусто</p>
+      </Section>
+    );
+  }
+
+  const randomWord = { ...data, points: randomWordPoints };
 
   return (
     <PrivatePage>
-      <Section>
-        <LerningRoom word={word} points={points} getRandomWord={getRandomWord} />
-      </Section>
+      <Section>{!isEmpty ? <LerningRoom word={randomWord} getRandomWord={getRandomWord} /> : <p>Пусто</p>}</Section>
     </PrivatePage>
   );
 };

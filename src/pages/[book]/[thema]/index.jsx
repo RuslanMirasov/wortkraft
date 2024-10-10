@@ -1,7 +1,9 @@
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import fetcher from '../../../utils/fatcher';
+import getWordsWithProgress from '../../../utils/getWordsWithProgress';
 import { useAuth } from '../../../hooks/useAuth';
+
 import { Hero, Section, TitleBox, Title, Preloader, Words, StartButton, StickyBox } from '../../../components';
 
 const ThemaPage = ({ books }) => {
@@ -26,12 +28,7 @@ const ThemaPage = ({ books }) => {
     learnt: alreadyLearnt.length,
   };
 
-  const wordsWithProgress = words
-    .map(word => {
-      const userProgress = user ? user.progress.find(progress => progress.id === word._id) : null;
-      return userProgress ? { ...word, points: userProgress.points } : { ...word, points: 0 };
-    })
-    .sort((a, b) => b.points - a.points);
+  const wordsWithProgress = getWordsWithProgress(user, words);
 
   return (
     <Section>
@@ -39,7 +36,7 @@ const ThemaPage = ({ books }) => {
       {words.length > 0 ? (
         <>
           <StickyBox>
-            <StartButton words={wordsWithProgress}>Starten Sie</StartButton>
+            <StartButton>Starten Sie</StartButton>
           </StickyBox>
           <TitleBox margin={20}>
             <Title tag="h2" size="h2">
