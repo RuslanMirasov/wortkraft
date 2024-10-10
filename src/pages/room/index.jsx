@@ -5,7 +5,7 @@ import { Section, PrivatePage, Preloader, LerningRoom } from '../../components';
 import { useState, useEffect } from 'react';
 
 const RoomPage = () => {
-  const { room } = useAuth();
+  const { room, setRoom } = useAuth();
   const [isEmpty, setIsEmpty] = useState(false);
   const [prevIndex, setPrevIndex] = useState(null);
   const [randomWordId, setRandomWordId] = useState(null);
@@ -13,7 +13,13 @@ const RoomPage = () => {
 
   useEffect(() => {
     if (room && room.length > 0) {
-      getRandomWord();
+      const wordsWithLowPoints = room.filter(word => word.points < 5);
+
+      if (wordsWithLowPoints.length > 0) {
+        getRandomWord();
+      } else {
+        setIsEmpty(true);
+      }
     } else {
       setIsEmpty(true);
     }
