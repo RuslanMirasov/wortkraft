@@ -56,6 +56,7 @@ export { default as Fieldset } from './Forms/Fieldset/Fieldset';
 export { default as AvatarForm } from './Forms/AvatarForm/AvatarForm';
 export { default as PasswordForm } from './Forms/PasswordForm/PasswordForm';
 export { default as ProfileForm } from './Forms/ProfileForm/ProfileForm';
+export { default as SearchForm } from './Forms/SearchForm/SearchForm';
 
 // Input types
 export { default as InputText } from './Forms/InputTypes/InputText/InputText';

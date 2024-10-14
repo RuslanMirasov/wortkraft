@@ -8,7 +8,11 @@ const SoundButton = ({ name }) => {
   useEffect(() => {
     const loadVoices = () => {
       const availableVoices = window.speechSynthesis.getVoices();
-      setVoices(availableVoices);
+      if (availableVoices.length) {
+        setVoices(availableVoices);
+      } else {
+        setTimeout(() => setVoices(window.speechSynthesis.getVoices()), 1000);
+      }
     };
 
     if (window.speechSynthesis.onvoiceschanged !== undefined) {
@@ -19,15 +23,34 @@ const SoundButton = ({ name }) => {
   }, []);
 
   const speakText = text => {
+    if (!voices.length) {
+      return;
+    }
     const selectedVoice = voices.find(voice => voice.lang.startsWith('de')) || voices[0];
+    if (!selectedVoice) {
+      return;
+    }
+    console.log(text);
     const utterance = new SpeechSynthesisUtterance(text);
+
     utterance.voice = selectedVoice;
     utterance.lang = selectedVoice.lang;
 
-    utterance.onstart = () => setIsSpeaking(true);
-    utterance.onend = () => setIsSpeaking(false);
+    utterance.onstart = () => {
+      setIsSpeaking(true);
+    };
 
-    window.speechSynthesis.speak(utterance);
+    utterance.onend = () => {
+      setIsSpeaking(false);
+    };
+
+    utterance.onerror = event => {
+      setIsSpeaking(false);
+    };
+
+    setTimeout(() => {
+      window.speechSynthesis.speak(utterance);
+    }, 10);
   };
 
   const handleSpeak = () => {
