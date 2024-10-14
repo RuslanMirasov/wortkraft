@@ -6,53 +6,82 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  max-width: 200px;
   margin: 0 auto;
-  margin-top: -20px;
-  border-radius: 400px;
+  margin-top: -30px;
+  border-radius: 0px;
+
+  // svg {
+  //   z-index: 1;
+  //   bottom: -15px;
+  //   border-radius: 50px;
+  //   box-shadow: -0px -0px 20px -6px rgba(0, 0, 0, 1);
+  // }
+}
+
+.AvatarHead {
+  width: 100%;
+  height: 100px;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.AvatarBody {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 200px;
+  background: var(--hr-color);
+  margin: 0 auto;
+  margin-top: -80px;
+  border-radius: 60px;
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-left: -16px;
+    margin-top: -18px;
+  }
+  form {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    overflow: hidden;
+    z-index: 2;
+    label {
+      position: absolute;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+    }
+    input {
+      display: none;
+    }
+  }
+  [class*='Avatar_Avatar__'] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    > div {
+      background: var(--grey-light-color) !important;
+      color: var(--text-color);
+      font-size: 80px;
+    }
+  }
   &:before {
     content: '';
     display: block;
     width: 100%;
     padding-top: 100%;
   }
-  * {
-    display: block;
-    position: absolute;
-  }
-  form {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
-    overflow: hidden;
-    z-index: 2;
-    label {
-      cursor: pointer;
-      width: 100%;
-      height: 100%;
-      left: 0px;
-      top: 0px;
-      border-radius: 0px;
-    }
-    input {
-      display: none;
-    }
-  }
-  div {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    left: 0px;
-    top: 0px;
-    font-size: 100px;
-  }
-  svg {
-    z-index: 1;
-    bottom: -15px;
-    border-radius: 50px;
-    box-shadow: -0px -0px 20px -6px rgba(0, 0, 0, 1);
-  }
+}
+
+.Loading {
+  border-radius: 60px;
 }

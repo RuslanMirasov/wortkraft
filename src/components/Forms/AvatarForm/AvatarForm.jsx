@@ -3,7 +3,7 @@ import imageCompression from 'browser-image-compression';
 import cropImageToSquare from '../../../utils/cropImageToSquare';
 import { useState } from 'react';
 import { mutate } from 'swr';
-import { Form, Avatar, Icon, Input } from '../../../components';
+import { Form, Icon, Avatar, Input } from '../../../components';
 import { usePopup } from '../../../hooks/usePopup';
 import css from './AvatarForm.module.scss';
 
@@ -41,12 +41,15 @@ const AvatarForm = ({ user }) => {
 
   return (
     <div className={css.AvatarForm}>
-      <Avatar avatar={avatar} color={color} email={email} />
-      <Form>
-        <Input type="file" name="avatar" onChange={handleFileChange} />
-      </Form>
-      {loading && <div className="loading"></div>}
-      <Icon name="avatar-plus" stroke={color} />
+      <div className={css.AvatarHead} style={{ background: color }}></div>
+      <div className={`${css.AvatarBody}`}>
+        <Avatar avatar={avatar} color={color} email={email} />
+        <Form>
+          <Input type="file" name="avatar" onChange={handleFileChange} />
+        </Form>
+        <Icon name="avatar-plus" />
+        {loading && <div className={`${css.Loading} loading`}></div>}
+      </div>
     </div>
   );
 };

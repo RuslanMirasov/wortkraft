@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useAuth } from '../../../hooks/useAuth';
-import { Icon, Avatar, LoginButton } from '../../../components';
+import { Avatar, LoginButton } from '../../../components';
 import css from './ProfileLink.module.scss';
 
 const ProfileLink = () => {
