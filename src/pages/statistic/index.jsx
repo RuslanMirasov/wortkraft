@@ -1,13 +1,14 @@
 import { useAuth } from '../../hooks/useAuth';
-import { Section, PrivatePage, Hero } from '../../components';
+import { Section, PrivatePage, Hero, StatisticTable } from '../../components';
 
-const StatisticPage = () => {
+const StatisticPage = ({ books }) => {
   const { user } = useAuth();
 
   return (
     <PrivatePage>
       <Section>
-        <Hero content={{ name: 'Meine Statistik', color: user?.color }} />
+        <Hero content={{ name: 'Statistik', color: user?.color }} />
+        <StatisticTable progress={user?.progress} books={books} />
       </Section>
     </PrivatePage>
   );

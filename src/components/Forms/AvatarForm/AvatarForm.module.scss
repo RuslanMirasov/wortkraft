@@ -9,13 +9,6 @@
   margin: 0 auto;
   margin-top: -30px;
   border-radius: 0px;
-
-  // svg {
-  //   z-index: 1;
-  //   bottom: -15px;
-  //   border-radius: 50px;
-  //   box-shadow: -0px -0px 20px -6px rgba(0, 0, 0, 1);
-  // }
 }
 
 .AvatarHead {
@@ -42,6 +35,7 @@
     top: 100%;
     margin-left: -16px;
     margin-top: -18px;
+    z-index: 5;
   }
   form {
     display: block;
@@ -83,5 +77,5 @@
 }
 
 .Loading {
-  border-radius: 60px;
+  border-radius: 60px !important;
 }
