@@ -1,7 +1,7 @@
 import fetcher from '../../../utils/fatcher';
 import { mutate } from 'swr';
 import { usePopup } from '../../../hooks/usePopup';
-import { Icon } from '../../../components';
+import { Button, Icon } from '../../../components';
 import css from './LoginButton.module.scss';
 
 const LogoutButton = () => {
@@ -17,10 +17,13 @@ const LogoutButton = () => {
   };
 
   return (
-    <button className={`${css.loginButton} ${css.logout}`} onClick={handleLogout}>
-      <Icon name="logout" size="24" />
-      <span>Abmeldung</span>
-    </button>
+    // <button className={`${css.loginButton} ${css.logout}`} onClick={handleLogout}>
+    //   <Icon name="logout" size="24" />
+    //   <span>Abmeldung</span>
+    // </button>
+    <Button icon="logout" full size="small" onClick={handleLogout}>
+      Abmeldung
+    </Button>
   );
 };
 
