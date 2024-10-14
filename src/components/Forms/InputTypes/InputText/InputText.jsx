@@ -36,7 +36,7 @@ const InputText = ({ type, icon, name, value, label, required, placeholder, min,
             className={css.InputIcon}
             onClick={name === 'password' || name === 'password2' ? handleIconClick : null}
           >
-            <Icon name={iconName} />
+            <Icon name={iconName} size="22" />
           </span>
         )}
       </span>

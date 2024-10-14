@@ -178,5 +178,7 @@ div.Input {
   -webkit-tap-highlight-color: transparent;
   svg {
     pointer-events: none;
+    background: #fff;
+    color: var(--grey-color);
   }
 }
