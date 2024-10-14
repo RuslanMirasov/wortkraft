@@ -1,4 +1,13 @@
-import { AvatarForm, ProfileForm, LogoutButton, DeleteAccaunt, Title, PasswordForm, Hero } from '../../components';
+import {
+  AvatarForm,
+  ProfileForm,
+  LogoutButton,
+  DeleteAccaunt,
+  Title,
+  PasswordForm,
+  Hero,
+  ButtonList,
+} from '../../components';
 import { useAuth } from '../../hooks/useAuth';
 import css from './Profile.module.scss';
 
@@ -13,8 +22,8 @@ const Profile = () => {
   return (
     <>
       <Hero content={profileContent} />
+      <AvatarForm user={user} />
       <div className={css.Profile}>
-        <AvatarForm user={user} />
         <Title tag="h1" size="h4">
           {user.name}
         </Title>
@@ -22,23 +31,28 @@ const Profile = () => {
           <span>{user.status} accaunt</span>
         </p>
         <div className={css.ProfileSection}>
-          <Title tag="h2" size="h6">
+          <Title tag="h2" size="h5">
             Profil Einstellungen
           </Title>
           <hr />
           <ProfileForm user={user} />
         </div>
         <div className={css.ProfileSection}>
-          <Title tag="h2" size="h6">
+          <Title tag="h2" size="h5">
             Passwort ändern
           </Title>
           <hr />
           <PasswordForm userId={user._id} />
         </div>
         <div className={css.ProfileSection}>
+          <Title tag="h2" size="h5">
+            Gefährliche Zone
+          </Title>
           <hr />
-          <LogoutButton />
-          <DeleteAccaunt />
+          <ButtonList>
+            <LogoutButton />
+            <DeleteAccaunt />
+          </ButtonList>
         </div>
       </div>
     </>
