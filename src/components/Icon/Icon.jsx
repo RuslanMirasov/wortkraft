@@ -266,8 +266,8 @@ const Login = ({ size = 24, stroke }) => (
 const AvatarPlus = ({ size = 32 }) => (
   <svg width={size} height={size} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="16" cy="16" r="16" fill="#292B2D" />
-    <path d="M16 23V9" stroke="white" stroke-width="2" stroke-linecap="round" />
-    <path d="M23 16L9 16" stroke="white" stroke-width="2" stroke-linecap="round" />
+    <path d="M16 23V9" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path d="M23 16L9 16" stroke="white" strokeWidth="2" strokeLinecap="round" />
   </svg>
 );
 

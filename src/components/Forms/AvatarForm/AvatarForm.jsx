@@ -32,7 +32,7 @@ const AvatarForm = ({ user }) => {
         await fetcher('/api/user/avatar', 'POST', formData, true);
         mutate('/api/auth/user');
       } catch (error) {
-        popupOpen('error', `Error ${error.status}`, error.message);
+        popupOpen('error', `Error ${error.status || ''}`, error.message);
       } finally {
         setLoading(false);
       }

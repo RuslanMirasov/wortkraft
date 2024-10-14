@@ -46,6 +46,7 @@ export { default as WordDescription } from './LerningRoom/WordDescription';
 export { default as Dialog } from './LerningRoom/Dialog';
 export { default as Quiz } from './LerningRoom/Quiz';
 export { default as InfoBlock } from './InfoBlock/InfoBlock';
+export { default as StatisticTable } from './StatisticTable/StatisticTable';
 
 // Forms
 export { default as Form } from './Forms/Form/Form';
