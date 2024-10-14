@@ -20,7 +20,7 @@ const SearchPage = ({ books }) => {
       <Hero content={{ name: 'Suche', color: user?.color || 'var(--orange-color)' }} />
       <SearchForm filterBooks={filterBooks} />
       <TitleBox margin="20">
-        <Title tag="h1" size="h2">
+        <Title tag="h1" size="h5">
           {filteredBooks.length === 0 ? 'Keine' : filteredBooks.length}
           {filteredBooks.length === 1 ? ' Buch' : ' Bücher'} gefunden
         </Title>
