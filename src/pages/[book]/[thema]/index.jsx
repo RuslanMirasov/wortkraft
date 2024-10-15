@@ -24,7 +24,7 @@ const ThemaPage = ({ books }) => {
 
   const themaContent = {
     ...thema,
-    words_count: words.length > 0 ? thema.words_count.toString() : '0',
+    words_count: words.length > 0 ? words.length.toString() : '0',
     learnt: alreadyLearnt.length,
   };
 

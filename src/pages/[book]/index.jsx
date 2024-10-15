@@ -15,7 +15,7 @@ const BookPage = ({ books }) => {
     return null;
   }
 
-  const bookLearnedWordsCount = user.progress?.filter(word => word.book === bookSlug && word.points === 5).length || 0;
+  const bookLearnedWordsCount = user?.progress?.filter(word => word.book === bookSlug && word.points === 5).length || 0;
 
   const bookContent = {
     ...book,

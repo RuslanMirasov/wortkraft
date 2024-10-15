@@ -15,8 +15,8 @@ const Collection = ({ collection }) => {
   return (
     <ul className={css.Collection}>
       {collection.map((item, index) => {
-        const doneThems = user.progress?.filter(word => word.theme === item.slug && word.points === 5).length || 0;
-        const doneBooks = user.progress?.filter(word => word.book === item.slug && word.points === 5).length || 0;
+        const doneThems = user?.progress?.filter(word => word.theme === item.slug && word.points === 5).length || 0;
+        const doneBooks = user?.progress?.filter(word => word.book === item.slug && word.points === 5).length || 0;
 
         const sum = doneThems > 0 ? doneThems : doneBooks;
 

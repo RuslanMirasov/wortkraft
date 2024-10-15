@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useAuth } from '../../hooks/useAuth';
-import { Header, Main, Footer, Popup, Section, Preloader } from '../../components';
+import { Header, Main, Footer, Popup, Section, Preloader, InfoBlock, Button } from '../../components';
+import css from '../../components/PageNotFound/PageNotFound.module.scss';
 
 const Layout = ({ booksLoading, error, children }) => {
   const { isLoading: userLoading } = useAuth();
@@ -18,8 +20,18 @@ const Layout = ({ booksLoading, error, children }) => {
         {booksLoading || userLoading ? (
           <Preloader />
         ) : error ? (
-          <Section>
-            <h1>ERROR</h1>
+          <Section className={css.PageNotFound}>
+            <InfoBlock
+              name="500"
+              title="Es tut uns leid"
+              subtitle={`Es besteht keine Verbindung zum Server.\n Bitte versuchen Sie es später erneut.`}
+            >
+              <Link href="/">
+                <Button size="small" full icon="arrow-right">
+                  Zurück zu Startseite
+                </Button>
+              </Link>
+            </InfoBlock>
           </Section>
         ) : (
           children
