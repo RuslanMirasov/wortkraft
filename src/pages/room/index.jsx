@@ -1,8 +1,10 @@
-import fetcher from '../../utils/fatcher';
 import useSWR from 'swr';
+import Link from 'next/link';
+import fetcher from '../../utils/fatcher';
 import { useAuth } from '../../hooks/useAuth';
-import { Section, PrivatePage, Preloader, LerningRoom } from '../../components';
+import { Section, PrivatePage, Preloader, LerningRoom, InfoBlock, Button } from '../../components';
 import { useState, useEffect } from 'react';
+import css from '../../components/PageNotFound/PageNotFound.module.scss';
 
 const RoomPage = () => {
   const { room, setRoom } = useAuth();
@@ -53,8 +55,17 @@ const RoomPage = () => {
 
   if (isEmpty || !data) {
     return (
-      <Section>
-        <p>Пусто</p>
+      <Section className={css.PageNotFound}>
+        <InfoBlock
+          name="404"
+          subtitle={`Sie haben alle Wörter auf dieser Liste gelernt.\n Wählen Sie eine neue Stufe.`}
+        >
+          <Link href="/">
+            <Button size="small" full icon="arrow-right">
+              Zu den Bücher
+            </Button>
+          </Link>
+        </InfoBlock>
       </Section>
     );
   }
