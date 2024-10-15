@@ -8,7 +8,6 @@ const StatisticTable = ({ progress = [], books }) => {
 
   useEffect(() => {
     const newStatistic = levels.map(level => {
-      // Сумма слов для уровня
       const levelSum = books.reduce((acc, book) => {
         if (book.level.startsWith(level)) {
           return acc + book.words_count;
@@ -16,7 +15,6 @@ const StatisticTable = ({ progress = [], books }) => {
         return acc;
       }, 0);
 
-      // Подсчёт "done"
       const done = progress.reduce((acc, item) => {
         const matchingBook = books.find(book => book.slug === item.book);
         if (matchingBook && matchingBook.level.startsWith(level) && item.points === 5) {
@@ -25,7 +23,6 @@ const StatisticTable = ({ progress = [], books }) => {
         return acc;
       }, 0);
 
-      // Подсчёт "inprocess"
       const inprocess = progress.reduce((acc, item) => {
         const matchingBook = books.find(book => book.slug === item.book);
         if (matchingBook && matchingBook.level.startsWith(level)) {
@@ -34,16 +31,14 @@ const StatisticTable = ({ progress = [], books }) => {
         return acc;
       }, 0);
 
-      // Вычисление процентов для done и inprocess относительно levelSum
       const donePercentage = levelSum > 0 ? (done / levelSum) * 100 : 0;
       const inprocessPercentage = levelSum > 0 ? (inprocess / levelSum) * 100 : 0;
 
-      // Создаём объект для статистики с процентами
       return {
         level,
         words: levelSum,
-        done: donePercentage.toFixed(2), // Округляем до двух знаков после запятой
-        inprocess: inprocessPercentage.toFixed(2), // Округляем до двух знаков
+        done: donePercentage.toFixed(2),
+        inprocess: inprocessPercentage.toFixed(2),
       };
     });
 

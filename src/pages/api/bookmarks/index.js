@@ -10,7 +10,7 @@ const handler = async (req, res) => {
   const token = cookies.token;
 
   if (!token) {
-    return res.status(401).json({ message: 'Only authorized users can access their bookmarks' });
+    return res.status(401).json({ message: 'Nur autorisierte Benutzer können ihre eigenen Listen erstellen' });
   }
 
   try {
