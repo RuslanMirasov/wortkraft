@@ -14,17 +14,24 @@ const Collection = ({ collection }) => {
 
   return (
     <ul className={css.Collection}>
-      {collection.map((item, index) => (
-        <li key={item.slug} className={css.CollectionItem} style={{ background: item.color }}>
-          <CollectionItem
-            item={{ ...item, learnt: 0 }}
-            index={index}
-            locked={index === 0 ? false : locked}
-            active={activeIndex === index}
-            onSetActive={() => handleSetActive(index)}
-          />
-        </li>
-      ))}
+      {collection.map((item, index) => {
+        const doneThems = user.progress?.filter(word => word.theme === item.slug && word.points === 5).length || 0;
+        const doneBooks = user.progress?.filter(word => word.book === item.slug && word.points === 5).length || 0;
+
+        const sum = doneThems > 0 ? doneThems : doneBooks;
+
+        return (
+          <li key={item.slug} className={css.CollectionItem} style={{ background: item.color }}>
+            <CollectionItem
+              item={{ ...item, learnt: sum }}
+              index={index}
+              locked={index === 0 ? false : locked}
+              active={activeIndex === index}
+              onSetActive={() => handleSetActive(index)}
+            />
+          </li>
+        );
+      })}
     </ul>
   );
 };
