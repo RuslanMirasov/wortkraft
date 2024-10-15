@@ -50,7 +50,11 @@ const CollectionItem = ({ item, index, locked = false, active, onSetActive }) =>
         </TitleBox>
 
         <TitleBox>
-          <Counters thems={thems_count} words={words_count} />
+          <Counters
+            thems={thems_count}
+            words={words_count}
+            learnt={thems_count || thems_count === 0 ? undefined : item.learnt}
+          />
           <LinkButton href={`${cleanedPath}/${slug}`} locked={locked} />
         </TitleBox>
       </div>

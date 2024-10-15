@@ -2671,5 +2671,86 @@
         ]
       }
     ]
+  },
+  {
+    "book": "schritte-plus-neu-a1-1",
+    "theme": "guten-tag-mein-name-ist",
+    "name": "ich",
+    "level": "A1",
+    "examples": ["Ich bin Anna, ich wohne in Berlin, und du?", "Ich heiße Christina, ich komme aus der Ukraine."],
+    "translates": [
+      {
+        "language": "RU",
+        "translation": [
+          { "name": "я", "status": true },
+          { "name": "ты", "status": false },
+          { "name": "он", "status": false },
+          { "name": "она", "status": false }
+        ]
+      },
+      {
+        "language": "UA",
+        "translation": [
+          { "name": "я", "status": true },
+          { "name": "ти", "status": false },
+          { "name": "він", "status": false },
+          { "name": "вона", "status": false }
+        ]
+      },
+      {
+        "language": "EN",
+        "translation": [
+          { "name": "I", "status": true },
+          { "name": "you", "status": false },
+          { "name": "he", "status": false },
+          { "name": "she", "status": false }
+        ]
+      },
+      {
+        "language": "FR",
+        "translation": [
+          { "name": "je", "status": true },
+          { "name": "tu", "status": false },
+          { "name": "il", "status": false },
+          { "name": "elle", "status": false }
+        ]
+      },
+      {
+        "language": "PL",
+        "translation": [
+          { "name": "ja", "status": true },
+          { "name": "ty", "status": false },
+          { "name": "on", "status": false },
+          { "name": "ona", "status": false }
+        ]
+      },
+      {
+        "language": "IT",
+        "translation": [
+          { "name": "io", "status": true },
+          { "name": "tu", "status": false },
+          { "name": "lui", "status": false },
+          { "name": "lei", "status": false }
+        ]
+      },
+      {
+        "language": "ES",
+        "translation": [
+          { "name": "yo", "status": true },
+          { "name": "tú", "status": false },
+          { "name": "él", "status": false },
+          { "name": "ella", "status": false }
+        ]
+      },
+      {
+        "language": "TR",
+        "translation": [
+          { "name": "ben", "status": true },
+          { "name": "sen", "status": false },
+          { "name": "o", "status": false },
+          { "name": "biz", "status": false }
+        ]
+      }
+    ]
   }
 ]

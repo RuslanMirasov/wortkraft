@@ -1,8 +1,10 @@
 import { useRouter } from 'next/router';
+import { useAuth } from '../../hooks/useAuth';
 import { Hero, Collection, Section, TitleBox, Title } from '../../components';
 
 const BookPage = ({ books }) => {
   const router = useRouter();
+  const { user } = useAuth();
   const { book: bookSlug } = router.query;
   const book = books.find(book => book.slug === bookSlug);
 
@@ -13,10 +15,12 @@ const BookPage = ({ books }) => {
     return null;
   }
 
+  const bookLearnedWordsCount = user.progress?.filter(word => word.book === bookSlug && word.points === 5).length || 0;
+
   const bookContent = {
     ...book,
     words_count: book.words_count ? book.words_count.toString() : '0',
-    learnt: 0,
+    learnt: bookLearnedWordsCount,
   };
 
   return (
